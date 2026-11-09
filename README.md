@@ -1,6 +1,6 @@
 # Финальный проект: разметка данных и выбор модели
 
-Фотографии для разметки лежат в [`dataset/`](dataset/): 400 кадров CC0 с iNaturalist, `metadata.csv` и `summary.json`. Состав и колонки описаны в [`dataset/README.md`](dataset/README.md).
+Фотографии для разметки лежат в [`dataset/`](dataset/): 400 кадров CC0 с iNaturalist, `metadata.csv` и `summary.json`. Состав и колонки описаны в [`dataset/README.md`](dataset/README.md). Скрипт сбора — [`collect/build_dataset.py`](collect/build_dataset.py); он записывает результат в `dataset/`.
 
 ## О задании
 
