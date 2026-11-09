@@ -1,0 +1,27 @@
+{
+  "photos": 400,
+  "failed": 5,
+  "by_group": {
+    "bee": 8,
+    "dragonfly": 12,
+    "flower": 14,
+    "fungus": 9,
+    "hoverfly": 10,
+    "ladybird": 8,
+    "larva": 22,
+    "moth_erebidae": 13,
+    "moth_geometridae": 13,
+    "moth_saturniidae": 12,
+    "moth_sphingidae": 12,
+    "pupa": 13,
+    "hesperiidae": 45,
+    "lycaenidae": 46,
+    "nymphalidae": 52,
+    "papilionidae": 37,
+    "pieridae": 39,
+    "riodinidae": 35
+  },
+  "positive": 254,
+  "negative": 146,
+  "note": "Таксон и стадия iNaturalist не заменяют разметку. Перед запуском заданий кадры нужно просмотреть."
+}
