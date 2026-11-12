@@ -71,7 +71,7 @@ function side() {
   const col = {ok: '#16a34a', none: '#2563eb', broken: '#b45309', skip: '#6b7280'};
   $('side').innerHTML = DATA.map((p, i) => { const r = st[p.photo_id] || {};
     const n = (r.boxes || []).filter(b => b.label == 'butterfly').length;
-    return `<div class="it ${i == cur ? 'cur' : ''}" onclick="go(${i})"><span>${i + 1}. ${p.kind || p.group || ''}</span>
+    return `<div class="it ${i == cur ? 'cur' : ''}" onclick="go(${i})"><span>№ ${i + 1}</span>
       <span class="st" style="color:${col[r.status] || '#aaa'}">${r.status ? r.status + (n ? ' ' + n : '') : '—'}</span></div>` }).join('')
   const done = DATA.filter(p => (st[p.photo_id] || {}).status).length;
   $('title').textContent = `${cur + 1}/${DATA.length} · готово ${done}`
