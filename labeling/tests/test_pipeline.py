@@ -205,7 +205,7 @@ def main():
     dual = passed[-1]                       # сдал bbox и пытается стать ещё и ревьюером
     fake.user_skills[(dual, s['rev_exam'])] = 90
     reviewers[dual] = 1.0
-    api.cmd_rev_pool(); api.cmd_bbox_pool('pilot'); api.cmd_bbox_pool('main')
+    api.cmd_rev_pool(); api.cmd_bbox_pool('pilot')
     s = api.state()
     for p in s['pools_bbox'] + [s['pool_review']]:
         fake.pools[p]['status'] = 'OPEN'
@@ -221,11 +221,15 @@ def main():
         for r, q in reviewers.items():
             for _ in range(rnd.randint(5, 40)):
                 fake.take(s['pool_review'], r, review_solver(truth, q))
-        api.cmd_cycle()
+        assert api.autopilot_step() or all(p.get('final') for p in api.ledger()['photos'].values())
         led = api.ledger()
         if all(p.get('final') for p in led['photos'].values()):
             break
     led = api.ledger()
+    main_log = [l for l in led['log'] if l[2] == 'batch added']
+    assert main_log and main_log[0][1] == 'main', 'автопилот не долил основные фото'
+    assert len(s['pools_bbox']) == 1, 'основные фото должны идти в тот же пул'
+    print('автопилот:', main_log[0])
     assert len(led['photos']) == 400 and all(p.get('final') for p in led['photos'].values()), 'не все фото дошли до решения'
     # инварианты конвейера
     rev_workers = {a['user_id'] for a in fake.asg.values() if a['pool_id'] == s['pool_review']}
@@ -254,7 +258,10 @@ def main():
           f'решения {dict(collections.Counter(a["decision"] for a in led["ann"].values()))}; потрачено (симуляция) {spent:.0f} ₽')
     # аварийный стоп по деньгам: пулы закрываются, cycle останавливается
     api.BUDGET_STOP = 1
-    api.cmd_cycle()
+    try:
+        api.cmd_cycle(); raise AssertionError('стоп по бюджету не сработал')
+    except SystemExit:
+        pass
     assert all(fake.pools[p]['status'] == 'CLOSED' for p in s['pools_bbox'] + [s['pool_review']]), 'стоп по бюджету не закрыл пулы'
     print('стоп по бюджету: пулы закрыты')
     shutil.rmtree(tmp)

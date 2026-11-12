@@ -29,14 +29,14 @@ STATE, LEDGER = 'work/state.json', 'work/ledger.json'
 FEE = 0.4                      # комиссия платформы (как в ДЗ2); проверить в интерфейсе при создании пула
 
 # --- параметры (обоснование — в README) ---
-BBOX_EXAM_PRICE, BBOX_EXAM_PEOPLE = 1.5, 40   # 10 фото ≈ 3–4 мин; 40 × 1.5 × 1.4 = 84 ₽
+BBOX_EXAM_PRICE, BBOX_EXAM_PEOPLE = 1.5, 20   # 10 фото ≈ 3–4 мин; волна: 20 × 1.5 × 1.4 = 42 ₽, добавить людей — exam-overlap
 EXAM_IOU, BBOX_PASS = 0.6, 85                  # навык = 100·F1 при IoU ≥ 0.6 (строже метрики 0.5: рамки должны быть плотными)
 BBOX_PRICE = 0.4                               # за фото, 1 фото на страницу: приёмка/отклонение по каждому фото отдельно
 REVIEW_PERIOD_DAYS = 7                         # отложенная приёмка: успеть проверить, иначе примется автоматически
 MAX_ATTEMPTS = 2                               # разметка + 1 переразметка; дальше — ручной разбор командой
 REV_PRICE, REV_REAL, REV_GOLD = 0.6, 9, 1      # страница ревью: 9 проверок + 1 контрольная, ~1 мин → ~36 ₽/ч
 REV_OVERLAP = 3                                # 3 независимых ревьюера: решение большинством, ничьих нет
-REV_EXAM_PRICE, REV_EXAM_PEOPLE = 0.5, 40     # 16 заданий ≈ 2 мин
+REV_EXAM_PRICE, REV_EXAM_PEOPLE = 0.5, 20     # 16 заданий ≈ 2 мин; волна: 20 человек
 REV_PASS, REV_TRAIN_PASS = 80, 70
 BUDGET_NO_REDO, BUDGET_STOP = 700, 780         # ₽ с комиссией: выше — без переразметок; ещё выше — пулы закрываются
 
@@ -117,6 +117,7 @@ def pool_body(project, name, price, real, gold, flt, qc=None, overlap=1, auto_ac
         'reward_per_assignment': price,
         'assignment_max_duration_seconds': max_sec,
         'auto_accept_solutions': auto_accept,
+        'auto_close_after_complete_delay_seconds': 259200,   # не закрываться сразу: переоткрыть можно только через модерацию
         'defaults': {'default_overlap_for_new_task_suites': overlap, 'default_overlap_for_new_tasks': overlap},
         # force_last_assignment: неполную последнюю страницу всё равно выдаём, иначе хвост пула зависнет
         'mixer_config': {'real_tasks_count': real, 'golden_tasks_count': gold, 'training_tasks_count': 0,
@@ -455,6 +456,66 @@ def spent():
     return total * (1 + FEE)
 
 
+def add_photos(pool_id, batch):
+    # фото батча → задания в уже открытый пул bbox (новый пул пришлось бы снова отправлять на модерацию)
+    photos = [ph for ph in load('photos') if ph['batch'] == batch]
+    have = existing(pool_id)
+    rows = [ph for ph in photos if ph['photo_id'] not in have]
+    post_tasks([{'pool_id': pool_id, 'input_values': {'photo_id': ph['photo_id'], 'image': ph['image']}, 'overlap': 1} for ph in rows])
+    led = ledger()
+    for ph in photos:
+        led['photos'].setdefault(ph['photo_id'], {'attempts': 0, 'tasks': 1, 'pool': pool_id, 'image': ph['image']})
+    led['log'].append([now(), batch, 'batch added', f'{len(rows)} photos -> pool {pool_id}'])
+    save_ledger(led)
+    ensure_open(pool_id)
+    return len(rows)
+
+
+def cmd_bbox_add(batch, pool_id=None):
+    print(f'добавлено {add_photos(pool_id or state()["pools_bbox"][0], batch)} фото ({batch})')
+
+
+PILOT_MIN_DECIDED, PILOT_MIN_ACCEPT, PILOT_MAX_MANUAL = 0.9, 0.5, 0.25
+
+
+def pilot_gate(led):
+    # пилот окончен, если решение есть по ≥90% его фото; качество: принято ≥50% первых разметок, на ручной ≤25% фото
+    pilot = [ph['photo_id'] for ph in load('photos') if ph['batch'] == 'pilot']
+    fin = [p for p in pilot if led['photos'].get(p, {}).get('final')]
+    first = [a for a in led['ann'].values() if a['photo_id'] in set(pilot) and a['round'] == 1 and a['decision']]
+    acc = sum(a['decision'].startswith('accept') for a in first) / max(1, len(first))
+    manual = sum(led['photos'][p].get('final') == 'manual' for p in fin) / max(1, len(pilot))
+    done = len(fin) >= PILOT_MIN_DECIDED * len(pilot)
+    ok = acc >= PILOT_MIN_ACCEPT and manual <= PILOT_MAX_MANUAL
+    return done, ok, f'пилот: решено {len(fin)}/{len(pilot)}, принято с 1-й попытки {acc:.0%}, на ручной {manual:.0%}'
+
+
+def autopilot_step():
+    # один проход: cycle; если пилот окончен и качество норм — доливаем основные фото. Возвращает False, когда пора остановиться
+    cmd_cycle()
+    led = ledger()
+    if not any(l[2] == 'batch added' and l[1] == 'main' for l in led['log']):
+        done, ok, msg = pilot_gate(led)
+        print(f'{time.strftime("%H:%M")} {msg}')
+        if done and ok:
+            n = add_photos(state()['pools_bbox'][0], 'main')
+            print(f'{time.strftime("%H:%M")} >>> пилот ок, добавлено {n} основных фото в пул {state()["pools_bbox"][0]}')
+        elif done:
+            print(f'{time.strftime("%H:%M")} !!! пилот закончен, но качество ниже порога — основные фото НЕ добавлены, жду человека')
+            return False
+    elif all(p.get('final') for p in ledger()['photos'].values()):
+        print(f'{time.strftime("%H:%M")} все фото решены — автопилот остановлен')
+        return False
+    return True
+
+
+def cmd_autopilot(minutes='5'):
+    # ждалка: cycle каждые N минут, после пилота — основные 368 фото в тот же пул; стоп по бюджету роняет её целиком
+    while autopilot_step():
+        sys.stdout.flush()
+        time.sleep(60 * int(minutes))
+
+
 def cmd_cycle(*args):
     while True:
         money = spent()
@@ -462,7 +523,8 @@ def cmd_cycle(*args):
             s = state()
             for pid in s.get('pools_bbox', []) + [s.get('pool_review')]:
                 call('POST', f'/pools/{pid}/close')
-            print(f'!!! потрачено {money:.0f} ₽ > {BUDGET_STOP}: пулы bbox и ревью ЗАКРЫТЫ'); return
+            print(f'!!! потрачено {money:.0f} ₽ > {BUDGET_STOP}: пулы bbox и ревью ЗАКРЫТЫ')
+            raise SystemExit('budget stop')
         led = ledger()
         n = sync(led); save_ledger(led)
         d = decide(led, allow_redo=money < BUDGET_NO_REDO); save_ledger(led)
@@ -551,6 +613,15 @@ def cmd_budget():
     print(f'{"итого":71} {e:8.0f} ₽ {m:8.0f} ₽   (бюджет 850, комиссия {FEE:.0%})')
     print(f'предохранитель в cycle: ≥{BUDGET_NO_REDO} ₽ — без переразметок, >{BUDGET_STOP} ₽ — пулы закрываются; '
           f'реальный потолок ≈ {BUDGET_STOP} ₽ + задания, уже взятые в работу (единицы рублей)')
+
+
+def cmd_exam_overlap(pool_id, n):
+    # сколько человек пройдут экзамен: запускаем волнами, чтобы сдавшие сразу получали работу, а не ждали
+    n = int(n)
+    for t in paged('/tasks', pool_id=pool_id):
+        call('PATCH', f'/tasks/{t["id"]}', {'overlap': n, 'infinite_overlap': False})
+    got = {t.get('overlap') for t in paged('/tasks', pool_id=pool_id)}
+    print(f'пул {pool_id}: перекрытие заданий теперь {got}')
 
 
 if __name__ == '__main__':
