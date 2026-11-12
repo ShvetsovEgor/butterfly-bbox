@@ -1,0 +1,2434 @@
+[
+ {
+  "id": "x651624739_loose",
+  "photo_id": "x651624739",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651624739/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.0,
+    "top": 0.03479,
+    "width": 1.0,
+    "height": 0.96521
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x650940581_ok_none",
+  "photo_id": "x650940581",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650940581/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651488031_extra",
+  "photo_id": "x651488031",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651488031/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.05091,
+    "top": 0.1426,
+    "width": 0.91743,
+    "height": 0.64875
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651677804_ok_none",
+  "photo_id": "x651677804",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651677804/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651308928_loose",
+  "photo_id": "x651308928",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651308928/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.16475,
+    "top": 0.29293,
+    "width": 0.4486,
+    "height": 0.53026
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651142109_ok_none",
+  "photo_id": "x651142109",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651142109/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651667136_ok_none",
+  "photo_id": "x651667136",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651667136/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651017425_ok",
+  "photo_id": "x651017425",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651017425/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.1295,
+    "top": 0.12093,
+    "width": 0.57218,
+    "height": 0.70903
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651230886_loose",
+  "photo_id": "x651230886",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651230886/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.3081,
+    "top": 0.20564,
+    "width": 0.34507,
+    "height": 0.38316
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651308928_missed",
+  "photo_id": "x651308928",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651308928/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x650740352_ok_none",
+  "photo_id": "x650740352",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650740352/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651100169_loose",
+  "photo_id": "x651100169",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651100169/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.00956,
+    "top": 0.05151,
+    "width": 0.99044,
+    "height": 0.86894
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651639012_loose",
+  "photo_id": "x651639012",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651639012/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.44666,
+    "top": 0.3059,
+    "width": 0.16111,
+    "height": 0.13212
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651647157_loose",
+  "photo_id": "x651647157",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651647157/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.3779,
+    "top": 0.29059,
+    "width": 0.31399,
+    "height": 0.20991
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651667136_extra",
+  "photo_id": "x651667136",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651667136/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.34016,
+    "top": 0.39686,
+    "width": 0.27558,
+    "height": 0.18611
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651379097_missed",
+  "photo_id": "x651379097",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651379097/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651648127_ok_none",
+  "photo_id": "x651648127",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651648127/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651601178_missed",
+  "photo_id": "x651601178",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651601178/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x648348417_ok_none",
+  "photo_id": "x648348417",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/648348417/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651121324_missed",
+  "photo_id": "x651121324",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651121324/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651162938_loose",
+  "photo_id": "x651162938",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651162938/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.31833,
+    "top": 0.33731,
+    "width": 0.21282,
+    "height": 0.18765
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651398826_ok",
+  "photo_id": "x651398826",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651398826/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.31279,
+    "top": 0.49631,
+    "width": 0.35295,
+    "height": 0.24467
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651110322_missed",
+  "photo_id": "x651110322",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651110322/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651648127_extra",
+  "photo_id": "x651648127",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651648127/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.34666,
+    "top": 0.32477,
+    "width": 0.28899,
+    "height": 0.33683
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651590515_loose",
+  "photo_id": "x651590515",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651590515/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.33987,
+    "top": 0.44202,
+    "width": 0.18397,
+    "height": 0.25174
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651620678_ok_none",
+  "photo_id": "x651620678",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651620678/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651598561_loose",
+  "photo_id": "x651598561",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651598561/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.30421,
+    "top": 0.35465,
+    "width": 0.30598,
+    "height": 0.20499
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651136330_loose",
+  "photo_id": "x651136330",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651136330/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.20273,
+    "top": 0.05925,
+    "width": 0.72473,
+    "height": 0.79319
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651632022_missed",
+  "photo_id": "x651632022",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651632022/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651683185_ok_none",
+  "photo_id": "x651683185",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651683185/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651398826_missed",
+  "photo_id": "x651398826",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651398826/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651077315_loose",
+  "photo_id": "x651077315",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651077315/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.36542,
+    "top": 0.2568,
+    "width": 0.42055,
+    "height": 0.498
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651035179_ok",
+  "photo_id": "x651035179",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651035179/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.34237,
+    "top": 0.12338,
+    "width": 0.5282,
+    "height": 0.82033
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651379097_ok",
+  "photo_id": "x651379097",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651379097/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.41331,
+    "top": 0.31195,
+    "width": 0.15676,
+    "height": 0.26818
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651621725_loose",
+  "photo_id": "x651621725",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651621725/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.26174,
+    "top": 0.2166,
+    "width": 0.35708,
+    "height": 0.38679
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651014503_loose",
+  "photo_id": "x651014503",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651014503/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.26463,
+    "top": 0.24777,
+    "width": 0.36242,
+    "height": 0.27851
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651035179_missed",
+  "photo_id": "x651035179",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651035179/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651677804_extra",
+  "photo_id": "x651677804",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651677804/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.40222,
+    "top": 0.45977,
+    "width": 0.24723,
+    "height": 0.12975
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651077315_ok",
+  "photo_id": "x651077315",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651077315/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.18896,
+    "top": 0.05597,
+    "width": 0.75542,
+    "height": 0.89482
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651586670_loose",
+  "photo_id": "x651586670",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651586670/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.17648,
+    "top": 0.50599,
+    "width": 0.41154,
+    "height": 0.13432
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651590515_missed",
+  "photo_id": "x651590515",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651590515/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651149946_ok",
+  "photo_id": "x651149946",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651149946/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.31428,
+    "top": 0.08462,
+    "width": 0.4022,
+    "height": 0.6177
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651635399_ok",
+  "photo_id": "x651635399",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651635399/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.38502,
+    "top": 0.54141,
+    "width": 0.41272,
+    "height": 0.27539
+   },
+   {
+    "shape": "rectangle",
+    "left": 0.23417,
+    "top": 0.10884,
+    "width": 0.58535,
+    "height": 0.53142
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651640791_ok",
+  "photo_id": "x651640791",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651640791/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.19679,
+    "top": 0.06994,
+    "width": 0.70224,
+    "height": 0.76598
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651121324_ok",
+  "photo_id": "x651121324",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651121324/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.22165,
+    "top": 0.15268,
+    "width": 0.66775,
+    "height": 0.74552
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651677806_ok_none",
+  "photo_id": "x651677806",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651677806/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651107174_ok",
+  "photo_id": "x651107174",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651107174/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.49973,
+    "top": 0.3522,
+    "width": 0.23503,
+    "height": 0.15601
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651369945_extra",
+  "photo_id": "x651369945",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651369945/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.37516,
+    "top": 0.19895,
+    "width": 0.17202,
+    "height": 0.44037
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651064322_ok",
+  "photo_id": "x651064322",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651064322/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.04929,
+    "top": 0.09707,
+    "width": 0.86339,
+    "height": 0.79408
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651635399_loose",
+  "photo_id": "x651635399",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651635399/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.38359,
+    "top": 0.54628,
+    "width": 0.40571,
+    "height": 0.27917
+   },
+   {
+    "shape": "rectangle",
+    "left": 0.36672,
+    "top": 0.23406,
+    "width": 0.32306,
+    "height": 0.29285
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651162938_ok",
+  "photo_id": "x651162938",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651162938/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.22985,
+    "top": 0.26411,
+    "width": 0.37492,
+    "height": 0.34028
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651100169_missed",
+  "photo_id": "x651100169",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651100169/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651586670_missed",
+  "photo_id": "x651586670",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651586670/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651029259_loose",
+  "photo_id": "x651029259",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651029259/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.10384,
+    "top": 0.18382,
+    "width": 0.77936,
+    "height": 0.5637
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x650714664_extra",
+  "photo_id": "x650714664",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650714664/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.31225,
+    "top": 0.02726,
+    "width": 0.35583,
+    "height": 0.79685
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x650810290_extra",
+  "photo_id": "x650810290",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650810290/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.16309,
+    "top": 0.32182,
+    "width": 0.53516,
+    "height": 0.34846
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651156176_ok",
+  "photo_id": "x651156176",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651156176/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.14297,
+    "top": 0.08802,
+    "width": 0.37234,
+    "height": 0.19985
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651661520_ok_none",
+  "photo_id": "x651661520",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651661520/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651647157_ok",
+  "photo_id": "x651647157",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651647157/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.26098,
+    "top": 0.20406,
+    "width": 0.54985,
+    "height": 0.37546
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x648348417_extra",
+  "photo_id": "x648348417",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/648348417/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.43536,
+    "top": 0.44928,
+    "width": 0.09436,
+    "height": 0.18742
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651608907_extra",
+  "photo_id": "x651608907",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651608907/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.27326,
+    "top": 0.11638,
+    "width": 0.49541,
+    "height": 0.4561
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651318756_ok",
+  "photo_id": "x651318756",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651318756/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.28068,
+    "top": 0.09431,
+    "width": 0.47817,
+    "height": 0.78893
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651601178_loose",
+  "photo_id": "x651601178",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651601178/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.09823,
+    "top": 0.11173,
+    "width": 0.78414,
+    "height": 0.60826
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651619354_ok_none",
+  "photo_id": "x651619354",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651619354/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651621725_ok",
+  "photo_id": "x651621725",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651621725/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.12054,
+    "top": 0.07844,
+    "width": 0.64568,
+    "height": 0.68483
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651448151_missed",
+  "photo_id": "x651448151",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651448151/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651470367_ok",
+  "photo_id": "x651470367",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651470367/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.47382,
+    "top": 0.24094,
+    "width": 0.51783,
+    "height": 0.30903
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651107174_missed",
+  "photo_id": "x651107174",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651107174/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x650779703_extra",
+  "photo_id": "x650779703",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650779703/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.03744,
+    "top": 0.11245,
+    "width": 0.94079,
+    "height": 0.79948
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651670676_ok_none",
+  "photo_id": "x651670676",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651670676/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651639012_missed",
+  "photo_id": "x651639012",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651639012/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651149946_loose",
+  "photo_id": "x651149946",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651149946/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.40129,
+    "top": 0.21725,
+    "width": 0.2259,
+    "height": 0.34349
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651562052_ok",
+  "photo_id": "x651562052",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651562052/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.05283,
+    "top": 0.29656,
+    "width": 0.92615,
+    "height": 0.66268
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651360211_extra",
+  "photo_id": "x651360211",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651360211/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.28899,
+    "top": 0.26448,
+    "width": 0.35911,
+    "height": 0.4941
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651399109_ok",
+  "photo_id": "x651399109",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651399109/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.31659,
+    "top": 0.45792,
+    "width": 0.29052,
+    "height": 0.11498
+   },
+   {
+    "shape": "rectangle",
+    "left": 0.32189,
+    "top": 0.53102,
+    "width": 0.14529,
+    "height": 0.14378
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651110322_ok",
+  "photo_id": "x651110322",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651110322/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.19876,
+    "top": 0.13849,
+    "width": 0.58908,
+    "height": 0.623
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651667201_ok_none",
+  "photo_id": "x651667201",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651667201/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651637768_ok",
+  "photo_id": "x651637768",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651637768/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.33682,
+    "top": 0.25739,
+    "width": 0.25961,
+    "height": 0.25732
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651318756_missed",
+  "photo_id": "x651318756",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651318756/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651617059_extra",
+  "photo_id": "x651617059",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651617059/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.33855,
+    "top": 0.22123,
+    "width": 0.31178,
+    "height": 0.51639
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651230886_ok",
+  "photo_id": "x651230886",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651230886/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.17406,
+    "top": 0.04897,
+    "width": 0.62509,
+    "height": 0.68078
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651379097_loose",
+  "photo_id": "x651379097",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651379097/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.3585,
+    "top": 0.2234,
+    "width": 0.26236,
+    "height": 0.44783
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x650714664_ok_none",
+  "photo_id": "x650714664",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650714664/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x650740352_extra",
+  "photo_id": "x650740352",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650740352/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.30832,
+    "top": 0.20288,
+    "width": 0.40203,
+    "height": 0.51114
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651148331_missed",
+  "photo_id": "x651148331",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651148331/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651640791_loose",
+  "photo_id": "x651640791",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651640791/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.358,
+    "top": 0.22579,
+    "width": 0.39931,
+    "height": 0.42862
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651308928_ok",
+  "photo_id": "x651308928",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651308928/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.26132,
+    "top": 0.39955,
+    "width": 0.26162,
+    "height": 0.30735
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x648709202_ok_none",
+  "photo_id": "x648709202",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/648709202/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651121324_loose",
+  "photo_id": "x651121324",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651121324/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0,
+    "height": 1.0
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651590515_ok",
+  "photo_id": "x651590515",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651590515/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.27003,
+    "top": 0.34778,
+    "width": 0.33144,
+    "height": 0.44388
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651120488_ok",
+  "photo_id": "x651120488",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651120488/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.36671,
+    "top": 0.32071,
+    "width": 0.20094,
+    "height": 0.43636
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651637768_loose",
+  "photo_id": "x651637768",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651637768/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.24466,
+    "top": 0.16934,
+    "width": 0.43433,
+    "height": 0.43671
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651017425_loose",
+  "photo_id": "x651017425",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651017425/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.0,
+    "top": 0.0,
+    "width": 0.91471,
+    "height": 1.0
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651149946_missed",
+  "photo_id": "x651149946",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651149946/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651156176_missed",
+  "photo_id": "x651156176",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651156176/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651632022_ok",
+  "photo_id": "x651632022",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651632022/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.29192,
+    "top": 0.211,
+    "width": 0.46768,
+    "height": 0.47884
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x650779703_ok_none",
+  "photo_id": "x650779703",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650779703/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651110322_loose",
+  "photo_id": "x651110322",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651110322/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.32425,
+    "top": 0.27972,
+    "width": 0.3266,
+    "height": 0.34569
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x648709202_extra",
+  "photo_id": "x648709202",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/648709202/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.25279,
+    "top": 0.08624,
+    "width": 0.67105,
+    "height": 0.69987
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651601178_ok",
+  "photo_id": "x651601178",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651601178/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.26039,
+    "top": 0.2437,
+    "width": 0.46702,
+    "height": 0.36012
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651064322_loose",
+  "photo_id": "x651064322",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651064322/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.22854,
+    "top": 0.26868,
+    "width": 0.48727,
+    "height": 0.45293
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651608907_ok_none",
+  "photo_id": "x651608907",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651608907/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651632022_loose",
+  "photo_id": "x651632022",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651632022/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.12805,
+    "top": 0.04463,
+    "width": 0.79419,
+    "height": 0.81323
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651318756_loose",
+  "photo_id": "x651318756",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651318756/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.10543,
+    "top": 0.0,
+    "width": 0.80879,
+    "height": 1.0
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x650692800_ok_none",
+  "photo_id": "x650692800",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650692800/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x650810290_ok_none",
+  "photo_id": "x650810290",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650810290/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651624739_missed",
+  "photo_id": "x651624739",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651624739/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651586670_ok",
+  "photo_id": "x651586670",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651586670/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.02302,
+    "top": 0.45425,
+    "width": 0.73944,
+    "height": 0.24095
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651664769_ok_none",
+  "photo_id": "x651664769",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651664769/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651598561_missed",
+  "photo_id": "x651598561",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651598561/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651107174_loose",
+  "photo_id": "x651107174",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651107174/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.41611,
+    "top": 0.29417,
+    "width": 0.39933,
+    "height": 0.26773
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651148331_loose",
+  "photo_id": "x651148331",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651148331/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.36375,
+    "top": 0.43656,
+    "width": 0.20697,
+    "height": 0.1578
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651014503_ok",
+  "photo_id": "x651014503",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651014503/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.3362,
+    "top": 0.30438,
+    "width": 0.21359,
+    "height": 0.16259
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651637768_missed",
+  "photo_id": "x651637768",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651637768/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651120488_loose",
+  "photo_id": "x651120488",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651120488/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.29478,
+    "top": 0.16486,
+    "width": 0.34697,
+    "height": 0.73829
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651470367_missed",
+  "photo_id": "x651470367",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651470367/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651624739_ok",
+  "photo_id": "x651624739",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651624739/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.17642,
+    "top": 0.23475,
+    "width": 0.73161,
+    "height": 0.5867
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651639012_ok",
+  "photo_id": "x651639012",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651639012/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.38076,
+    "top": 0.25431,
+    "width": 0.29194,
+    "height": 0.23482
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651640791_missed",
+  "photo_id": "x651640791",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651640791/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651399109_missed",
+  "photo_id": "x651399109",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651399109/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.31828,
+    "top": 0.45845,
+    "width": 0.29358,
+    "height": 0.11534
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651360211_ok_none",
+  "photo_id": "x651360211",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651360211/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651017425_missed",
+  "photo_id": "x651017425",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651017425/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x650940581_extra",
+  "photo_id": "x650940581",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650940581/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.252,
+    "top": 0.21075,
+    "width": 0.54641,
+    "height": 0.67627
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651667201_extra",
+  "photo_id": "x651667201",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651667201/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.2387,
+    "top": 0.33263,
+    "width": 0.57169,
+    "height": 0.30013
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651647157_missed",
+  "photo_id": "x651647157",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651647157/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651677806_extra",
+  "photo_id": "x651677806",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651677806/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.40613,
+    "top": 0.45845,
+    "width": 0.20435,
+    "height": 0.10223
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651136330_missed",
+  "photo_id": "x651136330",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651136330/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651142109_extra",
+  "photo_id": "x651142109",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651142109/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.00629,
+    "top": 0.29463,
+    "width": 0.75475,
+    "height": 0.26737
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651448151_ok",
+  "photo_id": "x651448151",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651448151/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.30632,
+    "top": 0.22288,
+    "width": 0.45914,
+    "height": 0.31904
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651399109_loose",
+  "photo_id": "x651399109",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651399109/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.31828,
+    "top": 0.45845,
+    "width": 0.29358,
+    "height": 0.11534
+   },
+   {
+    "shape": "rectangle",
+    "left": 0.35543,
+    "top": 0.56459,
+    "width": 0.08122,
+    "height": 0.08
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651620678_extra",
+  "photo_id": "x651620678",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651620678/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.2344,
+    "top": 0.31429,
+    "width": 0.44386,
+    "height": 0.37353
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651635399_missed",
+  "photo_id": "x651635399",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651635399/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.38359,
+    "top": 0.54628,
+    "width": 0.40571,
+    "height": 0.27917
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651014503_missed",
+  "photo_id": "x651014503",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651014503/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651064322_missed",
+  "photo_id": "x651064322",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651064322/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651621725_missed",
+  "photo_id": "x651621725",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651621725/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651488031_ok_none",
+  "photo_id": "x651488031",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651488031/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651148331_ok",
+  "photo_id": "x651148331",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651148331/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.282,
+    "top": 0.37987,
+    "width": 0.37224,
+    "height": 0.28587
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651617059_ok_none",
+  "photo_id": "x651617059",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651617059/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x650692800_extra",
+  "photo_id": "x650692800",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650692800/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.26899,
+    "top": 0.2907,
+    "width": 0.49997,
+    "height": 0.48494
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651100169_ok",
+  "photo_id": "x651100169",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651100169/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.2345,
+    "top": 0.23863,
+    "width": 0.63243,
+    "height": 0.5213
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651369945_ok_none",
+  "photo_id": "x651369945",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651369945/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651136330_ok",
+  "photo_id": "x651136330",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651136330/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.35431,
+    "top": 0.21479,
+    "width": 0.42414,
+    "height": 0.47089
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651470367_loose",
+  "photo_id": "x651470367",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651470367/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.58172,
+    "top": 0.31069,
+    "width": 0.28477,
+    "height": 0.17101
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651598561_ok",
+  "photo_id": "x651598561",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651598561/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.36626,
+    "top": 0.39548,
+    "width": 0.1775,
+    "height": 0.12111
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x651635961_ok_none",
+  "photo_id": "x651635961",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651635961/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651652159_ok_none",
+  "photo_id": "x651652159",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651652159/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651029259_ok",
+  "photo_id": "x651029259",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651029259/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.26159,
+    "top": 0.29533,
+    "width": 0.45959,
+    "height": 0.33255
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "OK",
+  "kind": "ok",
+  "hint": "Разметка верна: все бабочки выделены отдельными плотными рамками, лишних рамок нет."
+ },
+ {
+  "id": "x650405676_ok_none",
+  "photo_id": "x650405676",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650405676/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651156176_loose",
+  "photo_id": "x651156176",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651156176/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.23215,
+    "top": 0.13486,
+    "width": 0.21011,
+    "height": 0.11376
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651398826_loose",
+  "photo_id": "x651398826",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651398826/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.38254,
+    "top": 0.5498,
+    "width": 0.19474,
+    "height": 0.13578
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651448151_loose",
+  "photo_id": "x651448151",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651448151/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.39733,
+    "top": 0.29101,
+    "width": 0.2536,
+    "height": 0.17762
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "loose",
+  "hint": "Ошибка: рамка неточная — обрезает видимую часть бабочки или сильно больше неё."
+ },
+ {
+  "id": "x651029259_missed",
+  "photo_id": "x651029259",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651029259/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651271515_ok_none",
+  "photo_id": "x651271515",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651271515/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "OK",
+  "kind": "ok_none",
+  "hint": "Верно: взрослых бабочек на фото нет, рамок быть не должно."
+ },
+ {
+  "id": "x651562052_missed",
+  "photo_id": "x651562052",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651562052/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x650405676_extra",
+  "photo_id": "x650405676",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650405676/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.24838,
+    "top": 0.17143,
+    "width": 0.4858,
+    "height": 0.53604
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651120488_missed",
+  "photo_id": "x651120488",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651120488/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651619354_extra",
+  "photo_id": "x651619354",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651619354/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.29161,
+    "top": 0.09017,
+    "width": 0.47182,
+    "height": 0.80734
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651077315_missed",
+  "photo_id": "x651077315",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651077315/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651271515_extra",
+  "photo_id": "x651271515",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651271515/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.43011,
+    "top": 0.32215,
+    "width": 0.28484,
+    "height": 0.21887
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651230886_missed",
+  "photo_id": "x651230886",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651230886/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ },
+ {
+  "id": "x651635961_extra",
+  "photo_id": "x651635961",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651635961/large.jpg",
+  "boxes": [
+   {
+    "shape": "rectangle",
+    "left": 0.3211,
+    "top": 0.36409,
+    "width": 0.26442,
+    "height": 0.38925
+   }
+  ],
+  "status": "butterflies",
+  "verdict": "BAD",
+  "kind": "extra",
+  "hint": "Ошибка: лишняя рамка — на похожем насекомом, фоне или вторая рамка на ту же бабочку."
+ },
+ {
+  "id": "x651162938_missed",
+  "photo_id": "x651162938",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651162938/large.jpg",
+  "boxes": [],
+  "status": "none",
+  "verdict": "BAD",
+  "kind": "missed",
+  "hint": "Ошибка: пропущена бабочка. Осмотрите весь кадр, включая края и фон."
+ }
+]

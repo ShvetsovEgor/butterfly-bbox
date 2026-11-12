@@ -252,6 +252,11 @@ def main():
     spent = sum(float(a['reward']) for a in fake.asg.values() if a['status'] == 'ACCEPTED') * (1 + api.FEE)
     print(f'\nOK. golden vs синтетическая истина: F1@0.5 {f1:.3f} (P {p:.3f}, R {r:.3f}); попытки {dict(att)}; '
           f'решения {dict(collections.Counter(a["decision"] for a in led["ann"].values()))}; потрачено (симуляция) {spent:.0f} ₽')
+    # аварийный стоп по деньгам: пулы закрываются, cycle останавливается
+    api.BUDGET_STOP = 1
+    api.cmd_cycle()
+    assert all(fake.pools[p]['status'] == 'CLOSED' for p in s['pools_bbox'] + [s['pool_review']]), 'стоп по бюджету не закрыл пулы'
+    print('стоп по бюджету: пулы закрыты')
     shutil.rmtree(tmp)
 
 

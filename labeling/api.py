@@ -24,7 +24,7 @@ API = 'https://tasks.yandex.ru/api/v1'
 # токен: переменная YT_TOKEN или файл ~/.yt_token (chmod 600) — чтобы не светить его в командах и чатах
 _TF = os.path.expanduser('~/.yt_token')
 TOKEN = os.environ.get('YT_TOKEN') or (open(_TF).read().strip() if os.path.exists(_TF) else None)
-DRY = not TOKEN
+DRY = not TOKEN or os.environ.get('YT_DRY') == '1'     # YT_DRY=1 — холостой прогон даже при наличии токена
 STATE, LEDGER = 'work/state.json', 'work/ledger.json'
 FEE = 0.4                      # комиссия платформы (как в ДЗ2); проверить в интерфейсе при создании пула
 
@@ -36,8 +36,9 @@ REVIEW_PERIOD_DAYS = 7                         # отложенная приём
 MAX_ATTEMPTS = 2                               # разметка + 1 переразметка; дальше — ручной разбор командой
 REV_PRICE, REV_REAL, REV_GOLD = 0.6, 9, 1      # страница ревью: 9 проверок + 1 контрольная, ~1 мин → ~36 ₽/ч
 REV_OVERLAP = 3                                # 3 независимых ревьюера: решение большинством, ничьих нет
-REV_EXAM_PRICE, REV_EXAM_PEOPLE = 0.4, 40
+REV_EXAM_PRICE, REV_EXAM_PEOPLE = 0.5, 40     # 16 заданий ≈ 2 мин
 REV_PASS, REV_TRAIN_PASS = 80, 70
+BUDGET_NO_REDO, BUDGET_STOP = 700, 780         # ₽ с комиссией: выше — без переразметок; ещё выше — пулы закрываются
 
 
 def state():
@@ -108,7 +109,7 @@ def fast_rule(history, sec, total, fast, days=30):
                        'action': ban(days, f'fast answers < {sec}s')}]}
 
 
-def pool_body(project, name, price, real, gold, flt, qc=None, overlap=1, auto_accept=True, max_sec=900):
+def pool_body(project, name, price, real, gold, flt, qc=None, overlap=1, auto_accept=True, max_sec=900, force_delay=300):
     b = {
         'project_id': project, 'private_name': name,
         'may_contain_adult_content': False,
@@ -120,7 +121,7 @@ def pool_body(project, name, price, real, gold, flt, qc=None, overlap=1, auto_ac
         # force_last_assignment: неполную последнюю страницу всё равно выдаём, иначе хвост пула зависнет
         'mixer_config': {'real_tasks_count': real, 'golden_tasks_count': gold, 'training_tasks_count': 0,
                          'min_real_tasks_count': 1 if real else 0, 'force_last_assignment': True,
-                         'force_last_assignment_delay_seconds': 300},
+                         'force_last_assignment_delay_seconds': force_delay},
         'filter': {'and': flt},
     }
     if not auto_accept:
@@ -194,7 +195,7 @@ def cmd_bbox_exam():
     s = state()
     # заходят только «чистые»: без навыков bbox_exam/rev_exam → один человек = одна попытка и одна роль
     flt = [lang_ru, no_skill(need('bbox_exam')), no_skill(need('rev_exam'))]
-    qc = {'configs': [fast_rule(1, 60, 1, 1)]}            # 10 фото меньше чем за минуту — не размечал
+    qc = {'configs': [fast_rule(5, 60, 1, 1)]}            # 10 фото меньше чем за минуту — не размечал
     exam = load('bbox_exam')
     p = call('POST', '/pools', pool_body(need('project_bbox'), 'bbox exam', BBOX_EXAM_PRICE, len(exam), 0, flt, qc,
                                          overlap=BBOX_EXAM_PEOPLE, max_sec=1500))
@@ -299,8 +300,9 @@ def cmd_rev_pool():
         fast_rule(5, 15, 3, 2),                     # 10 проверок быстрее 15 с — не смотрел
     ]}
     flt = [lang_ru, skill_gte(need('rev_exam'), REV_PASS), no_skill(need('bbox_exam'))]
+    # задания на проверку приходят порциями: неполную страницу (9 проверок по цене полной) выдаём только через 30 мин
     p = call('POST', '/pools', pool_body(need('project_review'), 'review main', REV_PRICE, REV_REAL, REV_GOLD, flt, qc,
-                                         overlap=REV_OVERLAP, max_sec=1200))
+                                         overlap=REV_OVERLAP, max_sec=1200, force_delay=1800))
     save(pool_review=p['id'])
     post_tasks([golden_task(p['id'], it) for it in load('rev_honey')])
     print('review pool', p['id'], '(задания на проверку добавит cycle)')
@@ -402,7 +404,7 @@ def verdict_errors(o):
     return sorted(k for k, v in e.items() if v) if isinstance(e, dict) else sorted(e)
 
 
-def decide(led):
+def decide(led, allow_redo=True):
     # ≥2 из 3 «OK» → принять; иначе отклонить и переразметить (до MAX_ATTEMPTS), потом — ручной разбор
     for r in answers(need('pool_review')):
         aid = r['input'].get('assignment_id')
@@ -435,23 +437,40 @@ def decide(led):
             comment = 'Ревьюеры нашли ошибку: ' + ', '.join(why[e] for e, _ in errs.most_common() if e in why) if errs else 'Ошибка в разметке'
             a['decision'] = 'reject'
             judge(aid, False, comment)
-            if ph['attempts'] < MAX_ATTEMPTS:
+            if ph['attempts'] < MAX_ATTEMPTS and allow_redo:
                 reissue(led, a['photo_id'], f'rejected {ok}/{REV_OVERLAP} OK')
             else:
                 ph['final'] = 'manual'
-                led['log'].append([now(), a['photo_id'], 'manual', f'{ph["attempts"]} attempts rejected'])
+                led['log'].append([now(), a['photo_id'], 'manual', f'{ph["attempts"]} attempts rejected' if allow_redo else 'budget cap: no re-annotation'])
         done[a['decision']] += 1
     return done
 
 
+def spent():
+    # потрачено с комиссией: принятые + ещё не принятые (их могут принять автоматически) во всех пулах
+    s, total = state(), 0.0
+    for pid in [s.get('pool_bbox_exam'), s.get('pool_rev_exam'), s.get('pool_review')] + s.get('pools_bbox', []):
+        if pid:
+            total += sum(float(a.get('reward') or 0) for a in paged('/assignments', pool_id=pid) if a['status'] in ('ACCEPTED', 'SUBMITTED'))
+    return total * (1 + FEE)
+
+
 def cmd_cycle(*args):
     while True:
+        money = spent()
+        if money > BUDGET_STOP:            # аварийный стоп: закрыть пулы (обратимо), дальше решает человек
+            s = state()
+            for pid in s.get('pools_bbox', []) + [s.get('pool_review')]:
+                call('POST', f'/pools/{pid}/close')
+            print(f'!!! потрачено {money:.0f} ₽ > {BUDGET_STOP}: пулы bbox и ревью ЗАКРЫТЫ'); return
         led = ledger()
         n = sync(led); save_ledger(led)
-        d = decide(led); save_ledger(led)
+        d = decide(led, allow_redo=money < BUDGET_NO_REDO); save_ledger(led)
+        if money >= BUDGET_NO_REDO:
+            print(f'! потрачено {money:.0f} ₽ ≥ {BUDGET_NO_REDO}: переразметки отключены, отклонённое — на ручной разбор')
         ph = led['photos'].values()
         fin = collections.Counter('manual' if p.get('final') == 'manual' else 'accepted' if p.get('final') else 'in work' for p in ph)
-        print(f'{time.strftime("%H:%M")} в ревью +{n}; решения {dict(d)}; фото: {dict(fin)} из {len(led["photos"])}')
+        print(f'{time.strftime("%H:%M")} в ревью +{n}; решения {dict(d)}; фото: {dict(fin)} из {len(led["photos"])}; потрачено ≈{money:.0f} ₽')
         if '--loop' not in args or all(p.get('final') for p in ph):
             return
         time.sleep(60 * int(args[args.index('--loop') + 1]))
@@ -507,6 +526,31 @@ def cmd_cost():
         rows.append(f'{name:18} {pid}: принято {len(acc):4}, ждут решения {len(pend):3}, {money:7.1f} ₽')
     print('\n'.join(rows)); print(f'итого {total:.1f} ₽ из 850')
     json.dump({'rows': rows, 'total': total, 'at': now()}, open('work/cost.json', 'w'), ensure_ascii=False, indent=1)
+
+
+def cmd_budget():
+    # смета без обращения к API: по реальному числу заданий в work/ и параметрам выше
+    photos, exam, rexam = load('photos'), load('bbox_exam'), load('rev_exam')
+    k, n = 1 + FEE, len(photos)
+    redo = 0.15                                        # доля переразметок (в симуляции 7–9%, берём с запасом)
+    ann_exp, ann_max = n * (1 + redo), n * MAX_ATTEMPTS
+    rows = [
+        ('экзамен bbox', f'{BBOX_EXAM_PEOPLE} чел. × {BBOX_EXAM_PRICE} ₽ ({len(exam)} фото)', BBOX_EXAM_PEOPLE * BBOX_EXAM_PRICE * k, BBOX_EXAM_PEOPLE * BBOX_EXAM_PRICE * k),
+        ('обучение ревью', 'бесплатно', 0, 0),
+        ('экзамен ревью', f'{REV_EXAM_PEOPLE} чел. × {REV_EXAM_PRICE} ₽ ({len(rexam)} заданий)', REV_EXAM_PEOPLE * REV_EXAM_PRICE * k, REV_EXAM_PEOPLE * REV_EXAM_PRICE * k),
+        # платим только за принятые: по 1 на фото; максимум — если всё примется автоматически по истечении срока
+        ('разметка bbox', f'{n} фото × {BBOX_PRICE} ₽; макс.: все {MAX_ATTEMPTS} попытки оплачены', n * BBOX_PRICE * k, ann_max * BBOX_PRICE * k),
+        # ожидаемо: полные страницы; максимум: все попытки + каждая 3-я страница неполная (вдвое дороже на проверку)
+        ('ревью', f'{REV_OVERLAP} × разметки / {REV_REAL} на стр. × {REV_PRICE} ₽',
+         ann_exp * REV_OVERLAP / REV_REAL * REV_PRICE * k, ann_max * REV_OVERLAP / REV_REAL * REV_PRICE * k * 1.5),
+    ]
+    print(f'{"этап":15} {"расчёт":55} {"ожидаемо":>9} {"максимум":>9}')
+    for name, how, e, m in rows:
+        print(f'{name:15} {how:55} {e:8.0f} ₽ {m:8.0f} ₽')
+    e, m = sum(r[2] for r in rows), sum(r[3] for r in rows)
+    print(f'{"итого":71} {e:8.0f} ₽ {m:8.0f} ₽   (бюджет 850, комиссия {FEE:.0%})')
+    print(f'предохранитель в cycle: ≥{BUDGET_NO_REDO} ₽ — без переразметок, >{BUDGET_STOP} ₽ — пулы закрываются; '
+          f'реальный потолок ≈ {BUDGET_STOP} ₽ + задания, уже взятые в работу (единицы рублей)')
 
 
 if __name__ == '__main__':

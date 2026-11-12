@@ -192,8 +192,11 @@ def main():
     # 1. примеры для инструкции bbox: по одному фото на тег, дальше эти фото нигде не используются
     used, have = set(), set()
     for tag in EXAMPLE_TAGS:
-        g = next((g for g in gold if tag in g['tags'] and g['photo_id'] not in used), None) or \
-            next((g for g in gold if tag in g['auto_tags'] and g['photo_id'] not in used), None)
+        cands = [g for g in gold if tag in g['tags'] and g['photo_id'] not in used] or \
+                [g for g in gold if tag in g['auto_tags'] and g['photo_id'] not in used]
+        if tag == 'similar':        # пример «не выделяем» должен быть наглядным: крупный похожий объект, лучше моль
+            cands.sort(key=lambda g: (g.get('kind') != 'moth', -max((d['width'] * d['height'] for d in g['distractors']), default=0)))
+        g = cands[0] if cands else None
         if g:
             used.add(g['photo_id']); have.add(tag)
             render(g['image'], g['boxes'], g['distractors'] if tag == 'similar' else [], f'ex_{tag}')
@@ -227,9 +230,12 @@ def main():
         print(f'{k}: {len(items)} заданий, OK {c["OK"]} / BAD {c["BAD"]}', dict(collections.Counter(i['kind'] for i in items)))
 
     # 4. примеры для инструкции ревью — из обучения ревью (оно и так показывается исполнителям)
+    shown = set()
     for kind in ['ok', 'missed', 'extra', 'loose']:
-        it = next((i for i in out['rev_train'] if i['kind'] == kind), None) or next((i for i in out['rev_honey'] if i['kind'] == kind), None)
+        pool = [i for i in out['rev_train'] + out['rev_honey'] if i['kind'] == kind]
+        it = next((i for i in pool if i['photo_id'] not in shown), None) or (pool[0] if pool else None)   # разные кадры
         if it:
+            shown.add(it['photo_id'])
             render(it['image'], it['boxes'], [], f'ex_review_{kind}'); have.add(f'review_{kind}')
     instruction('yt/instruction_bbox.html', 'yt/instruction_bbox_final.html', have)
     instruction('yt/instruction_review.html', 'yt/instruction_review_final.html', have)

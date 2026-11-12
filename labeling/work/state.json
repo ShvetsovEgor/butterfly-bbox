@@ -1,0 +1,13 @@
+{
+ "bbox_exam": "21230",
+ "rev_exam": "21231",
+ "project_bbox": "11724",
+ "project_review": "11725",
+ "pool_bbox_exam": "6861715",
+ "training_review": "6861716",
+ "pool_rev_exam": "6861717",
+ "pool_review": "6861718",
+ "pools_bbox": [
+  "6861719"
+ ]
+}
