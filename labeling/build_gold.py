@@ -30,6 +30,24 @@ def tb(bs):
     return [{'shape': 'rectangle', **{k: round(b[k], 5) for k in ('left', 'top', 'width', 'height')}} for b in bs]
 
 
+def auto_tags(bf, ds):
+    # теги примеров, которые однозначно следуют из рамок эталона (ручные теги разметчиков в приоритете)
+    t = set()
+    if len(bf) == 1:
+        t.add('single')
+    if len(bf) >= 2:
+        t.add('multi')
+    if any(iou(a, c) > 0 for i, a in enumerate(bf) for c in bf[i + 1:]):
+        t.add('overlap')
+    if any(b['left'] < 0.01 or b['top'] < 0.01 or b['left'] + b['width'] > 0.99 or b['top'] + b['height'] > 0.99 for b in bf):
+        t.add('cropped')
+    if any(b['width'] * b['height'] < 0.01 for b in bf):
+        t.add('small')
+    if not bf:
+        t.add('similar' if ds else 'none')
+    return sorted(t)
+
+
 def load_gold():
     files = sorted(glob.glob('work/gold_*.json'))
     files = [f for f in files if not f.endswith(('gold_conflicts.json',))]
@@ -56,7 +74,8 @@ def load_gold():
             # среднее двух рамок — эталон точнее каждой по отдельности
             base = dict(a, bf=[{k: (a['bf'][i][k] + b['bf'][j][k]) / 2 for k in ('left', 'top', 'width', 'height')} for i, j, _ in m])
         gold.append({'photo_id': pid, 'image': base['image'], 'kind': base.get('kind'), 'tags': sorted(set(sum((r.get('tags') or [] for r in rs), []))),
-                     'boxes': base['bf'], 'distractors': base['ds'], 'annotators': [r['annotator'] for r in rs]})
+                     'boxes': base['bf'], 'distractors': base['ds'], 'annotators': [r['annotator'] for r in rs],
+                     'auto_tags': auto_tags(base['bf'], base['ds'])})
     if agree:
         ious = [x for _, xs in agree for x in xs]
         print(f'двойная разметка: {len(agree)} фото, совпало {sum(o for o, _ in agree)}, '
@@ -173,7 +192,8 @@ def main():
     # 1. примеры для инструкции bbox: по одному фото на тег, дальше эти фото нигде не используются
     used, have = set(), set()
     for tag in EXAMPLE_TAGS:
-        g = next((g for g in gold if tag in g['tags'] and g['photo_id'] not in used), None)
+        g = next((g for g in gold if tag in g['tags'] and g['photo_id'] not in used), None) or \
+            next((g for g in gold if tag in g['auto_tags'] and g['photo_id'] not in used), None)
         if g:
             used.add(g['photo_id']); have.add(tag)
             render(g['image'], g['boxes'], g['distractors'] if tag == 'similar' else [], f'ex_{tag}')
@@ -181,7 +201,7 @@ def main():
     rnd.shuffle(rest)
 
     # 2. экзамен bbox: 6 с бабочками (сложные — в приоритете), 4 без (похожие насекомые — в приоритете)
-    hard = lambda g: -len(set(g['tags']) & {'multi', 'overlap', 'cropped', 'small'}) - (len(g['boxes']) > 1)
+    hard = lambda g: -len(set(g['tags'] + g['auto_tags']) & {'multi', 'overlap', 'cropped', 'small'}) - (len(g['boxes']) > 1)
     pos = sorted([g for g in rest if g['boxes']], key=hard)
     neg = sorted([g for g in rest if not g['boxes']], key=lambda g: -bool(g['distractors']))
     exam = pos[:EXAM_POS] + neg[:EXAM_NEG]

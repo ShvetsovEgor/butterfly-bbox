@@ -1,4 +1,5 @@
-# Все действия в Яндекс Заданиях через API.  export YT_TOKEN=...  (без токена — dry-run: печатает запросы)
+# Все действия в Яндекс Заданиях через API. Токен: export YT_TOKEN=... или файл ~/.yt_token (без токена — dry-run)
+# Запуск пулов только с --yes: python api.py open <id> без флага показывает, что и почём откроется
 #
 # Подготовка (один раз):
 #   python api.py balance
@@ -20,7 +21,9 @@ import requests
 from boxes import clean, score
 
 API = 'https://tasks.yandex.ru/api/v1'
-TOKEN = os.environ.get('YT_TOKEN')
+# токен: переменная YT_TOKEN или файл ~/.yt_token (chmod 600) — чтобы не светить его в командах и чатах
+_TF = os.path.expanduser('~/.yt_token')
+TOKEN = os.environ.get('YT_TOKEN') or (open(_TF).read().strip() if os.path.exists(_TF) else None)
 DRY = not TOKEN
 STATE, LEDGER = 'work/state.json', 'work/ledger.json'
 FEE = 0.4                      # комиссия платформы (как в ДЗ2); проверить в интерфейсе при создании пула
@@ -139,10 +142,14 @@ def existing(pool_id, key='photo_id'):
 
 
 def ensure_open(pool_id):
+    # переоткрываем только пул, который закрылся сам (всё выполнено); закрытый вручную не трогаем
     if DRY:
         return
-    if call('GET', f'/pools/{pool_id}').get('status') != 'OPEN':
+    p = call('GET', f'/pools/{pool_id}')
+    if p.get('status') != 'OPEN' and p.get('last_close_reason') in ('COMPLETED', 'ALL_TASKS_COMPLETED', None):
         call('POST', f'/pools/{pool_id}/open')
+    elif p.get('status') != 'OPEN':
+        print(f'! пул {pool_id} закрыт вручную ({p.get("last_close_reason")}) — новые задания ждут, пока вы его не откроете')
 
 
 # ================= подготовка =================
@@ -451,7 +458,21 @@ def cmd_cycle(*args):
 
 
 # ================= служебное =================
-def cmd_open(pool_id):
+def cmd_open(pool_id, *args):
+    # запуск пула необратим (модерация, траты): без --yes только показываем, что и почём откроется
+    p = call('GET', f'/pools/{pool_id}')
+    tasks = paged('/tasks', pool_id=pool_id)
+    real = [t for t in tasks if not t.get('known_solutions')]
+    mix = p.get('mixer_config', {})
+    per_page = max(1, mix.get('real_tasks_count') or 1)
+    pages = sum(t.get('overlap', 1) for t in real) / per_page if mix.get('real_tasks_count') else max((t.get('overlap', 1) for t in tasks), default=0)
+    print(f"пул {pool_id} «{p.get('private_name')}», статус {p.get('status')}")
+    print(f"  заданий {len(tasks)} (контрольных {len(tasks) - len(real)}), на странице {mix.get('real_tasks_count')}+{mix.get('golden_tasks_count')}, "
+          f"цена {p.get('reward_per_assignment')} ₽, автоприёмка {p.get('auto_accept_solutions')}")
+    print(f"  фильтр: {json.dumps(p.get('filter'), ensure_ascii=False)}")
+    print(f"  максимум страниц ≈ {pages:.0f} → до {pages * float(p.get('reward_per_assignment', 0)) * (1 + FEE):.0f} ₽ с комиссией")
+    if '--yes' not in args:
+        print('НЕ запущен. Чтобы запустить: python api.py open', pool_id, '--yes'); return
     print(call('POST', f'/pools/{pool_id}/open'))
 
 
@@ -459,7 +480,10 @@ def cmd_close(pool_id):
     print(call('POST', f'/pools/{pool_id}/close'))
 
 
-def cmd_open_training(tid):
+def cmd_open_training(tid, *args):
+    # обучение бесплатное, но тоже уходит исполнителям — тот же предохранитель
+    if '--yes' not in args:
+        print('обучение', tid, 'НЕ запущено. Чтобы запустить: python api.py open-training', tid, '--yes'); return
     print(call('POST', f'/trainings/{tid}/open'))
 
 

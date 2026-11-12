@@ -1,0 +1,1824 @@
+[
+ {
+  "photo_id": "x651667201",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651667201/large.jpg",
+  "kind": "other_insect",
+  "taxon": "Dolycoris baccarum",
+  "observation_url": "https://www.inaturalist.org/observations/357308638",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651635961",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651635961/large.jpg",
+  "kind": "other_insect",
+  "taxon": "Aeshna constricta",
+  "observation_url": "https://www.inaturalist.org/observations/357288578",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650714664",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650714664/large.jpg",
+  "kind": "moth",
+  "taxon": "Asota heliconia",
+  "observation_url": "https://www.inaturalist.org/observations/356812925",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.31225,
+    "top": 0.02726,
+    "width": 0.35583,
+    "height": 0.79685
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x648709202",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/648709202/large.jpg",
+  "kind": "larva",
+  "taxon": "Acronicta tritona",
+  "observation_url": "https://www.inaturalist.org/observations/355743127",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651398410",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651398410/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Pararge aegeria",
+  "observation_url": "https://www.inaturalist.org/observations/357164930",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.23265,
+    "top": 0.21992,
+    "width": 0.53823,
+    "height": 0.41809
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651100169",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651100169/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Strymon melinus",
+  "observation_url": "https://www.inaturalist.org/observations/357016083",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.22675,
+    "top": 0.23041,
+    "width": 0.62054,
+    "height": 0.51114
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651637768",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651637768/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Pontia protodice",
+  "observation_url": "https://www.inaturalist.org/observations/357291334",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.33408,
+    "top": 0.25925,
+    "width": 0.25549,
+    "height": 0.25689
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651271515",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651271515/large.jpg",
+  "kind": "moth",
+  "taxon": "Plutella xylostella",
+  "observation_url": "https://www.inaturalist.org/observations/357097324",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.43011,
+    "top": 0.32215,
+    "width": 0.28484,
+    "height": 0.21887
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651664769",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651664769/large.jpg",
+  "kind": "flower",
+  "taxon": "Zizia aurea",
+  "observation_url": "https://www.inaturalist.org/observations/357301808",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651667136",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651667136/large.jpg",
+  "kind": "other_insect",
+  "taxon": "Coreus marginatus",
+  "observation_url": "https://www.inaturalist.org/observations/357308626",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651149946",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651149946/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Junonia coenia",
+  "observation_url": "https://www.inaturalist.org/observations/357039430",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.31254,
+    "top": 0.08231,
+    "width": 0.40339,
+    "height": 0.61338
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651633393",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651633393/large.jpg",
+  "kind": "other_insect",
+  "taxon": "Somatochlora williamsoni",
+  "observation_url": "https://www.inaturalist.org/observations/357288562",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651316087",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651316087/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Aglais io",
+  "observation_url": "https://www.inaturalist.org/observations/357120940",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.32352,
+    "top": 0.09148,
+    "width": 0.57723,
+    "height": 0.57012
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651017425",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651017425/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Danaus gilippus thersippus",
+  "observation_url": "https://www.inaturalist.org/observations/356969061",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.14085,
+    "top": 0.13255,
+    "width": 0.57323,
+    "height": 0.71387
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650940581",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650940581/large.jpg",
+  "kind": "moth",
+  "taxon": "Anticlea derivata",
+  "observation_url": "https://www.inaturalist.org/observations/356929039",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.252,
+    "top": 0.21075,
+    "width": 0.54641,
+    "height": 0.67627
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651318756",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651318756/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Papilio demodocus demodocus",
+  "observation_url": "https://www.inaturalist.org/observations/357122136",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.27195,
+    "top": 0.1059,
+    "width": 0.47576,
+    "height": 0.8021
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651648127",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651648127/large.jpg",
+  "kind": "larva",
+  "taxon": "Lophocampa caryae",
+  "observation_url": "https://www.inaturalist.org/observations/357294199",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651230886",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651230886/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Vanessa atalanta",
+  "observation_url": "https://www.inaturalist.org/observations/357076473",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.17254,
+    "top": 0.05511,
+    "width": 0.61619,
+    "height": 0.68421
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650716643",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650716643/large.jpg",
+  "kind": "moth",
+  "taxon": "Asota javana",
+  "observation_url": "https://www.inaturalist.org/observations/356813063",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.2926,
+    "top": 0.32476,
+    "width": 0.43053,
+    "height": 0.45479
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651162938",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651162938/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Nathalis iole",
+  "observation_url": "https://www.inaturalist.org/observations/357044062",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.23472,
+    "top": 0.26359,
+    "width": 0.38003,
+    "height": 0.33509
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650973061",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650973061/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Zemeros flegyas",
+  "observation_url": "https://www.inaturalist.org/observations/356945637",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.16826,
+    "top": 0.36017,
+    "width": 0.56172,
+    "height": 0.29489
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651677804",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651677804/large.jpg",
+  "kind": "other_insect",
+  "taxon": "Adalia bipunctata",
+  "observation_url": "https://www.inaturalist.org/observations/357310205",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651562052",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651562052/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Anthocharis cardamines",
+  "observation_url": "https://www.inaturalist.org/observations/357248873",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.05104,
+    "top": 0.29725,
+    "width": 0.91558,
+    "height": 0.66055
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651598561",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651598561/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Dixeia charina",
+  "observation_url": "https://www.inaturalist.org/observations/357268220",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.36721,
+    "top": 0.39685,
+    "width": 0.17999,
+    "height": 0.12058
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651110322",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651110322/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Junonia grisea",
+  "observation_url": "https://www.inaturalist.org/observations/357018260",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.19594,
+    "top": 0.14391,
+    "width": 0.58322,
+    "height": 0.6173
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651308928",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651308928/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Polygonia c-album",
+  "observation_url": "https://www.inaturalist.org/observations/357117102",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.25711,
+    "top": 0.4021,
+    "width": 0.26388,
+    "height": 0.31192
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651156132",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651156132/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Junonia coenia",
+  "observation_url": "https://www.inaturalist.org/observations/357039456",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.35587,
+    "top": 0.2042,
+    "width": 0.33666,
+    "height": 0.44955
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650977592",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650977592/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Pararge aegeria",
+  "observation_url": "https://www.inaturalist.org/observations/356953512",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.49512,
+    "top": 0.52679,
+    "width": 0.06348,
+    "height": 0.07906
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651136330",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651136330/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Junonia coenia",
+  "observation_url": "https://www.inaturalist.org/observations/357029915",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.35194,
+    "top": 0.22255,
+    "width": 0.42631,
+    "height": 0.46658
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650740352",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650740352/large.jpg",
+  "kind": "moth",
+  "taxon": "Xanthanomis xanthina",
+  "observation_url": "https://www.inaturalist.org/observations/356825012",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.30832,
+    "top": 0.20288,
+    "width": 0.40203,
+    "height": 0.51114
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651590515",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651590515/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Danaus chrysippus",
+  "observation_url": "https://www.inaturalist.org/observations/357263551",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.2676,
+    "top": 0.34312,
+    "width": 0.32852,
+    "height": 0.44954
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651014503",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651014503/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Graphium sarpedon nipponum",
+  "observation_url": "https://www.inaturalist.org/observations/356967460",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.33925,
+    "top": 0.30511,
+    "width": 0.21319,
+    "height": 0.16383
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651632022",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651632022/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Junonia coenia",
+  "observation_url": "https://www.inaturalist.org/observations/357291319",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.29156,
+    "top": 0.21206,
+    "width": 0.46717,
+    "height": 0.47837
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651621725",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651621725/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Danaus plexippus",
+  "observation_url": "https://www.inaturalist.org/observations/357280043",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.12146,
+    "top": 0.06465,
+    "width": 0.63765,
+    "height": 0.6907
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651032358",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651032358/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Colobura dirce dirce",
+  "observation_url": "https://www.inaturalist.org/observations/356977368",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.34167,
+    "top": 0.24482,
+    "width": 0.39279,
+    "height": 0.58191
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650691735",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650691735/large.jpg",
+  "kind": "moth",
+  "taxon": "Scardamia iographa",
+  "observation_url": "https://www.inaturalist.org/observations/356799687",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.11816,
+    "top": 0.21509,
+    "width": 0.72656,
+    "height": 0.52201
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651670676",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651670676/large.jpg",
+  "kind": "flower",
+  "taxon": "Heuchera richardsonii",
+  "observation_url": "https://www.inaturalist.org/observations/357304838",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651247608",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651247608/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Papilio glaucus",
+  "observation_url": "https://www.inaturalist.org/observations/357084918",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.81107,
+    "top": 0.17798,
+    "width": 0.14854,
+    "height": 0.10616
+   },
+   {
+    "label": "butterfly",
+    "left": 0.67127,
+    "top": 0.35754,
+    "width": 0.0699,
+    "height": 0.09436
+   },
+   {
+    "label": "butterfly",
+    "left": 0.14702,
+    "top": 0.25793,
+    "width": 0.2062,
+    "height": 0.11796
+   },
+   {
+    "label": "butterfly",
+    "left": 0.28507,
+    "top": 0.32346,
+    "width": 0.25164,
+    "height": 0.15596
+   },
+   {
+    "label": "butterfly",
+    "left": 0.80233,
+    "top": 0.5882,
+    "width": 0.08912,
+    "height": 0.14155
+   },
+   {
+    "label": "butterfly",
+    "left": 0.81281,
+    "top": 0.67864,
+    "width": 0.16426,
+    "height": 0.1599
+   },
+   {
+    "label": "butterfly",
+    "left": 0.9631,
+    "top": 0.57641,
+    "width": 0.0369,
+    "height": 0.15596
+   },
+   {
+    "label": "butterfly",
+    "left": 0.44584,
+    "top": 0.59607,
+    "width": 0.11708,
+    "height": 0.19397
+   },
+   {
+    "label": "butterfly",
+    "left": 0.55419,
+    "top": 0.65242,
+    "width": 0.19397,
+    "height": 0.16121
+   },
+   {
+    "label": "butterfly",
+    "left": 0.70098,
+    "top": 0.80315,
+    "width": 0.14154,
+    "height": 0.09436
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651120488",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651120488/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Echinargus isola",
+  "observation_url": "https://www.inaturalist.org/observations/357023457",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.36621,
+    "top": 0.31686,
+    "width": 0.2041,
+    "height": 0.43429
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651647157",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651647157/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Junonia coenia",
+  "observation_url": "https://www.inaturalist.org/observations/357293836",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.25455,
+    "top": 0.20813,
+    "width": 0.56069,
+    "height": 0.37484
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651639012",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651639012/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Strymon melinus",
+  "observation_url": "https://www.inaturalist.org/observations/357291339",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.38337,
+    "top": 0.254,
+    "width": 0.2877,
+    "height": 0.23592
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651398826",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651398826/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Araschnia levana",
+  "observation_url": "https://www.inaturalist.org/observations/357165153",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.30604,
+    "top": 0.49646,
+    "width": 0.34775,
+    "height": 0.24247
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651399109",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651399109/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Pieris napi",
+  "observation_url": "https://www.inaturalist.org/observations/357165319",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.31828,
+    "top": 0.45845,
+    "width": 0.29358,
+    "height": 0.11534
+   },
+   {
+    "label": "butterfly",
+    "left": 0.32352,
+    "top": 0.53316,
+    "width": 0.14504,
+    "height": 0.14286
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651664898",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651664898/large.jpg",
+  "kind": "flower",
+  "taxon": "Aralia racemosa",
+  "observation_url": "https://www.inaturalist.org/observations/357301862",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651121324",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651121324/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Junonia coenia",
+  "observation_url": "https://www.inaturalist.org/observations/357023467",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.21782,
+    "top": 0.16094,
+    "width": 0.65768,
+    "height": 0.73394
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651601178",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651601178/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Lon melane",
+  "observation_url": "https://www.inaturalist.org/observations/357269526",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.25967,
+    "top": 0.23696,
+    "width": 0.46126,
+    "height": 0.3578
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651204978",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651204978/large.jpg",
+  "kind": "moth",
+  "taxon": "Barsine striata",
+  "observation_url": "https://www.inaturalist.org/observations/357063997",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.00749,
+    "top": 0.00629,
+    "width": 0.98706,
+    "height": 0.97643
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650692800",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650692800/large.jpg",
+  "kind": "moth",
+  "taxon": "Xanthanomis xanthina",
+  "observation_url": "https://www.inaturalist.org/observations/356799795",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.26899,
+    "top": 0.2907,
+    "width": 0.49997,
+    "height": 0.48494
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651148331",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651148331/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Phyciodes graphica",
+  "observation_url": "https://www.inaturalist.org/observations/357035139",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.28244,
+    "top": 0.37457,
+    "width": 0.36959,
+    "height": 0.28179
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650907036",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650907036/large.jpg",
+  "kind": "moth",
+  "taxon": "Orthonama obstipata",
+  "observation_url": "https://www.inaturalist.org/observations/356911118",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.0901,
+    "top": 0.25007,
+    "width": 0.83356,
+    "height": 0.49803
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651617059",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651617059/large.jpg",
+  "kind": "other_insect",
+  "taxon": "Anthonomus phyllocola",
+  "observation_url": "https://www.inaturalist.org/observations/357277626",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651107174",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651107174/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Junonia coenia",
+  "observation_url": "https://www.inaturalist.org/observations/357016127",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.49832,
+    "top": 0.34929,
+    "width": 0.2349,
+    "height": 0.15749
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651661520",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651661520/large.jpg",
+  "kind": "flower",
+  "taxon": "Houstonia caerulea",
+  "observation_url": "https://www.inaturalist.org/observations/357307520",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651608907",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651608907/large.jpg",
+  "kind": "other_insect",
+  "taxon": "Xylocopa virginica",
+  "observation_url": "https://www.inaturalist.org/observations/357283351",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651141332",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651141332/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Burnsius communis",
+  "observation_url": "https://www.inaturalist.org/observations/357031979",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.49869,
+    "top": 0.01153,
+    "width": 0.32896,
+    "height": 0.30668
+   },
+   {
+    "label": "butterfly",
+    "left": 0.39384,
+    "top": 0.20813,
+    "width": 0.42857,
+    "height": 0.5308
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651683185",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651683185/large.jpg",
+  "kind": "flower",
+  "taxon": "Cirsium occidentale",
+  "observation_url": "https://www.inaturalist.org/observations/357311458",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651448151",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651448151/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Symmachia menetas",
+  "observation_url": "https://www.inaturalist.org/observations/357195735",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.2977,
+    "top": 0.22123,
+    "width": 0.45285,
+    "height": 0.31717
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651142109",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651142109/large.jpg",
+  "kind": "moth",
+  "taxon": "Frederickia s-signata",
+  "observation_url": "https://www.inaturalist.org/observations/357032281",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.00629,
+    "top": 0.29463,
+    "width": 0.75475,
+    "height": 0.26737
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651488031",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651488031/large.jpg",
+  "kind": "moth",
+  "taxon": "Paonias excaecata",
+  "observation_url": "https://www.inaturalist.org/observations/357210648",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.05091,
+    "top": 0.1426,
+    "width": 0.91743,
+    "height": 0.64875
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651412124",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651412124/large.jpg",
+  "kind": "moth",
+  "taxon": "Pseudopanthera macularia",
+  "observation_url": "https://www.inaturalist.org/observations/357178437",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.27372,
+    "top": 0.26711,
+    "width": 0.59706,
+    "height": 0.30669
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650405676",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650405676/large.jpg",
+  "kind": "larva",
+  "taxon": "Orgyia vetusta",
+  "observation_url": "https://www.inaturalist.org/observations/356646981",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651369945",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651369945/large.jpg",
+  "kind": "moth",
+  "taxon": "Esperia sulphurella",
+  "observation_url": "https://www.inaturalist.org/observations/357150771",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.37516,
+    "top": 0.19895,
+    "width": 0.17202,
+    "height": 0.44037
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651029259",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651029259/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Battus polydamas polydamas",
+  "observation_url": "https://www.inaturalist.org/observations/356975638",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.2643,
+    "top": 0.29988,
+    "width": 0.45845,
+    "height": 0.33159
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650779703",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650779703/large.jpg",
+  "kind": "moth",
+  "taxon": "Desmia maculalis",
+  "observation_url": "https://www.inaturalist.org/observations/356843947",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.03744,
+    "top": 0.11245,
+    "width": 0.94079,
+    "height": 0.79948
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651619354",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651619354/large.jpg",
+  "kind": "moth",
+  "taxon": "Hyphantria cunea",
+  "observation_url": "https://www.inaturalist.org/observations/357278894",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "distractor",
+    "left": 0.29161,
+    "top": 0.09017,
+    "width": 0.47182,
+    "height": 0.80734
+   }
+  ],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651635399",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651635399/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Phyciodes tharos",
+  "observation_url": "https://www.inaturalist.org/observations/357291333",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.38359,
+    "top": 0.54628,
+    "width": 0.40571,
+    "height": 0.27917
+   },
+   {
+    "label": "butterfly",
+    "left": 0.2398,
+    "top": 0.11901,
+    "width": 0.57689,
+    "height": 0.52295
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651622669",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651622669/large.jpg",
+  "kind": "other_insect",
+  "taxon": "Oncopeltus fasciatus",
+  "observation_url": "https://www.inaturalist.org/observations/357283399",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651652159",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651652159/large.jpg",
+  "kind": "flower",
+  "taxon": "Lindheimera texana",
+  "observation_url": "https://www.inaturalist.org/observations/357295053",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650947687",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650947687/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Phyciodes tharos",
+  "observation_url": "https://www.inaturalist.org/observations/356932480",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.32294,
+    "top": 0.41128,
+    "width": 0.30989,
+    "height": 0.09043
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651156176",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651156176/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Hylephila phyleus",
+  "observation_url": "https://www.inaturalist.org/observations/357039459",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.14961,
+    "top": 0.09017,
+    "width": 0.37519,
+    "height": 0.20315
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651035179",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651035179/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Battus polydamas polydamas",
+  "observation_url": "https://www.inaturalist.org/observations/356978443",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.34473,
+    "top": 0.10885,
+    "width": 0.53125,
+    "height": 0.81268
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651360211",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651360211/large.jpg",
+  "kind": "larva",
+  "taxon": "Penthophera morio",
+  "observation_url": "https://www.inaturalist.org/observations/357144283",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651620678",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651620678/large.jpg",
+  "kind": "other_insect",
+  "taxon": "Phyllobius pyri",
+  "observation_url": "https://www.inaturalist.org/observations/357279938",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651064322",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651064322/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Vanessa cardui",
+  "observation_url": "https://www.inaturalist.org/observations/356992736",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.03711,
+    "top": 0.09074,
+    "width": 0.87012,
+    "height": 0.80881
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651640791",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651640791/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Pontia protodice",
+  "observation_url": "https://www.inaturalist.org/observations/357291347",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.20113,
+    "top": 0.0574,
+    "width": 0.71305,
+    "height": 0.7654
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651586670",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651586670/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Vanessa cardui",
+  "observation_url": "https://www.inaturalist.org/observations/357261540",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.0148,
+    "top": 0.45322,
+    "width": 0.73489,
+    "height": 0.23985
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651677806",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651677806/large.jpg",
+  "kind": "other_insect",
+  "taxon": "Sphaerophoria scripta",
+  "observation_url": "https://www.inaturalist.org/observations/357310208",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651379097",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651379097/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Araschnia levana",
+  "observation_url": "https://www.inaturalist.org/observations/357155012",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.41252,
+    "top": 0.3156,
+    "width": 0.15433,
+    "height": 0.26343
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651470367",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651470367/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Polyommatus bellargus",
+  "observation_url": "https://www.inaturalist.org/observations/357201350",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.46985,
+    "top": 0.24351,
+    "width": 0.50851,
+    "height": 0.30537
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651624739",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651624739/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Vanessa virginiensis",
+  "observation_url": "https://www.inaturalist.org/observations/357281456",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.17149,
+    "top": 0.24351,
+    "width": 0.72346,
+    "height": 0.59633
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x648348417",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/648348417/large.jpg",
+  "kind": "larva",
+  "taxon": "Uresiphita reversalis",
+  "observation_url": "https://www.inaturalist.org/observations/355512728",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651581500",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651581500/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Celastrina echo",
+  "observation_url": "https://www.inaturalist.org/observations/357260206",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0,
+    "top": 0.00409,
+    "width": 0.68457,
+    "height": 0.99591
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651077315",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651077315/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Junonia grisea",
+  "observation_url": "https://www.inaturalist.org/observations/356999716",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.2002,
+    "top": 0.06116,
+    "width": 0.75098,
+    "height": 0.88928
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650978634",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650978634/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Anthocharis cardamines",
+  "observation_url": "https://www.inaturalist.org/observations/356953554",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.4834,
+    "top": 0.42493,
+    "width": 0.10059,
+    "height": 0.11877
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651002380",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651002380/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Papilio machaon",
+  "observation_url": "https://www.inaturalist.org/observations/356960724",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.31271,
+    "top": 0.37425,
+    "width": 0.40468,
+    "height": 0.2893
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x651602665",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/651602665/large.jpg",
+  "kind": "butterfly",
+  "taxon": "Vanessa atalanta",
+  "observation_url": "https://www.inaturalist.org/observations/357270317",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [
+   {
+    "label": "butterfly",
+    "left": 0.39167,
+    "top": 0.4768,
+    "width": 0.46658,
+    "height": 0.38008
+   }
+  ],
+  "status": "ok",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ },
+ {
+  "photo_id": "x650810290",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/650810290/large.jpg",
+  "kind": "larva",
+  "taxon": "Macrothylacia rubi",
+  "observation_url": "https://www.inaturalist.org/observations/356861053",
+  "attribution": "no rights reserved",
+  "license": "cc0",
+  "boxes": [],
+  "status": "none",
+  "tags": [],
+  "comment": "",
+  "annotator": "sayheykid"
+ }
+]

@@ -77,17 +77,17 @@ pip install requests pillow
 python prep.py photos && python prep.py candidates && python prep.py tool
 # эталон: двое размечают ОДНИ И ТЕ ЖЕ фото в gold_tool.html → work/gold_<имя>.json
 python build_gold.py           # см. work/gold_conflicts.tsv; instruction_img/ → в репо
-export YT_TOKEN=...
+echo <токен> > ~/.yt_token && chmod 600 ~/.yt_token   # или export YT_TOKEN=...
 python api.py balance && python api.py skills && python api.py projects
 # в интерфейсе: предпросмотр обоих проектов (несколько бабочек, «нет», «не загрузилась»)
-python api.py bbox-exam && python api.py open <exam_pool>
+python api.py bbox-exam && python api.py open <exam_pool>   # без --yes только смета; запуск: --yes
 python api.py score-exam --loop 10          # отдельный терминал: навыки раз в 10 мин
 python api.py rev-exam
-python api.py open-training <training> && python api.py open <rev_exam_pool>
+python api.py open-training <training> --yes && python api.py open <rev_exam_pool> --yes
 python api.py rev-pool && python api.py bbox-pool pilot   # + open обоих
 python api.py cycle --loop 5                # отдельный терминал: sync → decide
 # пилот: смотрим отклонения и комментарии, правим инструкцию; затем
-python api.py bbox-pool main && python api.py open <pool>
+python api.py bbox-pool main && python api.py open <pool> --yes
 python finalize.py queue                    # fix_tool.html → work/fix_<имя>.json
 python finalize.py build                    # → ../golden/
 python api.py cost
