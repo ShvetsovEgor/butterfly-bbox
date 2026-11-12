@@ -170,7 +170,7 @@ def main():
             jit = jit + [dict(rbox(), label='butterfly')]           # конфликт разметчиков
         b.append(dict(rec, boxes=jit, annotator='B', status='ok' if any(x['label'] == 'butterfly' for x in jit) else 'none'))
     json.dump(a, open('work/gold_A.json', 'w')); json.dump(b, open('work/gold_B.json', 'w'))
-    build_gold.render = lambda *x, **k: None                         # без скачивания картинок
+    build_gold.render = build_gold.collage = lambda *x, **k: None   # без скачивания картинок
     build_gold.main()
     gold = json.load(open('work/gold.json'))
     assert len(gold) == 60 - 4, len(gold)                             # 4 конфликта (i = 3, 18, 33, 48) не попали в эталон

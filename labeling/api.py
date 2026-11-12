@@ -30,7 +30,9 @@ FEE = 0.4                      # комиссия платформы (как в 
 
 # --- параметры (обоснование — в README) ---
 BBOX_EXAM_PRICE, BBOX_EXAM_PEOPLE = 1.5, 20   # 10 фото ≈ 3–4 мин; волна: 20 × 1.5 × 1.4 = 42 ₽, добавить людей — exam-overlap
-EXAM_IOU, BBOX_PASS = 0.6, 85                  # навык = 100·F1 при IoU ≥ 0.6 (строже метрики 0.5: рамки должны быть плотными)
+EXAM_IOU, BBOX_PASS = 0.5, 80                  # навык = 100·F1@IoU0.5 (как в Контесте) только по фото С бабочками.
+# Почему не по всем: на 1-й волне 18 из 20 обвели 3 из 4 дневных молей (по-русски это тоже «бабочки») — экзамен мерил
+# не умение рисовать рамки, а энтомологию. Молей отсекает ревью (контрольные «лишняя рамка на моли») + инструкция.
 BBOX_PRICE = 0.4                               # за фото, 1 фото на страницу: приёмка/отклонение по каждому фото отдельно
 REVIEW_PERIOD_DAYS = 7                         # отложенная приёмка: успеть проверить, иначе примется автоматически
 MAX_ATTEMPTS = 2                               # разметка + 1 переразметка; дальше — ручной разбор командой
@@ -191,6 +193,18 @@ def cmd_projects():
         save(**{f'project_{kind}': p['id']}); print(kind, p['id'])
 
 
+
+def cmd_update_instructions():
+    # новые инструкции в существующие проекты (после правки yt/instruction_*.html и build_gold.py)
+    for kind in ('bbox', 'review'):
+        pid = need(f'project_{kind}')
+        p = call('GET', f'/projects/{pid}')
+        body = {k: v for k, v in p.items() if k not in ('id', 'owner', 'created', 'status')}
+        body['public_instructions'] = open(f'yt/instruction_{kind}_final.html', encoding='utf-8').read()
+        r = call('PUT', f'/projects/{pid}', body)
+        print(kind, pid, 'инструкция обновлена:', len(r.get('public_instructions', '')), 'символов,',
+              r.get('public_instructions', '').count('<img'), 'картинок')
+
 # ================= допуск bbox =================
 def cmd_bbox_exam():
     s = state()
@@ -226,31 +240,47 @@ def bbox_answer(r):
             'doubt': bool(o.get('doubt'))}
 
 
+def exam_rows(exam, by):
+    # навык — F1 по фото с бабочками; ложные рамки на фото без бабочек (моли) считаем отдельно, для анализа
+    rows = []
+    for w, ans in by.items():
+        if len(ans) < len(exam):
+            continue
+        pos = [a for a in ans if exam[a['photo_id']]]
+        f1, p, rc, tp, fp, fn = score([(exam[a['photo_id']], a['boxes']) for a in pos], EXAM_IOU)
+        neg_fp = sum(bool(a['boxes']) for a in ans if not exam[a['photo_id']])
+        rows.append((w, round(100 * f1), p, rc, tp, fp, fn, neg_fp))
+    return rows
+
+
 def cmd_score_exam(*args):
+    # --rescore: перезаписать уже выставленные навыки (после смены правила подсчёта)
     exam = {e['photo_id']: e['boxes'] for e in load('bbox_exam')}
     sid, pool = need('bbox_exam'), need('pool_bbox_exam')
+    rescore = '--rescore' in args
     while True:
-        by = collections.defaultdict(list)
-        for r in answers(pool):
-            by[r['worker']].append(bbox_answer(r))
-        scored = state().get('exam_scored', {})
-        rows = []
-        for w, ans in by.items():
-            if len(ans) < len(exam):
-                continue
-            f1, p, rc, tp, fp, fn = score([(exam[a['photo_id']], a['boxes']) for a in ans], EXAM_IOU)
-            val = round(100 * f1)
-            rows.append((w, val, p, rc, tp, fp, fn))
-            if w not in scored:
-                call('PUT', '/user-skills', {'skill_id': sid, 'user_id': w, 'value': val})
-                scored[w] = val
-        save(exam_scored=scored)
-        json.dump([a for ans in by.values() for a in ans], open('work/exam_answers.json', 'w'), ensure_ascii=False, indent=1)
-        with open('work/exam_scores.tsv', 'w') as f:
-            f.write('worker\tskill\tprecision\trecall\ttp\tfp\tfn\n')
-            f.writelines(f'{w}\t{v}\t{p:.3f}\t{r:.3f}\t{tp}\t{fp}\t{fn}\n' for w, v, p, r, tp, fp, fn in sorted(rows, key=lambda x: -x[1]))
-        passed = sum(v >= BBOX_PASS for v in scored.values())
-        print(f'{time.strftime("%H:%M")} экзамен bbox: сдали работу {len(rows)}, допущено (≥{BBOX_PASS}) {passed} → work/exam_scores.tsv')
+        try:
+            by = collections.defaultdict(list)
+            for r in answers(pool):
+                by[r['worker']].append(bbox_answer(r))
+            scored = {} if rescore else state().get('exam_scored', {})
+            rows = exam_rows(exam, by)
+            for w, val, *_ in rows:
+                if scored.get(w) != val:
+                    call('PUT', '/user-skills', {'skill_id': sid, 'user_id': w, 'value': val})
+                    scored[w] = val
+            rescore = False
+            save(exam_scored=scored)
+            json.dump([a for ans in by.values() for a in ans], open('work/exam_answers.json', 'w'), ensure_ascii=False, indent=1)
+            with open('work/exam_scores.tsv', 'w') as f:
+                f.write('worker\tskill\tprecision\trecall\ttp\tfp\tfn\tboxes_on_negatives\n')
+                f.writelines(f'{w}\t{v}\t{p:.3f}\t{r:.3f}\t{tp}\t{fp}\t{fn}\t{nf}\n' for w, v, p, r, tp, fp, fn, nf in sorted(rows, key=lambda x: -x[1]))
+            passed = sum(v >= BBOX_PASS for v in scored.values())
+            print(f'{time.strftime("%H:%M")} экзамен bbox: сдали работу {len(rows)}, допущено (≥{BBOX_PASS}) {passed} → work/exam_scores.tsv')
+        except (requests.RequestException, SystemExit) as e:        # обрыв сети не должен ронять фоновую ждалку
+            if '--loop' not in args:
+                raise
+            print(f'{time.strftime("%H:%M")} ошибка, повторю в следующий раз: {str(e)[:200]}')
         if '--loop' not in args:
             return
         time.sleep(60 * int(args[args.index('--loop') + 1]))
@@ -511,7 +541,16 @@ def autopilot_step():
 
 def cmd_autopilot(minutes='5'):
     # ждалка: cycle каждые N минут, после пилота — основные 368 фото в тот же пул; стоп по бюджету роняет её целиком
-    while autopilot_step():
+    while True:
+        try:
+            if not autopilot_step():
+                return
+        except requests.RequestException as e:          # обрыв сети — не повод останавливать ждалку
+            print(f'{time.strftime("%H:%M")} сеть: {str(e)[:200]} — повторю')
+        except SystemExit as e:
+            if str(e) == 'budget stop':
+                raise
+            print(f'{time.strftime("%H:%M")} ошибка API: {str(e)[:300]} — повторю')
         sys.stdout.flush()
         time.sleep(60 * int(minutes))
 

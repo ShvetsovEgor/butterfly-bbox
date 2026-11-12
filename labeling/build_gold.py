@@ -73,7 +73,7 @@ def load_gold():
                 continue
             # среднее двух рамок — эталон точнее каждой по отдельности
             base = dict(a, bf=[{k: (a['bf'][i][k] + b['bf'][j][k]) / 2 for k in ('left', 'top', 'width', 'height')} for i, j, _ in m])
-        gold.append({'photo_id': pid, 'image': base['image'], 'kind': base.get('kind'), 'tags': sorted(set(sum((r.get('tags') or [] for r in rs), []))),
+        gold.append({'photo_id': pid, 'image': base['image'], 'kind': base.get('kind'), 'taxon': base.get('taxon'), 'tags': sorted(set(sum((r.get('tags') or [] for r in rs), []))),
                      'boxes': base['bf'], 'distractors': base['ds'], 'annotators': [r['annotator'] for r in rs],
                      'auto_tags': auto_tags(base['bf'], base['ds'])})
     if agree:
@@ -174,6 +174,21 @@ def render(img_url, boxes, red, out):
     im.save(f'instruction_img/{out}.jpg', quality=85)
 
 
+def collage(items, out, h=360):
+    # несколько фото с красными пунктирными рамками в одну картинку (одна строка)
+    from PIL import Image
+    tiles = []
+    for i, (img, red) in enumerate(items):
+        render(img, [], red, f'_tmp{i}')
+        im = Image.open(f'instruction_img/_tmp{i}.jpg'); im = im.resize((round(im.width * h / im.height), h))
+        tiles.append(im); os.remove(f'instruction_img/_tmp{i}.jpg')
+    sheet = Image.new('RGB', (sum(t.width for t in tiles) + 12 * (len(tiles) - 1), h), 'white')
+    x = 0
+    for t in tiles:
+        sheet.paste(t, (x, 0)); x += t.width + 12
+    sheet.save(f'instruction_img/{out}.jpg', quality=85)
+
+
 def instruction(src, dst, have):
     html = open(src, encoding='utf-8').read()
     for tag in set(__import__('re').findall(r'\{\{EX:(\w+)\}\}', html)):
@@ -210,6 +225,14 @@ def main():
     exam = pos[:EXAM_POS] + neg[:EXAM_NEG]
     if len(exam) < N_EXAM:
         print(f'  ! на экзамен bbox только {len(exam)} фото из {N_EXAM}: разметьте ещё')
+    # коллаж «это моли — не выделяем»: самые яркие похожие на бабочек моли, не из экзамена и не из других примеров
+    ex_ids = {g['photo_id'] for g in exam}
+    moths = [g for g in gold if g.get('kind') == 'moth' and g['distractors'] and g['photo_id'] not in used | ex_ids]
+    # яркие дневные моли, похожие на бабочек: именно их на 1-й волне экзамена обвели 18 из 20 исполнителей
+    bright = ('Asota', 'Xanthanomis', 'Pseudopanthera', 'Esperia', 'Barsine', 'Scardamia', 'Hyphantria')
+    moths.sort(key=lambda g: (not (g.get('taxon') or '').startswith(bright), -max(d['width'] * d['height'] for d in g['distractors'])))
+    if len(moths) >= 3:
+        collage([(g['image'], g['distractors']) for g in moths[:3]], 'ex_moths'); have.add('moths')
     json.dump([{'photo_id': g['photo_id'], 'image': g['image'], 'boxes': g['boxes']} for g in exam],
               open('work/bbox_exam.json', 'w'), ensure_ascii=False, indent=1)
 
