@@ -1,0 +1,58 @@
+{
+  "view": {
+    "type": "view.list",
+    "items": [
+      {
+        "type": "view.alert",
+        "theme": "info",
+        "content": {
+          "type": "helper.if",
+          "condition": {"type": "condition.equals", "data": {"type": "data.input", "path": "status"}, "to": "none"},
+          "then": {"type": "view.text", "content": "Разметчик ответил: бабочек на фото НЕТ. Внимательно осмотрите весь кадр — нет ли бабочки, в том числе мелкой или у края."},
+          "else": {"type": "view.text", "content": "Разметчик выделил бабочек рамками. Проверьте каждую рамку и весь кадр: нет ли пропущенных бабочек."}
+        }
+      },
+      {
+        "type": "field.image-annotation",
+        "image": {"type": "data.input", "path": "image"},
+        "data": {"type": "data.internal", "path": "shown", "default": {"type": "data.input", "path": "boxes"}},
+        "shapes": {"rectangle": true},
+        "disabled": true,
+        "fullHeight": true
+      },
+      {
+        "type": "field.radio-group",
+        "label": "Разметка верна?",
+        "data": {"type": "data.output", "path": "verdict"},
+        "options": [
+          {"label": "1 — Да, всё верно", "value": "OK"},
+          {"label": "2 — Нет, есть ошибка", "value": "BAD"}
+        ],
+        "validation": {"type": "condition.required", "hint": "Выберите ответ"}
+      },
+      {
+        "type": "helper.if",
+        "condition": {"type": "condition.equals", "data": {"type": "data.output", "path": "verdict"}, "to": "BAD"},
+        "then": {
+          "type": "field.checkbox-group",
+          "label": "Какая ошибка? (можно несколько)",
+          "data": {"type": "data.output", "path": "errors"},
+          "options": [
+            {"label": "Пропущена бабочка", "value": "missed"},
+            {"label": "Лишняя рамка (не бабочка: моль, другое насекомое, фон) или две рамки на одну бабочку", "value": "extra"},
+            {"label": "Рамка неточная: обрезает крылья/усики или сильно больше бабочки", "value": "loose"}
+          ],
+          "validation": {"type": "condition.required", "hint": "Отметьте хотя бы одну ошибку"}
+        }
+      }
+    ]
+  },
+  "plugins": [
+    {"type": "plugin.toloka", "layout": {"kind": "scroll", "taskWidth": 900}},
+    {
+      "type": "plugin.hotkeys",
+      "1": {"type": "action.set", "data": {"type": "data.output", "path": "verdict"}, "payload": "OK"},
+      "2": {"type": "action.set", "data": {"type": "data.output", "path": "verdict"}, "payload": "BAD"}
+    }
+  ]
+}

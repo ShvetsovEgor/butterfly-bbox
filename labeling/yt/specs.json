@@ -1,0 +1,26 @@
+{
+  "bbox": {
+    "input": {
+      "photo_id": {"type": "string", "required": true, "hidden": false},
+      "image": {"type": "url", "required": true, "hidden": false}
+    },
+    "output": {
+      "boxes": {"type": "json", "required": false, "hidden": false},
+      "status": {"type": "string", "required": true, "hidden": false, "allowed_values": ["butterflies", "none", "load_error"]},
+      "doubt": {"type": "boolean", "required": false, "hidden": false}
+    }
+  },
+  "review": {
+    "input": {
+      "photo_id": {"type": "string", "required": true, "hidden": false},
+      "image": {"type": "url", "required": true, "hidden": false},
+      "boxes": {"type": "json", "required": false, "hidden": false},
+      "status": {"type": "string", "required": true, "hidden": false},
+      "assignment_id": {"type": "string", "required": true, "hidden": true}
+    },
+    "output": {
+      "verdict": {"type": "string", "required": true, "hidden": false, "allowed_values": ["OK", "BAD"]},
+      "errors": {"type": "json", "required": false, "hidden": false}
+    }
+  }
+}

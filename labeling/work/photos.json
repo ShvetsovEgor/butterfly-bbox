@@ -1,0 +1,2802 @@
+[
+ {
+  "photo_id": "759218497",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759218497/large.jpg",
+  "group": "bee",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759830064",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759830064/large.jpg",
+  "group": "bee",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759874130",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759874130/large.jpg",
+  "group": "bee",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760155902",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760155902/large.jpg",
+  "group": "bee",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760169647",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760169647/large.jpg",
+  "group": "bee",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760775385",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760775385/large.jpg",
+  "group": "bee",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760779242",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760779242/large.jpg",
+  "group": "bee",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "760866864",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760866864/large.jpg",
+  "group": "bee",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760119719",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760119719/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760584599",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760584599/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760592562",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760592562/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "760693709",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760693709/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760693737",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760693737/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760693750",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760693750/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760882910",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760882910/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761006280",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761006280/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761046251",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761046251/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761383738",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761383738/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761383766",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761383766/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761383805",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761383805/large.jpg",
+  "group": "dragonfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761453932",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761453932/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761456640",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761456640/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761456795",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761456795/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761457279",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761457279/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761476516",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761476516/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761477724",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761477724/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761484120",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761484120/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761486507",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761486507/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761489345",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761489345/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761493823",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761493823/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761494362",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761494362/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761512522",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761512522/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761538006",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761538006/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761551438",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761551438/large.jpg",
+  "group": "flower",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761451338",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761451338/large.jpg",
+  "group": "fungus",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761454534",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761454534/large.jpg",
+  "group": "fungus",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761462170",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761462170/large.jpg",
+  "group": "fungus",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761476795",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761476795/large.jpg",
+  "group": "fungus",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761578734",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761578734/large.jpg",
+  "group": "fungus",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761580106",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761580106/large.jpg",
+  "group": "fungus",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761587979",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761587979/large.jpg",
+  "group": "fungus",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761647826",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761647826/large.jpg",
+  "group": "fungus",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761648309",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761648309/large.jpg",
+  "group": "fungus",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759879589",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759879589/large.jpg",
+  "group": "hoverfly",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "760273208",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760273208/large.jpg",
+  "group": "hoverfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760350882",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760350882/large.jpg",
+  "group": "hoverfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760518533",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760518533/large.jpg",
+  "group": "hoverfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760627754",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760627754/large.jpg",
+  "group": "hoverfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760791913",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760791913/large.jpg",
+  "group": "hoverfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760839875",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760839875/large.jpg",
+  "group": "hoverfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760889708",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760889708/large.jpg",
+  "group": "hoverfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761246130",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761246130/large.jpg",
+  "group": "hoverfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761334792",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761334792/large.jpg",
+  "group": "hoverfly",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759434685",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759434685/large.jpg",
+  "group": "ladybird",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759942174",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759942174/large.jpg",
+  "group": "ladybird",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760506482",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760506482/large.jpg",
+  "group": "ladybird",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760715879",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760715879/large.jpg",
+  "group": "ladybird",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760771076",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760771076/large.jpg",
+  "group": "ladybird",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760879549",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760879549/large.jpg",
+  "group": "ladybird",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761250786",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761250786/large.jpg",
+  "group": "ladybird",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761527778",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761527778/large.jpg",
+  "group": "ladybird",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757994357",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757994357/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758011954",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758011954/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758785438",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758785438/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759028884",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759028884/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759047135",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759047135/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759218992",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759218992/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759764490",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759764490/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759764561",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759764561/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759764776",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759764776/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759764858",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759764858/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760284121",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760284121/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "760480859",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760480859/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760825354",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760825354/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760973611",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760973611/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761004535",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761004535/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761025447",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761025447/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761036746",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761036746/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761169060",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761169060/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761169798",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761169798/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761170228",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761170228/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761289382",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761289382/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761481390",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761481390/large.jpg",
+  "group": "larva",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760495181",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760495181/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760546858",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760546858/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760589148",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760589148/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760883669",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883669/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760883696",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883696/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760883873",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883873/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760883877",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883877/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760883917",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883917/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760883985",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883985/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760884065",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884065/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760884071",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884071/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760884141",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884141/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761107813",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761107813/large.jpg",
+  "group": "moth_erebidae",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "760883554",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883554/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760883580",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883580/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760883667",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883667/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760883727",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883727/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760883955",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883955/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "760884082",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884082/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760884143",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884143/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760884168",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884168/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760896231",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760896231/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761473390",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761473390/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761474257",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761474257/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761478605",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761478605/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761589120",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761589120/large.jpg",
+  "group": "moth_geometridae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "742183688",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/742183688/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "743438449",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/743438449/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "743671383",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/743671383/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "746348219",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/746348219/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "749069406",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/749069406/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "749377128",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/749377128/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "751777249",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751777249/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753092065",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753092065/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753317551",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753317551/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753324642",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753324642/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "755140737",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755140737/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758005953",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758005953/large.jpg",
+  "group": "moth_saturniidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753317526",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753317526/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753324687",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753324687/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "754129366",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754129366/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754985266",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754985266/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "755178974",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755178974/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "755406952",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755406952/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "755534516",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755534516/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756068323",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756068323/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756264357",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756264357/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756558367",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756558367/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758358635",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758358635/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759475465",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759475465/large.jpg",
+  "group": "moth_sphingidae",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "726855054",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/726855054/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "727241001",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/727241001/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "733183452",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/733183452/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "739272366",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/739272366/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "741759692",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/741759692/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "741954174",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/741954174/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "745405202",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/745405202/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "745693880",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/745693880/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "748426286",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/748426286/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "750689985",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/750689985/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756244210",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756244210/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757646621",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757646621/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761195981",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761195981/large.jpg",
+  "group": "pupa",
+  "role": "negative",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757345906",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757345906/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757453142",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757453142/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758013992",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758013992/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758126480",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758126480/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758286954",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758286954/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758288457",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758288457/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758292411",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758292411/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758333372",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758333372/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758364081",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758364081/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758370761",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758370761/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758397413",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758397413/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "758887795",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758887795/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759018211",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759018211/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759794890",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759794890/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760037237",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760037237/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760169057",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760169057/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760195371",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760195371/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760212571",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760212571/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760215924",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760215924/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760218804",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760218804/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760275747",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760275747/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760580916",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760580916/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "760584047",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760584047/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760585041",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760585041/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760586815",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760586815/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760590720",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760590720/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760605789",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760605789/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "760620476",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760620476/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760640706",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760640706/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760792279",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760792279/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761006969",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761006969/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761011559",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761011559/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761016447",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761016447/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761026616",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761026616/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761028483",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761028483/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761032336",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761032336/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761383827",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761383827/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761476956",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761476956/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761478127",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761478127/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761479744",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761479744/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761480934",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761480934/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761481875",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761481875/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761483634",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761483634/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761485274",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761485274/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761486404",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761486404/large.jpg",
+  "group": "hesperiidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753631847",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753631847/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753670004",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753670004/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753739500",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753739500/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753747304",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753747304/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753803357",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753803357/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754499647",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754499647/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754654618",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754654618/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754747903",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754747903/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754748168",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754748168/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754872241",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754872241/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "755466271",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755466271/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "755467709",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755467709/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "755658692",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755658692/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756643547",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756643547/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756692791",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756692791/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756811862",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756811862/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "756855073",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756855073/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757459547",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757459547/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757847507",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757847507/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758226798",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758226798/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758342175",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758342175/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758396310",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758396310/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758638811",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758638811/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758718188",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758718188/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758739577",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758739577/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "759152743",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759152743/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759627439",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759627439/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759943678",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759943678/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759944838",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759944838/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760152198",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760152198/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760153523",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760153523/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760290128",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760290128/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760595076",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760595076/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760748192",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760748192/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760791732",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760791732/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761005095",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761005095/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761029370",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761029370/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761035878",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761035878/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761036975",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761036975/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761037191",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761037191/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761200985",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761200985/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761286010",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761286010/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761321810",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761321810/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761472486",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761472486/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761476198",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761476198/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761484844",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761484844/large.jpg",
+  "group": "lycaenidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760150448",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760150448/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760154955",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760154955/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760163603",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760163603/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760202799",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760202799/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760203903",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760203903/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760219697",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760219697/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760220039",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760220039/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760223631",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760223631/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760227185",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760227185/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760292300",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760292300/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760307496",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760307496/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760581402",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760581402/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760734357",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760734357/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760752269",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760752269/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760788352",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760788352/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760796949",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760796949/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760937232",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760937232/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "760980351",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760980351/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761002924",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761002924/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761005580",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761005580/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761010311",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761010311/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761015168",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761015168/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761031680",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761031680/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761033465",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761033465/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761035439",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761035439/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761036720",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761036720/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761036721",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761036721/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761039739",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761039739/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761065194",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761065194/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761075844",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761075844/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761148032",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761148032/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761272141",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761272141/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761287454",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761287454/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761308748",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761308748/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761321807",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761321807/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761335294",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761335294/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761335297",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761335297/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761335307",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761335307/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761336278",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761336278/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761337769",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761337769/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761346782",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761346782/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761383748",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761383748/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761383846",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761383846/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761383864",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761383864/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761383894",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761383894/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761474873",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761474873/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761475415",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761475415/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761479088",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761479088/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761486073",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761486073/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761486670",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761486670/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761542018",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761542018/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761564604",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761564604/large.jpg",
+  "group": "nymphalidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "749340979",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/749340979/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "749341502",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/749341502/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "749903606",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/749903606/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "750843407",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/750843407/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "751407962",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751407962/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "751709726",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751709726/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "751709928",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751709928/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "751750485",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751750485/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "751752003",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751752003/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "751752012",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751752012/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "751797140",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751797140/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "751799291",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751799291/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "752036306",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/752036306/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "752231520",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/752231520/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "752790059",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/752790059/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "753324689",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753324689/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "753333863",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753333863/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "754498973",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754498973/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754730556",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754730556/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756128768",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756128768/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756141761",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756141761/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756565961",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756565961/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756603624",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756603624/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756613721",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756613721/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757345766",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757345766/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757764719",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757764719/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757765903",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757765903/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757812338",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757812338/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757954774",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757954774/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758626739",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758626739/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759008377",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759008377/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759425320",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759425320/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "759715161",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759715161/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760226383",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760226383/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760524137",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760524137/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761013096",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761013096/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761036691",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761036691/large.jpg",
+  "group": "papilionidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754624808",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754624808/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754806325",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754806325/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754893596",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754893596/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "755736214",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755736214/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756365322",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756365322/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756486925",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756486925/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "756856199",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756856199/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757105104",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757105104/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757225229",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757225229/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "757765535",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/757765535/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758293022",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758293022/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758336810",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758336810/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758338104",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758338104/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "758475069",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758475069/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "758739082",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758739082/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "759428295",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759428295/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759513440",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759513440/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759561242",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759561242/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759625117",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759625117/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759627071",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759627071/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759801546",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759801546/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759914934",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759914934/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760213379",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760213379/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760217691",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760217691/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "760225746",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760225746/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760323308",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760323308/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760651030",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760651030/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760971386",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760971386/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761008477",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761008477/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761009261",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761009261/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761036757",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761036757/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761065348",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761065348/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761227491",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761227491/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761284671",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761284671/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761312810",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761312810/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761333301",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761333301/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761334775",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761334775/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761369266",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761369266/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761383669",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761383669/large.jpg",
+  "group": "pieridae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "653637652",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/653637652/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "654392959",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/654392959/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "660951415",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/660951415/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "661414281",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/661414281/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "686645168",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/686645168/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "687542262",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/687542262/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "687793271",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/687793271/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "687793892",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/687793892/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "688544139",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/688544139/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "689357404",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/689357404/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "690102568",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/690102568/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "691436028",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/691436028/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "691596274",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/691596274/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "698328900",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/698328900/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "701667036",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/701667036/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "703535337",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/703535337/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "705135894",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/705135894/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "706667985",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/706667985/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "710393725",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/710393725/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "714305328",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/714305328/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "723941750",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/723941750/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "724958135",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/724958135/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "730560002",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/730560002/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "730613716",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/730613716/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "744178636",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/744178636/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "746622494",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/746622494/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754773811",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754773811/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "754775377",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754775377/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "759415174",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759415174/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "760581893",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760581893/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761004210",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761004210/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761021296",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761021296/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761033047",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761033047/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "pilot"
+ },
+ {
+  "photo_id": "761038352",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761038352/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ },
+ {
+  "photo_id": "761476521",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761476521/large.jpg",
+  "group": "riodinidae",
+  "role": "positive",
+  "batch": "main"
+ }
+]

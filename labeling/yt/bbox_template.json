@@ -1,0 +1,58 @@
+{
+  "view": {
+    "type": "view.list",
+    "items": [
+      {
+        "type": "field.image-annotation",
+        "label": "Выделите рамкой КАЖДУЮ взрослую бабочку. Моль, гусениц, куколок и других насекомых не выделяйте.",
+        "image": {"type": "data.input", "path": "image"},
+        "data": {"type": "data.output", "path": "boxes"},
+        "shapes": {"rectangle": true},
+        "fullHeight": true
+      },
+      {
+        "type": "field.radio-group",
+        "label": "Ваш ответ",
+        "data": {"type": "data.output", "path": "status"},
+        "options": [
+          {"label": "1 — Выделил(а) всех бабочек", "value": "butterflies"},
+          {"label": "2 — Бабочек на фото нет", "value": "none"},
+          {"label": "3 — Картинка не загрузилась", "value": "load_error"}
+        ],
+        "validation": {
+          "type": "condition.any",
+          "hint": "«Выделил(а)» — нужна хотя бы одна рамка. «Бабочек нет» и «Не загрузилась» — рамок быть не должно, удалите их.",
+          "conditions": [
+            {"type": "condition.all", "conditions": [
+              {"type": "condition.equals", "data": {"type": "data.output", "path": "status"}, "to": "butterflies"},
+              {"type": "condition.not", "condition": {"type": "condition.empty", "data": {"type": "data.output", "path": "boxes"}}}
+            ]},
+            {"type": "condition.all", "conditions": [
+              {"type": "condition.equals", "data": {"type": "data.output", "path": "status"}, "to": "none"},
+              {"type": "condition.empty", "data": {"type": "data.output", "path": "boxes"}}
+            ]},
+            {"type": "condition.all", "conditions": [
+              {"type": "condition.equals", "data": {"type": "data.output", "path": "status"}, "to": "load_error"},
+              {"type": "condition.empty", "data": {"type": "data.output", "path": "boxes"}}
+            ]}
+          ]
+        }
+      },
+      {
+        "type": "field.checkbox",
+        "label": "На фото есть объект, про который я не уверен(а), бабочка ли это",
+        "data": {"type": "data.output", "path": "doubt"}
+      }
+    ]
+  },
+  "plugins": [
+    {"type": "plugin.toloka", "layout": {"kind": "scroll", "taskWidth": 900}},
+    {"type": "plugin.field.image-annotation.hotkeys", "modes": {"select": "q", "rectangle": "e"}, "confirm": "a", "cancel": "s"},
+    {
+      "type": "plugin.hotkeys",
+      "1": {"type": "action.set", "data": {"type": "data.output", "path": "status"}, "payload": "butterflies"},
+      "2": {"type": "action.set", "data": {"type": "data.output", "path": "status"}, "payload": "none"},
+      "3": {"type": "action.set", "data": {"type": "data.output", "path": "status"}, "payload": "load_error"}
+    }
+  ]
+}

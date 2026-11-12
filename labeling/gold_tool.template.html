@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>/*TITLE*/Эталон рамок</title>
+<style>
+:root{--bg:#f6f6f4;--fg:#1d1d1b;--mut:#6b6b66;--line:#d9d9d4;--card:#fff;--bf:#16a34a;--ds:#e11d48;--acc:#2563eb}
+*{box-sizing:border-box}body{margin:0;font:14px/1.4 system-ui,sans-serif;background:var(--bg);color:var(--fg);display:flex;height:100vh}
+#side{width:250px;border-right:1px solid var(--line);overflow:auto;background:var(--card)}
+#side .it{padding:4px 10px;cursor:pointer;display:flex;justify-content:space-between;border-bottom:1px solid #eee;font-size:12px}
+#side .it.cur{background:#e0e7ff}#side .st{font-weight:600}
+#main{flex:1;display:flex;flex-direction:column;min-width:0}
+#bar{padding:8px 12px;border-bottom:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap;align-items:center;background:var(--card)}
+button{font:inherit;padding:4px 10px;border:1px solid var(--line);background:#fff;border-radius:6px;cursor:pointer}
+button.on{background:var(--fg);color:#fff}
+#stage{flex:1;overflow:auto;display:flex;justify-content:center;align-items:flex-start;padding:12px}
+#wrap{position:relative;user-select:none;cursor:crosshair;line-height:0}
+#img{max-height:calc(100vh - 170px);max-width:100%}
+.box{position:absolute;border:2px solid var(--bf);background:rgba(22,163,74,.08)}
+.box.d{border-color:var(--ds);border-style:dashed;background:rgba(225,29,72,.06)}
+.box.sel{outline:2px solid var(--acc)}
+#info{padding:6px 12px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);background:var(--card)}
+label{font-size:12px}
+</style></head><body>
+<div id="side"></div>
+<div id="main">
+ <div id="bar">
+  <b id="title"></b>
+  <span>рамка:</span>
+  <button id="lb" class="on" onclick="setLab('butterfly')">1 бабочка</button>
+  <button id="ld" onclick="setLab('distractor')">2 похожий объект</button>
+  <span>|</span>
+  <button onclick="setStatus('ok')">Готово (Enter)</button>
+  <button onclick="setStatus('none')">Бабочек нет (0)</button>
+  <button onclick="setStatus('broken')">Не грузится</button>
+  <button onclick="setStatus('skip')">Спорно, не брать (S)</button>
+  <span>|</span>
+  <span id="tags"></span>
+  <span style="flex:1"></span>
+  <input id="cm" placeholder="пояснение (что исправили и почему)" size="28">
+  <input id="who" placeholder="ваше имя" size="8">
+  <button onclick="exportJson()">Экспорт JSON</button>
+  <label><input type="file" id="imp" accept=".json" style="width:150px"></label>
+ </div>
+ <div id="note" style="padding:4px 12px;color:#b45309;font-weight:600"></div>
+ <div id="stage"><div id="wrap"><img id="img" draggable="false"></div></div>
+ <div id="info">Тяните мышью — рамка. Клик по рамке — выделить, Del — удалить, Z — отменить последнюю, ←/→ — листать.
+  Зелёная — бабочка (идёт в эталон). Красная пунктирная — похожий объект: моль, другое насекомое (нужна для контрольных ревью и примеров «не размечать»).
+  Рамка плотно по видимым частям: крылья, тело, усики, лапки. Прячущееся за листом не достраиваем.</div>
+</div>
+<script>
+const DATA = /*DATA*/[];
+const TAGS = {single:'одна', multi:'несколько', overlap:'перекрытие', similar:'похожее насекомое', none:'без бабочек', cropped:'обрезана краем', small:'мелкая'};
+const KEY = '/*KEY*/gold_tool_v1';
+let st = {}; try { st = JSON.parse(localStorage.getItem(KEY) || '{}') } catch (e) {}
+let cur = 0, lab = 'butterfly', sel = -1;
+const $ = id => document.getElementById(id);
+$('who').value = st.__who || '';
+$('who').onchange = () => { st.__who = $('who').value; save() };
+function rec(i = cur) { const p = DATA[i], id = p.photo_id;
+  // для разбора и выборочной проверки рамки краудсорсинга подставлены заранее
+  return st[id] = st[id] || {boxes: (p.pre || []).map(b => ({label: 'butterfly', ...b})), status: null, tags: [], comment: ''} }
+function save() { try { localStorage.setItem(KEY, JSON.stringify(st)) } catch (e) {} }
+function setLab(l) { lab = l; $('lb').classList.toggle('on', l == 'butterfly'); $('ld').classList.toggle('on', l != 'butterfly') }
+function setStatus(s) {
+  const r = rec();
+  if (s == 'none' && r.boxes.some(b => b.label == 'butterfly')) { alert('Есть зелёные рамки — удалите их или нажмите «Готово»'); return }
+  if (s == 'ok' && !r.boxes.some(b => b.label == 'butterfly')) { if (!confirm('Зелёных рамок нет. Отметить «бабочек нет»?')) return; s = 'none' }
+  r.status = s; save(); go(cur + 1)
+}
+function side() {
+  const col = {ok: '#16a34a', none: '#2563eb', broken: '#b45309', skip: '#6b7280'};
+  $('side').innerHTML = DATA.map((p, i) => { const r = st[p.photo_id] || {};
+    const n = (r.boxes || []).filter(b => b.label == 'butterfly').length;
+    return `<div class="it ${i == cur ? 'cur' : ''}" onclick="go(${i})"><span>${i + 1}. ${p.kind || p.group || ''}</span>
+      <span class="st" style="color:${col[r.status] || '#aaa'}">${r.status ? r.status + (n ? ' ' + n : '') : '—'}</span></div>` }).join('')
+  const done = DATA.filter(p => (st[p.photo_id] || {}).status).length;
+  $('title').textContent = `${cur + 1}/${DATA.length} · готово ${done}`
+}
+function draw() {
+  const W = $('img').clientWidth, H = $('img').clientHeight;
+  document.querySelectorAll('.box').forEach(e => e.remove());
+  rec().boxes.forEach((b, i) => { const d = document.createElement('div');
+    d.className = 'box' + (b.label != 'butterfly' ? ' d' : '') + (i == sel ? ' sel' : '');
+    Object.assign(d.style, {left: b.left * W + 'px', top: b.top * H + 'px', width: b.width * W + 'px', height: b.height * H + 'px'});
+    d.onmousedown = e => { e.stopPropagation(); sel = i; draw() };
+    $('wrap').appendChild(d) });
+  $('tags').innerHTML = Object.entries(TAGS).map(([k, v]) => `<label><input type="checkbox" ${rec().tags.includes(k) ? 'checked' : ''} onchange="tag('${k}',this.checked)">${v}</label>`).join(' ')
+}
+function tag(k, on) { const r = rec(); r.tags = r.tags.filter(t => t != k); if (on) r.tags.push(k); save() }
+function go(i) { cur = Math.max(0, Math.min(DATA.length - 1, i)); sel = -1; $('img').src = DATA[cur].image; $('cm').value = rec().comment || '';
+  $('note').textContent = DATA[cur].note || ''; side(); draw() }
+$('cm').oninput = () => { rec().comment = $('cm').value; save() };
+$('img').onload = draw; window.onresize = draw;
+let start = null, ghost = null;
+$('wrap').onmousedown = e => { const r = $('img').getBoundingClientRect(); start = [(e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height];
+  ghost = document.createElement('div'); ghost.className = 'box' + (lab != 'butterfly' ? ' d' : ''); $('wrap').appendChild(ghost) };
+window.onmousemove = e => { if (!start) return; const r = $('img').getBoundingClientRect();
+  const x = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width)), y = Math.min(1, Math.max(0, (e.clientY - r.top) / r.height));
+  Object.assign(ghost.style, {left: Math.min(x, start[0]) * r.width + 'px', top: Math.min(y, start[1]) * r.height + 'px',
+    width: Math.abs(x - start[0]) * r.width + 'px', height: Math.abs(y - start[1]) * r.height + 'px'}); ghost._b = [x, y] };
+window.onmouseup = () => { if (!start) return; const b = ghost._b; ghost.remove();
+  if (b && Math.abs(b[0] - start[0]) > 0.005 && Math.abs(b[1] - start[1]) > 0.005) {
+    const r = rec(); r.boxes.push({label: lab, left: +Math.min(b[0], start[0]).toFixed(5), top: +Math.min(b[1], start[1]).toFixed(5),
+      width: +Math.abs(b[0] - start[0]).toFixed(5), height: +Math.abs(b[1] - start[1]).toFixed(5)});
+    if (r.status == 'none') r.status = null; save() }
+  start = null; draw(); side() };
+window.onkeydown = e => { if (e.target.tagName == 'INPUT') return; const r = rec();
+  if (e.key == 'Delete' || e.key == 'Backspace') { if (sel >= 0) { r.boxes.splice(sel, 1); sel = -1; save(); draw(); side() } }
+  else if (e.key == 'z' || e.key == 'я') { r.boxes.pop(); save(); draw(); side() }
+  else if (e.key == 'ArrowRight') go(cur + 1); else if (e.key == 'ArrowLeft') go(cur - 1);
+  else if (e.key == '1') setLab('butterfly'); else if (e.key == '2') setLab('distractor');
+  else if (e.key == 'Enter') setStatus('ok'); else if (e.key == '0') setStatus('none'); else if (e.key == 's' || e.key == 'ы') setStatus('skip') };
+function exportJson() {
+  if (!$('who').value) { alert('Впишите имя — оно попадёт в имя файла'); return }
+  const out = DATA.filter(p => (st[p.photo_id] || {}).status).map(p => ({...p, ...st[p.photo_id], annotator: $('who').value}));
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], {type: 'application/json'}));
+  a.download = `/*PREFIX*/gold_${$('who').value}.json`; a.click()
+}
+$('imp').onchange = e => { const f = e.target.files[0]; if (!f) return; f.text().then(t => { JSON.parse(t).forEach(x => { st[x.photo_id] = {boxes: x.boxes, status: x.status, tags: x.tags || [], comment: x.comment || ''} }); save(); go(cur) }) };
+go(0);
+</script></body></html>

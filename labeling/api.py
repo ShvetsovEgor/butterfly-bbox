@@ -1,0 +1,495 @@
+# Все действия в Яндекс Заданиях через API.  export YT_TOKEN=...  (без токена — dry-run: печатает запросы)
+#
+# Подготовка (один раз):
+#   python api.py balance
+#   python api.py skills                       # навыки bbox_exam, rev_exam
+#   python api.py projects                     # проекты bbox и review (шаблон, спецификации, инструкции)
+# Допуск:
+#   python api.py bbox-exam                    # экзамен bbox: 10 эталонных фото, 1 страница
+#   python api.py score-exam [--loop 10]       # считаем F1 каждого по эталону → навык bbox_exam (раз в N минут)
+#   python api.py rev-exam                     # обучение + экзамен ревью (навык rev_exam ставит сама платформа)
+# Разметка:
+#   python api.py rev-pool                     # пул ревью + контрольные задания
+#   python api.py bbox-pool pilot|main         # пул bbox с отложенной приёмкой + фото
+#   python api.py cycle [--loop 10]            # sync + decide: bbox-ответы → ревью → принять/отклонить → переразметка
+# Служебное:
+#   python api.py open|close|status <pool_id>   python api.py cost
+# id всех объектов — в work/state.json, история решений — в work/ledger.json
+import json, os, sys, time, datetime, collections, urllib.request
+import requests
+from boxes import clean, score
+
+API = 'https://tasks.yandex.ru/api/v1'
+TOKEN = os.environ.get('YT_TOKEN')
+DRY = not TOKEN
+STATE, LEDGER = 'work/state.json', 'work/ledger.json'
+FEE = 0.4                      # комиссия платформы (как в ДЗ2); проверить в интерфейсе при создании пула
+
+# --- параметры (обоснование — в README) ---
+BBOX_EXAM_PRICE, BBOX_EXAM_PEOPLE = 1.5, 40   # 10 фото ≈ 3–4 мин; 40 × 1.5 × 1.4 = 84 ₽
+EXAM_IOU, BBOX_PASS = 0.6, 85                  # навык = 100·F1 при IoU ≥ 0.6 (строже метрики 0.5: рамки должны быть плотными)
+BBOX_PRICE = 0.4                               # за фото, 1 фото на страницу: приёмка/отклонение по каждому фото отдельно
+REVIEW_PERIOD_DAYS = 7                         # отложенная приёмка: успеть проверить, иначе примется автоматически
+MAX_ATTEMPTS = 2                               # разметка + 1 переразметка; дальше — ручной разбор командой
+REV_PRICE, REV_REAL, REV_GOLD = 0.6, 9, 1      # страница ревью: 9 проверок + 1 контрольная, ~1 мин → ~36 ₽/ч
+REV_OVERLAP = 3                                # 3 независимых ревьюера: решение большинством, ничьих нет
+REV_EXAM_PRICE, REV_EXAM_PEOPLE = 0.4, 40
+REV_PASS, REV_TRAIN_PASS = 80, 70
+
+
+def state():
+    return json.load(open(STATE)) if os.path.exists(STATE) else {}
+
+
+def save(**kw):
+    if DRY:                    # dry-run не должен портить настоящее состояние
+        print('[dry] state +', kw); return
+    s = state(); s.update(kw); json.dump(s, open(STATE, 'w'), indent=1)
+
+
+def need(key):
+    s = state()
+    if key not in s:
+        sys.exit(f'нет {key} в {STATE} — сначала выполните предыдущий шаг')
+    return s[key]
+
+
+def _http(method, path, body=None, params=None):
+    if DRY:
+        print(f'\n[dry] {method} {API}{path} {params or ""}')
+        if body is not None:
+            print(json.dumps(body, ensure_ascii=False, indent=1)[:2500])
+        return {'id': f'DRY_{path.strip("/").replace("/", "_")}', 'items': [], 'has_more': False}
+    for attempt in range(3):
+        r = requests.request(method, API + path, json=body, params=params,
+                             headers={'Authorization': f'OAuth {TOKEN}'}, timeout=180)
+        if r.status_code in (429, 502, 503, 504) and attempt < 2:
+            time.sleep(5 * (attempt + 1)); continue
+        if r.status_code >= 400:
+            sys.exit(f'{method} {path} → {r.status_code}\n{r.text[:2000]}')
+        return r.json() if r.text else {}
+
+
+call = _http          # тесты подменяют на фейковый бэкенд
+
+
+def paged(path, **params):
+    out, last = [], None
+    while True:
+        p = {'limit': 1000, 'sort': 'id', **params}
+        if last:
+            p['id_gt'] = last
+        r = call('GET', path, params=p)
+        out += r['items']
+        if not r.get('has_more') or not r['items']:
+            return out
+        last = r['items'][-1]['id']
+
+
+def load(name):
+    return json.load(open(f'work/{name}.json'))
+
+
+# --- фильтры и правила контроля качества ---
+lang_ru = {'category': 'profile', 'key': 'languages', 'operator': 'IN', 'value': 'RU'}
+no_skill = lambda sid: {'category': 'skill', 'key': sid, 'operator': 'EQ'}     # «навыка нет» = EQ без value
+skill_gte = lambda sid, v: {'category': 'skill', 'key': sid, 'operator': 'GTE', 'value': v}
+ban = lambda days, why: {'type': 'RESTRICTION_V2', 'parameters': {
+    'scope': 'PROJECT', 'duration_unit': 'DAYS', 'duration': days, 'private_comment': why}}
+
+
+def fast_rule(history, sec, total, fast, days=30):
+    return {'collector_config': {'type': 'ASSIGNMENT_SUBMIT_TIME', 'parameters': {'history_size': history, 'fast_submit_threshold_seconds': sec}},
+            'rules': [{'conditions': [{'key': 'total_submitted_count', 'operator': 'GTE', 'value': total},
+                                      {'key': 'fast_submitted_count', 'operator': 'GTE', 'value': fast}],
+                       'action': ban(days, f'fast answers < {sec}s')}]}
+
+
+def pool_body(project, name, price, real, gold, flt, qc=None, overlap=1, auto_accept=True, max_sec=900):
+    b = {
+        'project_id': project, 'private_name': name,
+        'may_contain_adult_content': False,
+        'will_expire': (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=30)).strftime('%Y-%m-%dT%H:%M:%S'),
+        'reward_per_assignment': price,
+        'assignment_max_duration_seconds': max_sec,
+        'auto_accept_solutions': auto_accept,
+        'defaults': {'default_overlap_for_new_task_suites': overlap, 'default_overlap_for_new_tasks': overlap},
+        # force_last_assignment: неполную последнюю страницу всё равно выдаём, иначе хвост пула зависнет
+        'mixer_config': {'real_tasks_count': real, 'golden_tasks_count': gold, 'training_tasks_count': 0,
+                         'min_real_tasks_count': 1 if real else 0, 'force_last_assignment': True,
+                         'force_last_assignment_delay_seconds': 300},
+        'filter': {'and': flt},
+    }
+    if not auto_accept:
+        b['auto_accept_period_day'] = REVIEW_PERIOD_DAYS
+    if qc:
+        b['quality_control'] = qc
+    return b
+
+
+def post_tasks(rows):
+    # пачками по 100: большие синхронные запросы ловили 504 в ДЗ2
+    for i in range(0, len(rows), 100):
+        call('POST', '/tasks', rows[i:i + 100], params={'allow_defaults': 'true', 'skip_invalid_items': 'false'})
+    return len(rows)
+
+
+def existing(pool_id, key='photo_id'):
+    return {t['input_values'][key] for t in paged('/tasks', pool_id=pool_id)}
+
+
+def ensure_open(pool_id):
+    if DRY:
+        return
+    if call('GET', f'/pools/{pool_id}').get('status') != 'OPEN':
+        call('POST', f'/pools/{pool_id}/open')
+
+
+# ================= подготовка =================
+def cmd_balance():
+    print(call('GET', '/requester'))
+
+
+def cmd_skills():
+    ids = {n: call('POST', '/skills', {'name': n, 'hidden': True, 'private_comment': 'butterfly final project'})['id']
+           for n in ['bbox_exam', 'rev_exam']}
+    save(**ids); print(ids)
+
+
+def view_spec(path):
+    cfg = open(path, encoding='utf-8').read()
+    import re
+    comps = sorted({t for t in re.findall(r'"type":\s*"([a-z]+\.[a-z0-9.\-]+)"', cfg) if not t.startswith('data.')})
+    return {'type': 'tb', 'config': cfg, 'lock': {'core': '1.0.0', **{c: '1.0.0' for c in comps}}}
+
+
+def cmd_projects():
+    specs = json.load(open('yt/specs.json'))
+    meta = {
+        'bbox': ('Выделите бабочек на фото', 'Обведите рамкой каждую взрослую бабочку на фотографии природы', 'yt/bbox_template.json'),
+        'review': ('Проверьте, верно ли выделены бабочки', 'Посмотрите на фото с рамками и решите, верно ли выделены бабочки', 'yt/review_template.json'),
+    }
+    for kind, (name, descr, tpl) in meta.items():
+        instr = f'yt/instruction_{kind}_final.html'
+        if not os.path.exists(instr):
+            sys.exit(f'нет {instr} — сначала python build_gold.py')
+        p = call('POST', '/projects', {
+            'public_name': name, 'public_description': descr,
+            'public_instructions': open(instr, encoding='utf-8').read(),
+            'private_comment': f'butterfly final project: {kind}',
+            'assignments_issuing_type': 'AUTOMATED',
+            'task_spec': {'input_spec': specs[kind]['input'], 'output_spec': specs[kind]['output'], 'view_spec': view_spec(tpl)}})
+        save(**{f'project_{kind}': p['id']}); print(kind, p['id'])
+
+
+# ================= допуск bbox =================
+def cmd_bbox_exam():
+    s = state()
+    # заходят только «чистые»: без навыков bbox_exam/rev_exam → один человек = одна попытка и одна роль
+    flt = [lang_ru, no_skill(need('bbox_exam')), no_skill(need('rev_exam'))]
+    qc = {'configs': [fast_rule(1, 60, 1, 1)]}            # 10 фото меньше чем за минуту — не размечал
+    exam = load('bbox_exam')
+    p = call('POST', '/pools', pool_body(need('project_bbox'), 'bbox exam', BBOX_EXAM_PRICE, len(exam), 0, flt, qc,
+                                         overlap=BBOX_EXAM_PEOPLE, max_sec=1500))
+    save(pool_bbox_exam=p['id'])
+    post_tasks([{'pool_id': p['id'], 'input_values': {'photo_id': e['photo_id'], 'image': e['image']}, 'overlap': BBOX_EXAM_PEOPLE}
+                for e in exam])
+    print('bbox exam pool', p['id'], '— откройте: python api.py open', p['id'])
+
+
+def answers(pool_id, statuses=('SUBMITTED', 'ACCEPTED')):
+    # плоский список ответов: одна строка = одно фото в одном assignment
+    out = []
+    for a in paged('/assignments', pool_id=pool_id):
+        if a['status'] not in statuses:
+            continue
+        for t, sol in zip(a['tasks'], a['solutions']):
+            out.append({'assignment_id': a['id'], 'worker': a['user_id'], 'status_a': a['status'], 'task_id': t['id'],
+                        'input': t['input_values'], 'output': sol['output_values'],
+                        'submitted': a.get('submitted'), 'reward': a.get('reward')})
+    return out
+
+
+def bbox_answer(r):
+    o = r['output']
+    return {'photo_id': r['input']['photo_id'], 'assignment_id': r['assignment_id'], 'worker': r['worker'],
+            'status': o.get('status'), 'boxes': clean(o.get('boxes')) if o.get('status') == 'butterflies' else [],
+            'doubt': bool(o.get('doubt'))}
+
+
+def cmd_score_exam(*args):
+    exam = {e['photo_id']: e['boxes'] for e in load('bbox_exam')}
+    sid, pool = need('bbox_exam'), need('pool_bbox_exam')
+    while True:
+        by = collections.defaultdict(list)
+        for r in answers(pool):
+            by[r['worker']].append(bbox_answer(r))
+        scored = state().get('exam_scored', {})
+        rows = []
+        for w, ans in by.items():
+            if len(ans) < len(exam):
+                continue
+            f1, p, rc, tp, fp, fn = score([(exam[a['photo_id']], a['boxes']) for a in ans], EXAM_IOU)
+            val = round(100 * f1)
+            rows.append((w, val, p, rc, tp, fp, fn))
+            if w not in scored:
+                call('PUT', '/user-skills', {'skill_id': sid, 'user_id': w, 'value': val})
+                scored[w] = val
+        save(exam_scored=scored)
+        json.dump([a for ans in by.values() for a in ans], open('work/exam_answers.json', 'w'), ensure_ascii=False, indent=1)
+        with open('work/exam_scores.tsv', 'w') as f:
+            f.write('worker\tskill\tprecision\trecall\ttp\tfp\tfn\n')
+            f.writelines(f'{w}\t{v}\t{p:.3f}\t{r:.3f}\t{tp}\t{fp}\t{fn}\n' for w, v, p, r, tp, fp, fn in sorted(rows, key=lambda x: -x[1]))
+        passed = sum(v >= BBOX_PASS for v in scored.values())
+        print(f'{time.strftime("%H:%M")} экзамен bbox: сдали работу {len(rows)}, допущено (≥{BBOX_PASS}) {passed} → work/exam_scores.tsv')
+        if '--loop' not in args:
+            return
+        time.sleep(60 * int(args[args.index('--loop') + 1]))
+
+
+# ================= допуск review =================
+def golden_task(pool_id, it, hint=False, overlap=None):
+    t = {'pool_id': pool_id,
+         'input_values': {'photo_id': it['id'], 'image': it['image'], 'boxes': it['boxes'], 'status': it['status'], 'assignment_id': 'gold'},
+         'known_solutions': [{'output_values': {'verdict': it['verdict']}, 'correctness_weight': 1}]}
+    if hint:
+        t['message_on_unknown_solution'] = it['hint']
+    if overlap:
+        t['overlap'] = overlap
+    else:
+        t['infinite_overlap'] = True
+    return t
+
+
+def cmd_rev_exam():
+    proj, train, exam = need('project_review'), load('rev_train'), load('rev_exam')
+    tr = call('POST', '/trainings', {
+        'project_id': proj, 'private_name': 'review training', 'may_contain_adult_content': False,
+        'assignment_max_duration_seconds': 1200, 'mix_tasks_in_creation_order': False, 'shuffle_tasks_in_task_suite': True,
+        'training_tasks_in_task_suite_count': len(train) // 2, 'task_suites_required_to_pass': 2,
+        'retry_training_after_days': 1, 'inherited_instructions': True})
+    save(training_review=tr['id'])
+    post_tasks([golden_task(tr['id'], it, hint=True) for it in train])
+    qc = {'training_requirement': {'training_pool_id': tr['id'], 'training_passing_skill_value': REV_TRAIN_PASS},
+          'configs': [{'collector_config': {'type': 'GOLDEN_SET', 'parameters': {'history_size': len(exam)}},
+                       'rules': [{'conditions': [{'key': 'golden_set_answers_count', 'operator': 'GTE', 'value': len(exam)}],
+                                  'action': {'type': 'SET_SKILL_FROM_OUTPUT_FIELD',
+                                             'parameters': {'skill_id': need('rev_exam'), 'from_field': 'correct_answers_rate'}}}]}]}
+    flt = [lang_ru, no_skill(need('rev_exam')), no_skill(need('bbox_exam'))]
+    ex = call('POST', '/pools', pool_body(proj, 'review exam', REV_EXAM_PRICE, 0, len(exam), flt, qc, overlap=REV_EXAM_PEOPLE))
+    save(pool_rev_exam=ex['id'])
+    post_tasks([golden_task(ex['id'], it, overlap=REV_EXAM_PEOPLE) for it in exam])
+    print('training', tr['id'], 'exam', ex['id'], '— откройте: python api.py open-training', tr['id'], '&& python api.py open', ex['id'])
+
+
+# ================= основные пулы =================
+def cmd_rev_pool():
+    qc = {'configs': [
+        {'collector_config': {'type': 'GOLDEN_SET', 'parameters': {'history_size': 10}},
+         'rules': [{'conditions': [{'key': 'golden_set_answers_count', 'operator': 'GTE', 'value': 3},
+                                   {'key': 'golden_set_correct_answers_rate', 'operator': 'LT', 'value': 70}],
+                    'action': ban(30, 'review honeypots < 70%')}]},
+        fast_rule(5, 15, 3, 2),                     # 10 проверок быстрее 15 с — не смотрел
+    ]}
+    flt = [lang_ru, skill_gte(need('rev_exam'), REV_PASS), no_skill(need('bbox_exam'))]
+    p = call('POST', '/pools', pool_body(need('project_review'), 'review main', REV_PRICE, REV_REAL, REV_GOLD, flt, qc,
+                                         overlap=REV_OVERLAP, max_sec=1200))
+    save(pool_review=p['id'])
+    post_tasks([golden_task(p['id'], it) for it in load('rev_honey')])
+    print('review pool', p['id'], '(задания на проверку добавит cycle)')
+
+
+def cmd_bbox_pool(batch):
+    qc = {'configs': [
+        fast_rule(10, 4, 5, 3),                     # фото быстрее 4 с — даже не посмотрел
+        {'collector_config': {'type': 'ACCEPTANCE_RATE', 'parameters': {}},     # «результаты отложенной приёмки»
+         'rules': [{'conditions': [{'key': 'total_assignments_count', 'operator': 'GTE', 'value': 5},
+                                   {'key': 'rejected_assignments_rate', 'operator': 'GT', 'value': 35}],
+                    'action': ban(30, 'review rejected > 35%')}]},
+    ]}
+    flt = [lang_ru, skill_gte(need('bbox_exam'), BBOX_PASS), no_skill(need('rev_exam'))]
+    p = call('POST', '/pools', pool_body(need('project_bbox'), f'bbox {batch}', BBOX_PRICE, 1, 0, flt, qc,
+                                         overlap=1, auto_accept=False, max_sec=600))
+    pools = state().get('pools_bbox', [])
+    save(pools_bbox=pools + [p['id']])
+    photos = [ph for ph in load('photos') if ph['batch'] == batch]
+    post_tasks([{'pool_id': p['id'], 'input_values': {'photo_id': ph['photo_id'], 'image': ph['image']}, 'overlap': 1} for ph in photos])
+    led = ledger()
+    for ph in photos:
+        led['photos'].setdefault(ph['photo_id'], {'attempts': 0, 'tasks': 1, 'pool': p['id'], 'image': ph['image']})
+    save_ledger(led)
+    print(f'bbox pool {p["id"]}: {len(photos)} фото ({batch}) — откройте: python api.py open {p["id"]}')
+
+
+# ================= конвейер: bbox → review → решение =================
+def ledger():
+    return json.load(open(LEDGER)) if os.path.exists(LEDGER) else {'ann': {}, 'photos': {}, 'log': []}
+
+
+def save_ledger(led):
+    if DRY:
+        return
+    json.dump(led, open(LEDGER, 'w'), ensure_ascii=False, indent=1)
+
+
+def url_ok(url):
+    try:
+        req = urllib.request.Request(url, method='HEAD', headers={'User-Agent': 'ysda-course'})
+        return urllib.request.urlopen(req, timeout=30).status == 200
+    except Exception:
+        return False
+
+
+def judge(aid, accept, comment=''):
+    body = {'status': 'ACCEPTED' if accept else 'REJECTED', 'public_comment': comment or ('Спасибо!' if accept else 'Ошибка в разметке')}
+    call('PATCH', f'/assignments/{aid}', body)
+
+
+def reissue(led, pid, why):
+    # новое задание на то же фото в тот же пул bbox (переразметка другим человеком — см. проверку в decide)
+    ph = led['photos'][pid]
+    post_tasks([{'pool_id': ph['pool'], 'input_values': {'photo_id': pid, 'image': ph['image']}, 'overlap': 1}])
+    ph['tasks'] += 1
+    ensure_open(ph['pool'])
+    led['log'].append([now(), pid, 'reissue', why])
+
+
+def now():
+    return datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
+
+
+def sync(led):
+    # новые ответы bbox (ждут приёмки) → задания ревью с перекрытием 3
+    rev_pool, new = need('pool_review'), []
+    for pool in state().get('pools_bbox', []):
+        for r in answers(pool, statuses=('SUBMITTED',)):
+            aid = r['assignment_id']
+            if aid in led['ann']:
+                continue
+            a = bbox_answer(r)
+            ph = led['photos'][a['photo_id']]
+            ph['attempts'] += 1
+            a.update(round=ph['attempts'], pool=pool, reviews=[], decision=None)
+            led['ann'][aid] = a
+            if a['status'] == 'load_error':
+                if url_ok(ph['image']):       # картинка открывается → ответ неверный, переразметка без штрафа к попыткам
+                    a['decision'] = 'reject_load'
+                    judge(aid, False, 'Картинка открывается. Если не видно фото — обновите страницу, не выбирайте этот ответ.')
+                    ph['attempts'] -= 1
+                    reissue(led, a['photo_id'], 'false load_error')
+                else:
+                    a['decision'] = 'accept_broken'; judge(aid, True)
+                    ph['final'] = 'manual'; led['log'].append([now(), a['photo_id'], 'manual', 'broken image'])
+                continue
+            new.append({'pool_id': rev_pool, 'overlap': REV_OVERLAP, 'input_values': {
+                'photo_id': a['photo_id'], 'image': ph['image'], 'status': a['status'], 'assignment_id': aid,
+                'boxes': [{'shape': 'rectangle', **b} for b in a['boxes']]}})
+    if new:
+        post_tasks(new)
+        ensure_open(rev_pool)
+    return len(new)
+
+
+def verdict_errors(o):
+    e = o.get('errors') or {}
+    return sorted(k for k, v in e.items() if v) if isinstance(e, dict) else sorted(e)
+
+
+def decide(led):
+    # ≥2 из 3 «OK» → принять; иначе отклонить и переразметить (до MAX_ATTEMPTS), потом — ручной разбор
+    for r in answers(need('pool_review')):
+        aid = r['input'].get('assignment_id')
+        if aid == 'gold' or aid not in led['ann']:
+            continue
+        a = led['ann'][aid]
+        if any(x['review_assignment'] == r['assignment_id'] for x in a['reviews']):
+            continue
+        a['reviews'].append({'worker': r['worker'], 'verdict': r['output'].get('verdict'), 'errors': verdict_errors(r['output']),
+                             'review_assignment': r['assignment_id'], 'self': r['worker'] == a['worker']})
+    done = collections.Counter()
+    for aid, a in led['ann'].items():
+        if a['decision']:
+            continue
+        valid = [x for x in a['reviews'] if not x['self']]      # автор не проверяет сам себя
+        if len(valid) < REV_OVERLAP:
+            continue
+        ok = sum(x['verdict'] == 'OK' for x in valid[:REV_OVERLAP])
+        ph = led['photos'][a['photo_id']]
+        if ok * 2 > REV_OVERLAP:
+            a['decision'] = 'accept' if ok == REV_OVERLAP else 'accept_majority'
+            judge(aid, True)
+            ph['final'] = 'manual' if a['doubt'] else aid              # «не уверен» → команда смотрит отдельно
+            if a['doubt']:
+                ph['accepted'] = aid
+                led['log'].append([now(), a['photo_id'], 'manual', 'annotator doubt'])
+        else:
+            errs = collections.Counter(e for x in valid for e in x['errors'])
+            why = {'missed': 'пропущена бабочка', 'extra': 'лишняя рамка', 'loose': 'неточная рамка'}
+            comment = 'Ревьюеры нашли ошибку: ' + ', '.join(why[e] for e, _ in errs.most_common() if e in why) if errs else 'Ошибка в разметке'
+            a['decision'] = 'reject'
+            judge(aid, False, comment)
+            if ph['attempts'] < MAX_ATTEMPTS:
+                reissue(led, a['photo_id'], f'rejected {ok}/{REV_OVERLAP} OK')
+            else:
+                ph['final'] = 'manual'
+                led['log'].append([now(), a['photo_id'], 'manual', f'{ph["attempts"]} attempts rejected'])
+        done[a['decision']] += 1
+    return done
+
+
+def cmd_cycle(*args):
+    while True:
+        led = ledger()
+        n = sync(led); save_ledger(led)
+        d = decide(led); save_ledger(led)
+        ph = led['photos'].values()
+        fin = collections.Counter('manual' if p.get('final') == 'manual' else 'accepted' if p.get('final') else 'in work' for p in ph)
+        print(f'{time.strftime("%H:%M")} в ревью +{n}; решения {dict(d)}; фото: {dict(fin)} из {len(led["photos"])}')
+        if '--loop' not in args or all(p.get('final') for p in ph):
+            return
+        time.sleep(60 * int(args[args.index('--loop') + 1]))
+
+
+# ================= служебное =================
+def cmd_open(pool_id):
+    print(call('POST', f'/pools/{pool_id}/open'))
+
+
+def cmd_close(pool_id):
+    print(call('POST', f'/pools/{pool_id}/close'))
+
+
+def cmd_open_training(tid):
+    print(call('POST', f'/trainings/{tid}/open'))
+
+
+def cmd_status(pool_id):
+    p = call('GET', f'/pools/{pool_id}')
+    print({k: p.get(k) for k in ['id', 'private_name', 'status', 'last_close_reason']})
+
+
+def cmd_cost():
+    # фактические расходы: принятые задания × цена × (1 + комиссия); отклонённые не оплачиваются, обучение бесплатно
+    s, total, rows = state(), 0.0, []
+    named = [('экзамен bbox', s.get('pool_bbox_exam')), ('экзамен ревью', s.get('pool_rev_exam')), ('ревью', s.get('pool_review'))]
+    named += [(f'разметка bbox {i + 1}', p) for i, p in enumerate(s.get('pools_bbox', []))]
+    for name, pid in named:
+        if not pid:
+            continue
+        acc = [a for a in paged('/assignments', pool_id=pid) if a['status'] == 'ACCEPTED']
+        pend = [a for a in paged('/assignments', pool_id=pid) if a['status'] == 'SUBMITTED']
+        money = sum(float(a.get('reward', 0)) for a in acc) * (1 + FEE)
+        total += money
+        rows.append(f'{name:18} {pid}: принято {len(acc):4}, ждут решения {len(pend):3}, {money:7.1f} ₽')
+    print('\n'.join(rows)); print(f'итого {total:.1f} ₽ из 850')
+    json.dump({'rows': rows, 'total': total, 'at': now()}, open('work/cost.json', 'w'), ensure_ascii=False, indent=1)
+
+
+if __name__ == '__main__':
+    if DRY:
+        print('YT_TOKEN не задан → dry-run')
+    cmd, *args = sys.argv[1:] or ['help']
+    fn = globals().get('cmd_' + cmd.replace('-', '_'))
+    if not fn:
+        sys.exit(open(__file__).read().split('import json')[0])
+    fn(*args)
