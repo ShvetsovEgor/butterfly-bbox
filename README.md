@@ -4,6 +4,8 @@
 
 **Эталонная разметка рамок (нужна до запуска Яндекс Заданий):** инструкция — [`labeling/GOLD_README.md`](labeling/GOLD_README.md), инструмент — [`labeling/gold_tool.html`](labeling/gold_tool.html).
 
+**Статус разметки и что делать дальше (для того, кто собирает golden set):** [`labeling/HANDOFF.md`](labeling/HANDOFF.md). Код конвейера — ветка `labeling-pipeline`.
+
 **Ручной разбор и выборочная проверка (нужны для golden set на 400 фото):** инструкция — [`labeling/FIX_README.md`](labeling/FIX_README.md), инструмент — [`labeling/fix_tool.html`](labeling/fix_tool.html).
 
 ## О задании
