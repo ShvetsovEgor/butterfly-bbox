@@ -2855,5 +2855,2941 @@
    }
   ],
   "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e7d8ce65631396ae8f2",
+  "worker": "12265cc48f472edeeaaaa651e5265d29",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.40594,
+    "top": 0.38,
+    "width": 0.1875,
+    "height": 0.1975
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e7d8ce65631396ae8f2",
+  "worker": "12265cc48f472edeeaaaa651e5265d29",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.22367,
+    "top": 0.135,
+    "width": 0.61388,
+    "height": 0.4875
+   },
+   {
+    "left": 0.4751,
+    "top": 0.61,
+    "width": 0.30367,
+    "height": 0.205
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e7d8ce65631396ae8f2",
+  "worker": "12265cc48f472edeeaaaa651e5265d29",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.17518,
+    "top": 0.2275,
+    "width": 0.58102,
+    "height": 0.5825
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e7d8ce65631396ae8f2",
+  "worker": "12265cc48f472edeeaaaa651e5265d29",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.32285,
+    "top": 0.46831,
+    "width": 0.27578,
+    "height": 0.20276
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e7d8ce65631396ae8f2",
+  "worker": "12265cc48f472edeeaaaa651e5265d29",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.28594,
+    "top": 0.185,
+    "width": 0.43312,
+    "height": 0.5825
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e7d8ce65631396ae8f2",
+  "worker": "12265cc48f472edeeaaaa651e5265d29",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.31836,
+    "top": 0.2155,
+    "width": 0.39078,
+    "height": 0.49343
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e7d8ce65631396ae8f2",
+  "worker": "12265cc48f472edeeaaaa651e5265d29",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.35139,
+    "top": 0.23721,
+    "width": 0.42813,
+    "height": 0.37559
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e7d8ce65631396ae8f2",
+  "worker": "12265cc48f472edeeaaaa651e5265d29",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.39817,
+    "top": 0.25601,
+    "width": 0.27693,
+    "height": 0.23788
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e7d8ce65631396ae8f2",
+  "worker": "12265cc48f472edeeaaaa651e5265d29",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.31211,
+    "top": 0.32067,
+    "width": 0.54388,
+    "height": 0.23848
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e7d8ce65631396ae8f2",
+  "worker": "12265cc48f472edeeaaaa651e5265d29",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e7eb6faf62508cadd6f",
+  "worker": "34e78e135d10ff3965cac284f870c671",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.32231,
+    "top": 0.225,
+    "width": 0.46923,
+    "height": 0.5375
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e7eb6faf62508cadd6f",
+  "worker": "34e78e135d10ff3965cac284f870c671",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e7eb6faf62508cadd6f",
+  "worker": "34e78e135d10ff3965cac284f870c671",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.39181,
+    "top": 0.24562,
+    "width": 0.32523,
+    "height": 0.29156
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e7eb6faf62508cadd6f",
+  "worker": "34e78e135d10ff3965cac284f870c671",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.08813,
+    "top": 0.045,
+    "width": 0.69636,
+    "height": 0.7575
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e7eb6faf62508cadd6f",
+  "worker": "34e78e135d10ff3965cac284f870c671",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.29344,
+    "top": 0.24408,
+    "width": 0.57045,
+    "height": 0.3485
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e7eb6faf62508cadd6f",
+  "worker": "34e78e135d10ff3965cac284f870c671",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.39844,
+    "top": 0.315,
+    "width": 0.18562,
+    "height": 0.2675
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e7eb6faf62508cadd6f",
+  "worker": "34e78e135d10ff3965cac284f870c671",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.30167,
+    "top": 0.4575,
+    "width": 0.33333,
+    "height": 0.15
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e7eb6faf62508cadd6f",
+  "worker": "34e78e135d10ff3965cac284f870c671",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.29531,
+    "top": 0.2025,
+    "width": 0.42562,
+    "height": 0.52
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e7eb6faf62508cadd6f",
+  "worker": "34e78e135d10ff3965cac284f870c671",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.20408,
+    "top": 0.115,
+    "width": 0.64,
+    "height": 0.5375
+   },
+   {
+    "left": 0.45551,
+    "top": 0.59,
+    "width": 0.35265,
+    "height": 0.2375
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e7eb6faf62508cadd6f",
+  "worker": "34e78e135d10ff3965cac284f870c671",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.28219,
+    "top": 0.28,
+    "width": 0.45187,
+    "height": 0.525
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e80b6faf62508cade0a",
+  "worker": "5ce4b6e2c13128e96eebca0ef7f46bb1",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.39565,
+    "top": 0.32996,
+    "width": 0.17841,
+    "height": 0.25736
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e80b6faf62508cade0a",
+  "worker": "5ce4b6e2c13128e96eebca0ef7f46bb1",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.16838,
+    "top": 0.11408,
+    "width": 0.65715,
+    "height": 0.75796
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e80b6faf62508cade0a",
+  "worker": "5ce4b6e2c13128e96eebca0ef7f46bb1",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e80b6faf62508cade0a",
+  "worker": "5ce4b6e2c13128e96eebca0ef7f46bb1",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.33484,
+    "top": 0.245,
+    "width": 0.46012,
+    "height": 0.395
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e80b6faf62508cade0a",
+  "worker": "5ce4b6e2c13128e96eebca0ef7f46bb1",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.1915,
+    "top": 0.215,
+    "width": 0.58973,
+    "height": 0.5975
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e80b6faf62508cade0a",
+  "worker": "5ce4b6e2c13128e96eebca0ef7f46bb1",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.44793,
+    "top": 0.245,
+    "width": 0.23138,
+    "height": 0.235
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e80b6faf62508cade0a",
+  "worker": "5ce4b6e2c13128e96eebca0ef7f46bb1",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e80b6faf62508cade0a",
+  "worker": "5ce4b6e2c13128e96eebca0ef7f46bb1",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.31543,
+    "top": 0.3175,
+    "width": 0.56446,
+    "height": 0.265
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e80b6faf62508cade0a",
+  "worker": "5ce4b6e2c13128e96eebca0ef7f46bb1",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.3,
+    "top": 0.465,
+    "width": 0.32,
+    "height": 0.1625
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e80b6faf62508cade0a",
+  "worker": "5ce4b6e2c13128e96eebca0ef7f46bb1",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.32625,
+    "top": 0.245,
+    "width": 0.40125,
+    "height": 0.5
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e811a22e9617c2e2153",
+  "worker": "9ebbb241f2e6b64463ae2056a5136c0f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.237,
+    "top": 0.174,
+    "width": 0.52875,
+    "height": 0.6175
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e811a22e9617c2e2153",
+  "worker": "9ebbb241f2e6b64463ae2056a5136c0f",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e811a22e9617c2e2153",
+  "worker": "9ebbb241f2e6b64463ae2056a5136c0f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.31467,
+    "top": 0.443,
+    "width": 0.32333,
+    "height": 0.18
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e811a22e9617c2e2153",
+  "worker": "9ebbb241f2e6b64463ae2056a5136c0f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.27692,
+    "top": 0.254,
+    "width": 0.63419,
+    "height": 0.33
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e811a22e9617c2e2153",
+  "worker": "9ebbb241f2e6b64463ae2056a5136c0f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.14449,
+    "top": 0.0795,
+    "width": 0.64413,
+    "height": 0.6975
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e811a22e9617c2e2153",
+  "worker": "9ebbb241f2e6b64463ae2056a5136c0f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.44911,
+    "top": 0.2445,
+    "width": 0.26698,
+    "height": 0.2675
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e811a22e9617c2e2153",
+  "worker": "9ebbb241f2e6b64463ae2056a5136c0f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.32436,
+    "top": 0.213,
+    "width": 0.45557,
+    "height": 0.5075
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e811a22e9617c2e2153",
+  "worker": "9ebbb241f2e6b64463ae2056a5136c0f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.31012,
+    "top": 0.203,
+    "width": 0.41625,
+    "height": 0.5025
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e811a22e9617c2e2153",
+  "worker": "9ebbb241f2e6b64463ae2056a5136c0f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.39637,
+    "top": 0.304,
+    "width": 0.20437,
+    "height": 0.2925
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e811a22e9617c2e2153",
+  "worker": "9ebbb241f2e6b64463ae2056a5136c0f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.22047,
+    "top": 0.10925,
+    "width": 0.63448,
+    "height": 0.5121
+   },
+   {
+    "left": 0.47989,
+    "top": 0.61418,
+    "width": 0.33131,
+    "height": 0.21298
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e81cb69824dbc879a6d",
+  "worker": "59139af094d0b8882103e2ad24382bca",
+  "status": "load_error",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e81cb69824dbc879a6d",
+  "worker": "59139af094d0b8882103e2ad24382bca",
+  "status": "load_error",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e81cb69824dbc879a6d",
+  "worker": "59139af094d0b8882103e2ad24382bca",
+  "status": "load_error",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e81cb69824dbc879a6d",
+  "worker": "59139af094d0b8882103e2ad24382bca",
+  "status": "load_error",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e81cb69824dbc879a6d",
+  "worker": "59139af094d0b8882103e2ad24382bca",
+  "status": "load_error",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e81cb69824dbc879a6d",
+  "worker": "59139af094d0b8882103e2ad24382bca",
+  "status": "load_error",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e81cb69824dbc879a6d",
+  "worker": "59139af094d0b8882103e2ad24382bca",
+  "status": "load_error",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e81cb69824dbc879a6d",
+  "worker": "59139af094d0b8882103e2ad24382bca",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e81cb69824dbc879a6d",
+  "worker": "59139af094d0b8882103e2ad24382bca",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e81cb69824dbc879a6d",
+  "worker": "59139af094d0b8882103e2ad24382bca",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e83d03b9f41d44fa7a3",
+  "worker": "8ece26d510e315c632caee7142ef7651",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.28941,
+    "top": 0.26992,
+    "width": 0.56655,
+    "height": 0.31163
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e83d03b9f41d44fa7a3",
+  "worker": "8ece26d510e315c632caee7142ef7651",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.17746,
+    "top": 0.12742,
+    "width": 0.55637,
+    "height": 0.59241
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e83d03b9f41d44fa7a3",
+  "worker": "8ece26d510e315c632caee7142ef7651",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.41154,
+    "top": 0.33586,
+    "width": 0.13909,
+    "height": 0.23522
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e83d03b9f41d44fa7a3",
+  "worker": "8ece26d510e315c632caee7142ef7651",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.25888,
+    "top": 0.31437,
+    "width": 0.50209,
+    "height": 0.45234
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e83d03b9f41d44fa7a3",
+  "worker": "8ece26d510e315c632caee7142ef7651",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.30637,
+    "top": 0.19651,
+    "width": 0.41728,
+    "height": 0.484
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e83d03b9f41d44fa7a3",
+  "worker": "8ece26d510e315c632caee7142ef7651",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.18085,
+    "top": 0.1007,
+    "width": 0.50549,
+    "height": 0.5013
+   },
+   {
+    "left": 0.44886,
+    "top": 0.62278,
+    "width": 0.34604,
+    "height": 0.21299
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e83d03b9f41d44fa7a3",
+  "worker": "8ece26d510e315c632caee7142ef7651",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e83d03b9f41d44fa7a3",
+  "worker": "8ece26d510e315c632caee7142ef7651",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.29959,
+    "top": 0.17343,
+    "width": 0.43424,
+    "height": 0.44309
+   },
+   {
+    "left": 0.53706,
+    "top": 0.36017,
+    "width": 0.12213,
+    "height": 0.15638
+   },
+   {
+    "left": 0.49635,
+    "top": 0.42347,
+    "width": 0.16284,
+    "height": 0.57653
+   },
+   {
+    "left": 0.73722,
+    "top": 0.75857,
+    "width": 0.01696,
+    "height": 0.0633
+   },
+   {
+    "left": 0.41493,
+    "top": 0.36933,
+    "width": 0.41728,
+    "height": 0.09137
+   },
+   {
+    "left": 0.29959,
+    "top": 0.1571,
+    "width": 0.20355,
+    "height": 0.07447
+   },
+   {
+    "left": 0.59813,
+    "top": 0.22412,
+    "width": 0.14588,
+    "height": 0.47287
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e83d03b9f41d44fa7a3",
+  "worker": "8ece26d510e315c632caee7142ef7651",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.31316,
+    "top": 0.46851,
+    "width": 0.29176,
+    "height": 0.13485
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e83d03b9f41d44fa7a3",
+  "worker": "8ece26d510e315c632caee7142ef7651",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.43529,
+    "top": 0.24962,
+    "width": 0.24765,
+    "height": 0.27734
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e858ce65631396aea63",
+  "worker": "b214a0eb329c26b8b48ba7094294cc47",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.41075,
+    "top": 0.37566,
+    "width": 0.15169,
+    "height": 0.19497
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e858ce65631396aea63",
+  "worker": "b214a0eb329c26b8b48ba7094294cc47",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e858ce65631396aea63",
+  "worker": "b214a0eb329c26b8b48ba7094294cc47",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.48494,
+    "top": 0.2555,
+    "width": 0.19733,
+    "height": 0.23862
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e858ce65631396aea63",
+  "worker": "b214a0eb329c26b8b48ba7094294cc47",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.35109,
+    "top": 0.23287,
+    "width": 0.42595,
+    "height": 0.3675
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e858ce65631396aea63",
+  "worker": "b214a0eb329c26b8b48ba7094294cc47",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.23307,
+    "top": 0.12446,
+    "width": 0.43593,
+    "height": 0.45068
+   },
+   {
+    "left": 0.47566,
+    "top": 0.6049,
+    "width": 0.31733,
+    "height": 0.20933
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e858ce65631396aea63",
+  "worker": "b214a0eb329c26b8b48ba7094294cc47",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e858ce65631396aea63",
+  "worker": "b214a0eb329c26b8b48ba7094294cc47",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.18744,
+    "top": 0.20062,
+    "width": 0.58755,
+    "height": 0.57
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e858ce65631396aea63",
+  "worker": "b214a0eb329c26b8b48ba7094294cc47",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e858ce65631396aea63",
+  "worker": "b214a0eb329c26b8b48ba7094294cc47",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.29596,
+    "top": 0.33263,
+    "width": 0.5877,
+    "height": 0.23
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e858ce65631396aea63",
+  "worker": "b214a0eb329c26b8b48ba7094294cc47",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.32163,
+    "top": 0.46231,
+    "width": 0.2789,
+    "height": 0.11879
+   },
+   {
+    "left": 0.31646,
+    "top": 0.53978,
+    "width": 0.16183,
+    "height": 0.13687
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e87b6faf62508cade87",
+  "worker": "cb1a350fdcc3b12dda598109f67dbd06",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.26833,
+    "top": 0.43,
+    "width": 0.35333,
+    "height": 0.2375
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e87b6faf62508cade87",
+  "worker": "cb1a350fdcc3b12dda598109f67dbd06",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.29385,
+    "top": 0.275,
+    "width": 0.57442,
+    "height": 0.325
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e87b6faf62508cade87",
+  "worker": "cb1a350fdcc3b12dda598109f67dbd06",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.14471,
+    "top": 0.1925,
+    "width": 0.63978,
+    "height": 0.585
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e87b6faf62508cade87",
+  "worker": "cb1a350fdcc3b12dda598109f67dbd06",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.28594,
+    "top": 0.3175,
+    "width": 0.44063,
+    "height": 0.505
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e87b6faf62508cade87",
+  "worker": "cb1a350fdcc3b12dda598109f67dbd06",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.37822,
+    "top": 0.25,
+    "width": 0.3619,
+    "height": 0.2525
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e87b6faf62508cade87",
+  "worker": "cb1a350fdcc3b12dda598109f67dbd06",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.38719,
+    "top": 0.3025,
+    "width": 0.19687,
+    "height": 0.305
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e87b6faf62508cade87",
+  "worker": "cb1a350fdcc3b12dda598109f67dbd06",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.2302,
+    "top": 0.125,
+    "width": 0.47673,
+    "height": 0.495
+   },
+   {
+    "left": 0.44245,
+    "top": 0.6375,
+    "width": 0.37551,
+    "height": 0.2075
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e87b6faf62508cade87",
+  "worker": "cb1a350fdcc3b12dda598109f67dbd06",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e87b6faf62508cade87",
+  "worker": "cb1a350fdcc3b12dda598109f67dbd06",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.2927,
+    "top": 0.21,
+    "width": 0.5239,
+    "height": 0.4275
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e87b6faf62508cade87",
+  "worker": "cb1a350fdcc3b12dda598109f67dbd06",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.30281,
+    "top": 0.23,
+    "width": 0.45375,
+    "height": 0.5125
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e888ce65631396aec83",
+  "worker": "6bf0608aa103e64d0f3b0454d35d4e5a",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.43414,
+    "top": 0.45374,
+    "width": 0.17661,
+    "height": 0.11528
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e888ce65631396aec83",
+  "worker": "6bf0608aa103e64d0f3b0454d35d4e5a",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.3775,
+    "top": 0.285,
+    "width": 0.33563,
+    "height": 0.43
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e888ce65631396aec83",
+  "worker": "6bf0608aa103e64d0f3b0454d35d4e5a",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.38662,
+    "top": 0.25167,
+    "width": 0.29961,
+    "height": 0.2475
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e888ce65631396aec83",
+  "worker": "6bf0608aa103e64d0f3b0454d35d4e5a",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e888ce65631396aec83",
+  "worker": "6bf0608aa103e64d0f3b0454d35d4e5a",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.22966,
+    "top": 0.12,
+    "width": 0.60408,
+    "height": 0.48
+   },
+   {
+    "left": 0.43864,
+    "top": 0.61,
+    "width": 0.36245,
+    "height": 0.2075
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e888ce65631396aec83",
+  "worker": "6bf0608aa103e64d0f3b0454d35d4e5a",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.288,
+    "top": 0.2573,
+    "width": 0.60594,
+    "height": 0.32378
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e888ce65631396aec83",
+  "worker": "6bf0608aa103e64d0f3b0454d35d4e5a",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.41125,
+    "top": 0.31833,
+    "width": 0.18375,
+    "height": 0.2575
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e888ce65631396aec83",
+  "worker": "6bf0608aa103e64d0f3b0454d35d4e5a",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.28937,
+    "top": 0.305,
+    "width": 0.435,
+    "height": 0.485
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e888ce65631396aec83",
+  "worker": "6bf0608aa103e64d0f3b0454d35d4e5a",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.34471,
+    "top": 0.23667,
+    "width": 0.4419,
+    "height": 0.4625
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e888ce65631396aec83",
+  "worker": "6bf0608aa103e64d0f3b0454d35d4e5a",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.18569,
+    "top": 0.14833,
+    "width": 0.59408,
+    "height": 0.57
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e91d03b9f41d44fa975",
+  "worker": "48b10260a1ce502bad2c70805a1d7441",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e91d03b9f41d44fa975",
+  "worker": "48b10260a1ce502bad2c70805a1d7441",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.13592,
+    "top": 0.12269,
+    "width": 0.65372,
+    "height": 0.63948
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e91d03b9f41d44fa975",
+  "worker": "48b10260a1ce502bad2c70805a1d7441",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.16653,
+    "top": 0.11,
+    "width": 0.54857,
+    "height": 0.4425
+   },
+   {
+    "left": 0.45714,
+    "top": 0.6125,
+    "width": 0.33633,
+    "height": 0.19
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e91d03b9f41d44fa975",
+  "worker": "48b10260a1ce502bad2c70805a1d7441",
+  "status": "none",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e91d03b9f41d44fa975",
+  "worker": "48b10260a1ce502bad2c70805a1d7441",
+  "status": "none",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e91d03b9f41d44fa975",
+  "worker": "48b10260a1ce502bad2c70805a1d7441",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.38,
+    "top": 0.4575,
+    "width": 0.19,
+    "height": 0.145
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e91d03b9f41d44fa975",
+  "worker": "48b10260a1ce502bad2c70805a1d7441",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.45631,
+    "top": 0.25638,
+    "width": 0.22977,
+    "height": 0.24547
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e91d03b9f41d44fa975",
+  "worker": "48b10260a1ce502bad2c70805a1d7441",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.39482,
+    "top": 0.30636,
+    "width": 0.20388,
+    "height": 0.31499
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e91d03b9f41d44fa975",
+  "worker": "48b10260a1ce502bad2c70805a1d7441",
+  "status": "none",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e91d03b9f41d44fa975",
+  "worker": "48b10260a1ce502bad2c70805a1d7441",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.33333,
+    "top": 0.1847,
+    "width": 0.40129,
+    "height": 0.49726
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61e9ead349930113402d5",
+  "worker": "4568c6369fb2d7ad46c6140667643147",
+  "status": "none",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61e9ead349930113402d5",
+  "worker": "4568c6369fb2d7ad46c6140667643147",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.40781,
+    "top": 0.32,
+    "width": 0.17437,
+    "height": 0.25
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61e9ead349930113402d5",
+  "worker": "4568c6369fb2d7ad46c6140667643147",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.34965,
+    "top": 0.2325,
+    "width": 0.43507,
+    "height": 0.39
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61e9ead349930113402d5",
+  "worker": "4568c6369fb2d7ad46c6140667643147",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61e9ead349930113402d5",
+  "worker": "4568c6369fb2d7ad46c6140667643147",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.49094,
+    "top": 0.2525,
+    "width": 0.18095,
+    "height": 0.2475
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61e9ead349930113402d5",
+  "worker": "4568c6369fb2d7ad46c6140667643147",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.16865,
+    "top": 0.1275,
+    "width": 0.61149,
+    "height": 0.6475
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61e9ead349930113402d5",
+  "worker": "4568c6369fb2d7ad46c6140667643147",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61e9ead349930113402d5",
+  "worker": "4568c6369fb2d7ad46c6140667643147",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.35053,
+    "top": 0.46061,
+    "width": 0.25854,
+    "height": 0.10951
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61e9ead349930113402d5",
+  "worker": "4568c6369fb2d7ad46c6140667643147",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.30049,
+    "top": 0.28,
+    "width": 0.59102,
+    "height": 0.2875
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61e9ead349930113402d5",
+  "worker": "4568c6369fb2d7ad46c6140667643147",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.22367,
+    "top": 0.13,
+    "width": 0.61061,
+    "height": 0.495
+   },
+   {
+    "left": 0.48816,
+    "top": 0.5975,
+    "width": 0.30367,
+    "height": 0.2075
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61ea3875d8626c9f185d1",
+  "worker": "4743fa9b9eb3d239d95ce9190e97b615",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.41061,
+    "top": 0.37798,
+    "width": 0.15372,
+    "height": 0.1917
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61ea3875d8626c9f185d1",
+  "worker": "4743fa9b9eb3d239d95ce9190e97b615",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.30049,
+    "top": 0.315,
+    "width": 0.56446,
+    "height": 0.25
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61ea3875d8626c9f185d1",
+  "worker": "4743fa9b9eb3d239d95ce9190e97b615",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.39305,
+    "top": 0.25,
+    "width": 0.28774,
+    "height": 0.2525
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61ea3875d8626c9f185d1",
+  "worker": "4743fa9b9eb3d239d95ce9190e97b615",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.35648,
+    "top": 0.2325,
+    "width": 0.4214,
+    "height": 0.37
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61ea3875d8626c9f185d1",
+  "worker": "4743fa9b9eb3d239d95ce9190e97b615",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.22694,
+    "top": 0.12,
+    "width": 0.60408,
+    "height": 0.5225
+   },
+   {
+    "left": 0.45878,
+    "top": 0.6025,
+    "width": 0.33959,
+    "height": 0.2075
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61ea3875d8626c9f185d1",
+  "worker": "4743fa9b9eb3d239d95ce9190e97b615",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61ea3875d8626c9f185d1",
+  "worker": "4743fa9b9eb3d239d95ce9190e97b615",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.31031,
+    "top": 0.22,
+    "width": 0.40312,
+    "height": 0.4875
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61ea3875d8626c9f185d1",
+  "worker": "4743fa9b9eb3d239d95ce9190e97b615",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.29344,
+    "top": 0.1275,
+    "width": 0.42562,
+    "height": 0.655
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61ea3875d8626c9f185d1",
+  "worker": "4743fa9b9eb3d239d95ce9190e97b615",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.20129,
+    "top": 0.21,
+    "width": 0.56797,
+    "height": 0.555
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61ea3875d8626c9f185d1",
+  "worker": "4743fa9b9eb3d239d95ce9190e97b615",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.33833,
+    "top": 0.4575,
+    "width": 0.26667,
+    "height": 0.12
+   },
+   {
+    "left": 0.33167,
+    "top": 0.53,
+    "width": 0.15667,
+    "height": 0.1425
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61ee3ad34993011340c96",
+  "worker": "cc53816c3873c6045ffa4c04a581ac51",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.2903,
+    "top": 0.32076,
+    "width": 0.57442,
+    "height": 0.2575
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61ee3ad34993011340c96",
+  "worker": "cc53816c3873c6045ffa4c04a581ac51",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.28768,
+    "top": 0.3137,
+    "width": 0.43312,
+    "height": 0.4675
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61ee3ad34993011340c96",
+  "worker": "cc53816c3873c6045ffa4c04a581ac51",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.32861,
+    "top": 0.46663,
+    "width": 0.29618,
+    "height": 0.17216
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61ee3ad34993011340c96",
+  "worker": "cc53816c3873c6045ffa4c04a581ac51",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61ee3ad34993011340c96",
+  "worker": "cc53816c3873c6045ffa4c04a581ac51",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.37768,
+    "top": 0.28616,
+    "width": 0.33937,
+    "height": 0.42
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61ee3ad34993011340c96",
+  "worker": "cc53816c3873c6045ffa4c04a581ac51",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.22018,
+    "top": 0.13114,
+    "width": 0.62367,
+    "height": 0.45
+   },
+   {
+    "left": 0.4814,
+    "top": 0.61614,
+    "width": 0.31347,
+    "height": 0.205
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61ee3ad34993011340c96",
+  "worker": "cc53816c3873c6045ffa4c04a581ac51",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.34949,
+    "top": 0.22886,
+    "width": 0.42823,
+    "height": 0.4
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61ee3ad34993011340c96",
+  "worker": "cc53816c3873c6045ffa4c04a581ac51",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.20114,
+    "top": 0.21384,
+    "width": 0.56579,
+    "height": 0.5625
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61ee3ad34993011340c96",
+  "worker": "cc53816c3873c6045ffa4c04a581ac51",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.4848,
+    "top": 0.25383,
+    "width": 0.16315,
+    "height": 0.2375
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61ee3ad34993011340c96",
+  "worker": "cc53816c3873c6045ffa4c04a581ac51",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.40768,
+    "top": 0.36404,
+    "width": 0.165,
+    "height": 0.205
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61ee5d03b9f41d44fb4d1",
+  "worker": "466c54f65c9243cb2a049ae0729b3704",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61ee5d03b9f41d44fb4d1",
+  "worker": "466c54f65c9243cb2a049ae0729b3704",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.34133,
+    "top": 0.4485,
+    "width": 0.29667,
+    "height": 0.1625
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61ee5d03b9f41d44fb4d1",
+  "worker": "466c54f65c9243cb2a049ae0729b3704",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.18992,
+    "top": 0.18015,
+    "width": 0.59435,
+    "height": 0.66485
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61ee5d03b9f41d44fb4d1",
+  "worker": "466c54f65c9243cb2a049ae0729b3704",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61ee5d03b9f41d44fb4d1",
+  "worker": "466c54f65c9243cb2a049ae0729b3704",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.45801,
+    "top": 0.2525,
+    "width": 0.21655,
+    "height": 0.2575
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61ee5d03b9f41d44fb4d1",
+  "worker": "466c54f65c9243cb2a049ae0729b3704",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61ee5d03b9f41d44fb4d1",
+  "worker": "466c54f65c9243cb2a049ae0729b3704",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.402,
+    "top": 0.357,
+    "width": 0.18187,
+    "height": 0.2375
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61ee5d03b9f41d44fb4d1",
+  "worker": "466c54f65c9243cb2a049ae0729b3704",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.21029,
+    "top": 0.1115,
+    "width": 0.62367,
+    "height": 0.5125
+   },
+   {
+    "left": 0.48131,
+    "top": 0.6165,
+    "width": 0.32653,
+    "height": 0.2225
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61ee5d03b9f41d44fb4d1",
+  "worker": "466c54f65c9243cb2a049ae0729b3704",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.3517,
+    "top": 0.2165,
+    "width": 0.43051,
+    "height": 0.4125
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61ee5d03b9f41d44fb4d1",
+  "worker": "466c54f65c9243cb2a049ae0729b3704",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.3068,
+    "top": 0.2925,
+    "width": 0.56446,
+    "height": 0.305
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61f048ce65631396afea3",
+  "worker": "cc6e05944b265f2c3da7bff400f9518f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.28625,
+    "top": 0.22333,
+    "width": 0.02733,
+    "height": 0.005
+   },
+   {
+    "left": 0.28169,
+    "top": 0.22333,
+    "width": 0.05922,
+    "height": 0.04167
+   },
+   {
+    "left": 0.30219,
+    "top": 0.1875,
+    "width": 0.00683,
+    "height": 0.0175
+   },
+   {
+    "left": 0.31814,
+    "top": 0.25,
+    "width": 0.03645,
+    "height": 0.03
+   },
+   {
+    "left": 0.22019,
+    "top": 0.20333,
+    "width": 0.62868,
+    "height": 0.005
+   },
+   {
+    "left": 0.30903,
+    "top": 0.75333,
+    "width": 0.5444,
+    "height": 0.01
+   },
+   {
+    "left": 0.31358,
+    "top": 0.1575,
+    "width": 0.47151,
+    "height": 0.53417
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61f048ce65631396afea3",
+  "worker": "cc6e05944b265f2c3da7bff400f9518f",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61f048ce65631396afea3",
+  "worker": "cc6e05944b265f2c3da7bff400f9518f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.76138,
+    "top": 0.17167,
+    "width": 0.01483,
+    "height": 0.315
+   },
+   {
+    "left": 0.28972,
+    "top": 0.14417,
+    "width": 0.51022,
+    "height": 0.3375
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61f048ce65631396afea3",
+  "worker": "cc6e05944b265f2c3da7bff400f9518f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.21889,
+    "top": 0.38417,
+    "width": 0.47667,
+    "height": 0.0275
+   },
+   {
+    "left": 0.21556,
+    "top": 0.6775,
+    "width": 0.50667,
+    "height": 0.0125
+   },
+   {
+    "left": 0.21889,
+    "top": 0.43167,
+    "width": 0.49667,
+    "height": 0.2
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61f048ce65631396afea3",
+  "worker": "cc6e05944b265f2c3da7bff400f9518f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.23464,
+    "top": 0.26833,
+    "width": 0.61427,
+    "height": 0.03
+   },
+   {
+    "left": 0.84559,
+    "top": 0.27583,
+    "width": 0.02656,
+    "height": 0.04333
+   },
+   {
+    "left": 0.2778,
+    "top": 0.61417,
+    "width": 0.58438,
+    "height": 0.0075
+   },
+   {
+    "left": 0.27116,
+    "top": 0.29167,
+    "width": 0.61095,
+    "height": 0.31
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61f048ce65631396afea3",
+  "worker": "cc6e05944b265f2c3da7bff400f9518f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.27312,
+    "top": 0.21583,
+    "width": 0.48187,
+    "height": 0.04
+   },
+   {
+    "left": 0.26375,
+    "top": 0.21333,
+    "width": 0.48375,
+    "height": 0.05
+   },
+   {
+    "left": 0.26375,
+    "top": 0.29583,
+    "width": 0.53625,
+    "height": 0.4375
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61f048ce65631396afea3",
+  "worker": "cc6e05944b265f2c3da7bff400f9518f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.13605,
+    "top": 0.1175,
+    "width": 0.65633,
+    "height": 0.0075
+   },
+   {
+    "left": 0.12299,
+    "top": 0.105,
+    "width": 0.7902,
+    "height": 0.77
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61f048ce65631396afea3",
+  "worker": "cc6e05944b265f2c3da7bff400f9518f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.20375,
+    "top": 0.3125,
+    "width": 0.57937,
+    "height": 0.5425
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61f048ce65631396afea3",
+  "worker": "cc6e05944b265f2c3da7bff400f9518f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.305,
+    "top": 0.2875,
+    "width": 0.40875,
+    "height": 0.3825
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61f048ce65631396afea3",
+  "worker": "cc6e05944b265f2c3da7bff400f9518f",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.10155,
+    "top": 0.15417,
+    "width": 0.72465,
+    "height": 0.66
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61f411a22e9617c2e3efd",
+  "worker": "18907d90bf7bece52511c8ffeee39e85",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.37406,
+    "top": 0.28,
+    "width": 0.3525,
+    "height": 0.4875
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61f411a22e9617c2e3efd",
+  "worker": "18907d90bf7bece52511c8ffeee39e85",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.29156,
+    "top": 0.3075,
+    "width": 0.44062,
+    "height": 0.5375
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61f411a22e9617c2e3efd",
+  "worker": "18907d90bf7bece52511c8ffeee39e85",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.32167,
+    "top": 0.47,
+    "width": 0.28333,
+    "height": 0.22
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61f411a22e9617c2e3efd",
+  "worker": "18907d90bf7bece52511c8ffeee39e85",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.22367,
+    "top": 0.13,
+    "width": 0.57469,
+    "height": 0.6975
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61f411a22e9617c2e3efd",
+  "worker": "18907d90bf7bece52511c8ffeee39e85",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.23611,
+    "top": 0.255,
+    "width": 0.53532,
+    "height": 0.4125
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61f411a22e9617c2e3efd",
+  "worker": "18907d90bf7bece52511c8ffeee39e85",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.31045,
+    "top": 0.3275,
+    "width": 0.5545,
+    "height": 0.265
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61f411a22e9617c2e3efd",
+  "worker": "18907d90bf7bece52511c8ffeee39e85",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.41906,
+    "top": 0.3675,
+    "width": 0.1575,
+    "height": 0.2125
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61f411a22e9617c2e3efd",
+  "worker": "18907d90bf7bece52511c8ffeee39e85",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.35156,
+    "top": 0.3175,
+    "width": 0.28312,
+    "height": 0.35
+   }
+  ],
+  "doubt": true
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61f411a22e9617c2e3efd",
+  "worker": "18907d90bf7bece52511c8ffeee39e85",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.46127,
+    "top": 0.2575,
+    "width": 0.21951,
+    "height": 0.235
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61f411a22e9617c2e3efd",
+  "worker": "18907d90bf7bece52511c8ffeee39e85",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.34737,
+    "top": 0.2325,
+    "width": 0.43507,
+    "height": 0.3925
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af61f4e8ce65631396b08b0",
+  "worker": "368d61125c516f42327b5852124a25b3",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.34598,
+    "top": 0.21959,
+    "width": 0.43855,
+    "height": 0.38666
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af61f4e8ce65631396b08b0",
+  "worker": "368d61125c516f42327b5852124a25b3",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af61f4e8ce65631396b08b0",
+  "worker": "368d61125c516f42327b5852124a25b3",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.37842,
+    "top": 0.28472,
+    "width": 0.33767,
+    "height": 0.43516
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af61f4e8ce65631396b08b0",
+  "worker": "368d61125c516f42327b5852124a25b3",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.2304,
+    "top": 0.11963,
+    "width": 0.57795,
+    "height": 0.71124
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af61f4e8ce65631396b08b0",
+  "worker": "368d61125c516f42327b5852124a25b3",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.31446,
+    "top": 0.4606,
+    "width": 0.29885,
+    "height": 0.10814
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af61f4e8ce65631396b08b0",
+  "worker": "368d61125c516f42327b5852124a25b3",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.48536,
+    "top": 0.25413,
+    "width": 0.20346,
+    "height": 0.25778
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af61f4e8ce65631396b08b0",
+  "worker": "368d61125c516f42327b5852124a25b3",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.2949,
+    "top": 0.31568,
+    "width": 0.58227,
+    "height": 0.25811
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af61f4e8ce65631396b08b0",
+  "worker": "368d61125c516f42327b5852124a25b3",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.40869,
+    "top": 0.3067,
+    "width": 0.17047,
+    "height": 0.27472
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af61f4e8ce65631396b08b0",
+  "worker": "368d61125c516f42327b5852124a25b3",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.27656,
+    "top": 0.1196,
+    "width": 0.45052,
+    "height": 0.65383
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af61f4e8ce65631396b08b0",
+  "worker": "368d61125c516f42327b5852124a25b3",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.15559,
+    "top": 0.145,
+    "width": 0.63107,
+    "height": 0.695
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af624a04ee28f2ff965301b",
+  "worker": "3d2312dca7819a7e45cedc7792439129",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af624a04ee28f2ff965301b",
+  "worker": "3d2312dca7819a7e45cedc7792439129",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.19068,
+    "top": 0.2176,
+    "width": 0.5871,
+    "height": 0.59115
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af624a04ee28f2ff965301b",
+  "worker": "3d2312dca7819a7e45cedc7792439129",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.41102,
+    "top": 0.32468,
+    "width": 0.15259,
+    "height": 0.25201
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af624a04ee28f2ff965301b",
+  "worker": "3d2312dca7819a7e45cedc7792439129",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.34969,
+    "top": 0.2825,
+    "width": 0.36,
+    "height": 0.4325
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af624a04ee28f2ff965301b",
+  "worker": "3d2312dca7819a7e45cedc7792439129",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.22406,
+    "top": 0.12401,
+    "width": 0.60995,
+    "height": 0.55261
+   },
+   {
+    "left": 0.40061,
+    "top": 0.51793,
+    "width": 0.39803,
+    "height": 0.29597
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af624a04ee28f2ff965301b",
+  "worker": "3d2312dca7819a7e45cedc7792439129",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.28695,
+    "top": 0.12667,
+    "width": 0.43783,
+    "height": 0.65972
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af624a04ee28f2ff965301b",
+  "worker": "3d2312dca7819a7e45cedc7792439129",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.30483,
+    "top": 0.25083,
+    "width": 0.56646,
+    "height": 0.32088
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af624a04ee28f2ff965301b",
+  "worker": "3d2312dca7819a7e45cedc7792439129",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.3234,
+    "top": 0.45828,
+    "width": 0.28708,
+    "height": 0.11038
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af624a04ee28f2ff965301b",
+  "worker": "3d2312dca7819a7e45cedc7792439129",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.33598,
+    "top": 0.225,
+    "width": 0.45101,
+    "height": 0.3775
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af624a04ee28f2ff965301b",
+  "worker": "3d2312dca7819a7e45cedc7792439129",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.39548,
+    "top": 0.24957,
+    "width": 0.29148,
+    "height": 0.23661
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af62610ad3499301134c549",
+  "worker": "cdafe19891f9ee0d47d5379ccf98850d",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.44123,
+    "top": 0.46099,
+    "width": 0.15838,
+    "height": 0.09994
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af62610ad3499301134c549",
+  "worker": "cdafe19891f9ee0d47d5379ccf98850d",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.46932,
+    "top": 0.25378,
+    "width": 0.17205,
+    "height": 0.26
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af62610ad3499301134c549",
+  "worker": "cdafe19891f9ee0d47d5379ccf98850d",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.23088,
+    "top": 0.11517,
+    "width": 0.56163,
+    "height": 0.7075
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af62610ad3499301134c549",
+  "worker": "cdafe19891f9ee0d47d5379ccf98850d",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.28915,
+    "top": 0.31267,
+    "width": 0.43125,
+    "height": 0.4575
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af62610ad3499301134c549",
+  "worker": "cdafe19891f9ee0d47d5379ccf98850d",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.20609,
+    "top": 0.21905,
+    "width": 0.56579,
+    "height": 0.5675
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af62610ad3499301134c549",
+  "worker": "cdafe19891f9ee0d47d5379ccf98850d",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af62610ad3499301134c549",
+  "worker": "cdafe19891f9ee0d47d5379ccf98850d",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.30782,
+    "top": 0.30544,
+    "width": 0.5711,
+    "height": 0.2775
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af62610ad3499301134c549",
+  "worker": "cdafe19891f9ee0d47d5379ccf98850d",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.34778,
+    "top": 0.23495,
+    "width": 0.43481,
+    "height": 0.38354
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af62610ad3499301134c549",
+  "worker": "cdafe19891f9ee0d47d5379ccf98850d",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.37611,
+    "top": 0.27891,
+    "width": 0.33375,
+    "height": 0.45309
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af62610ad3499301134c549",
+  "worker": "cdafe19891f9ee0d47d5379ccf98850d",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.40727,
+    "top": 0.36495,
+    "width": 0.16125,
+    "height": 0.2175
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651136330",
+  "assignment_id": "000068b393--6af62b3c9b633d775844103d",
+  "worker": "85d5988a18b3583f897533d214327c3c",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.32204,
+    "top": 0.21198,
+    "width": 0.46468,
+    "height": 0.405
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651379097",
+  "assignment_id": "000068b393--6af62b3c9b633d775844103d",
+  "worker": "85d5988a18b3583f897533d214327c3c",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.40212,
+    "top": 0.35801,
+    "width": 0.16829,
+    "height": 0.22305
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651635399",
+  "assignment_id": "000068b393--6af62b3c9b633d775844103d",
+  "worker": "85d5988a18b3583f897533d214327c3c",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.12858,
+    "top": 0.11153,
+    "width": 0.73796,
+    "height": 0.5125
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651621725",
+  "assignment_id": "000068b393--6af62b3c9b633d775844103d",
+  "worker": "85d5988a18b3583f897533d214327c3c",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.15487,
+    "top": 0.19653,
+    "width": 0.63107,
+    "height": 0.5675
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651639012",
+  "assignment_id": "000068b393--6af62b3c9b633d775844103d",
+  "worker": "85d5988a18b3583f897533d214327c3c",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.46685,
+    "top": 0.2433,
+    "width": 0.18392,
+    "height": 0.255
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651648127",
+  "assignment_id": "000068b393--6af62b3c9b633d775844103d",
+  "worker": "85d5988a18b3583f897533d214327c3c",
+  "status": "none",
+  "boxes": [],
+  "doubt": false
+ },
+ {
+  "photo_id": "x650716643",
+  "assignment_id": "000068b393--6af62b3c9b633d775844103d",
+  "worker": "85d5988a18b3583f897533d214327c3c",
+  "status": "none",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x650740352",
+  "assignment_id": "000068b393--6af62b3c9b633d775844103d",
+  "worker": "85d5988a18b3583f897533d214327c3c",
+  "status": "none",
+  "boxes": [],
+  "doubt": true
+ },
+ {
+  "photo_id": "x651399109",
+  "assignment_id": "000068b393--6af62b3c9b633d775844103d",
+  "worker": "85d5988a18b3583f897533d214327c3c",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.30126,
+    "top": 0.43045,
+    "width": 0.32333,
+    "height": 0.1725
+   }
+  ],
+  "doubt": false
+ },
+ {
+  "photo_id": "x651412124",
+  "assignment_id": "000068b393--6af62b3c9b633d775844103d",
+  "worker": "85d5988a18b3583f897533d214327c3c",
+  "status": "butterflies",
+  "boxes": [
+   {
+    "left": 0.24626,
+    "top": 0.29295,
+    "width": 0.65411,
+    "height": 0.315
+   }
+  ],
+  "doubt": false
  }
 ]

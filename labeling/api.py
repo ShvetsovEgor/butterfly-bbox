@@ -29,16 +29,17 @@ STATE, LEDGER = 'work/state.json', 'work/ledger.json'
 FEE = 0.4                      # комиссия платформы (как в ДЗ2); проверить в интерфейсе при создании пула
 
 # --- параметры (обоснование — в README) ---
-BBOX_EXAM_PRICE, BBOX_EXAM_PEOPLE = 1.5, 20   # 10 фото ≈ 3–4 мин; волна: 20 × 1.5 × 1.4 = 42 ₽, добавить людей — exam-overlap
+# 12.11 после 1-й волны экзаменов все цены снижены вдвое по решению команды (бюджет)
+BBOX_EXAM_PRICE, BBOX_EXAM_PEOPLE = 0.75, 20   # 10 фото ≈ 3–4 мин; волна: 20 × 0.75 × 1.4 = 21 ₽ (1-я волна шла по 1.5), добавить людей — exam-overlap
 EXAM_IOU, BBOX_PASS = 0.5, 80                  # навык = 100·F1@IoU0.5 (как в Контесте) только по фото С бабочками.
 # Почему не по всем: на 1-й волне 18 из 20 обвели 3 из 4 дневных молей (по-русски это тоже «бабочки») — экзамен мерил
 # не умение рисовать рамки, а энтомологию. Молей отсекает ревью (контрольные «лишняя рамка на моли») + инструкция.
-BBOX_PRICE = 0.4                               # за фото, 1 фото на страницу: приёмка/отклонение по каждому фото отдельно
+BBOX_PRICE = 0.2                               # за фото, 1 фото на страницу: приёмка/отклонение по каждому фото отдельно
 REVIEW_PERIOD_DAYS = 7                         # отложенная приёмка: успеть проверить, иначе примется автоматически
 MAX_ATTEMPTS = 2                               # разметка + 1 переразметка; дальше — ручной разбор командой
-REV_PRICE, REV_REAL, REV_GOLD = 0.6, 9, 1      # страница ревью: 9 проверок + 1 контрольная, ~1 мин → ~36 ₽/ч
+REV_PRICE, REV_REAL, REV_GOLD = 0.3, 9, 1      # страница ревью: 9 проверок + 1 контрольная, ~1 мин → ~18 ₽/ч
 REV_OVERLAP = 3                                # 3 независимых ревьюера: решение большинством, ничьих нет
-REV_EXAM_PRICE, REV_EXAM_PEOPLE = 0.5, 20     # 16 заданий ≈ 2 мин; волна: 20 человек
+REV_EXAM_PRICE, REV_EXAM_PEOPLE = 0.25, 20     # 16 заданий ≈ 2 мин; волна: 20 человек
 REV_PASS, REV_TRAIN_PASS = 80, 70
 BUDGET_NO_REDO, BUDGET_STOP = 700, 780         # ₽ с комиссией: выше — без переразметок; ещё выше — пулы закрываются
 
@@ -381,13 +382,28 @@ def url_ok(url):
 
 
 def judge(aid, accept, comment=''):
-    body = {'status': 'ACCEPTED' if accept else 'REJECTED', 'public_comment': comment or ('Спасибо!' if accept else 'Ошибка в разметке')}
-    call('PATCH', f'/assignments/{aid}', body)
+    # возвращает фактический статус на платформе. Идемпотентно: если журнал не успел сохраниться после прошлого
+    # решения (обрыв сети), повторный PATCH даёт 409 — тогда берём статус с платформы, а не падаем
+    want = 'ACCEPTED' if accept else 'REJECTED'
+    body = {'status': want, 'public_comment': comment or ('Спасибо!' if accept else 'Ошибка в разметке')}
+    try:
+        call('PATCH', f'/assignments/{aid}', body)
+        return want
+    except SystemExit:
+        cur = call('GET', f'/assignments/{aid}')['status']
+        if cur in ('ACCEPTED', 'REJECTED'):
+            return cur
+        raise
 
 
 def reissue(led, pid, why):
     # новое задание на то же фото в тот же пул bbox (переразметка другим человеком — см. проверку в decide)
     ph = led['photos'][pid]
+    have = sum(t['input_values']['photo_id'] == pid for t in paged('/tasks', pool_id=ph['pool']))
+    if have > ph['tasks']:        # задание уже создано в прервавшемся проходе — второе не создаём
+        ph['tasks'] = have
+        led['log'].append([now(), pid, 'reissue', why + ' (already existed)'])
+        return
     post_tasks([{'pool_id': ph['pool'], 'input_values': {'photo_id': pid, 'image': ph['image']}, 'overlap': 1}])
     ph['tasks'] += 1
     ensure_open(ph['pool'])
@@ -457,7 +473,8 @@ def decide(led, allow_redo=True):
         ph = led['photos'][a['photo_id']]
         if ok * 2 > REV_OVERLAP:
             a['decision'] = 'accept' if ok == REV_OVERLAP else 'accept_majority'
-            judge(aid, True)
+            if judge(aid, True) != 'ACCEPTED':       # не должно случаться: принять можно и отклонённое
+                led['log'].append([now(), a['photo_id'], 'warning', f'{aid} not accepted on platform'])
             ph['final'] = 'manual' if a['doubt'] else aid              # «не уверен» → команда смотрит отдельно
             if a['doubt']:
                 ph['accepted'] = aid
@@ -467,13 +484,18 @@ def decide(led, allow_redo=True):
             why = {'missed': 'пропущена бабочка', 'extra': 'лишняя рамка', 'loose': 'неточная рамка'}
             comment = 'Ревьюеры нашли ошибку: ' + ', '.join(why[e] for e, _ in errs.most_common() if e in why) if errs else 'Ошибка в разметке'
             a['decision'] = 'reject'
-            judge(aid, False, comment)
-            if ph['attempts'] < MAX_ATTEMPTS and allow_redo:
+            if judge(aid, False, comment) == 'ACCEPTED':
+                # уже принято на платформе (оплачено), хотя ревью против — отдаём фото команде на проверку
+                a['decision'] = 'accepted_on_platform'
+                ph['final'] = 'manual'; ph['accepted'] = aid
+                led['log'].append([now(), a['photo_id'], 'manual', 'accepted on platform despite review'])
+            elif ph['attempts'] < MAX_ATTEMPTS and allow_redo:
                 reissue(led, a['photo_id'], f'rejected {ok}/{REV_OVERLAP} OK')
             else:
                 ph['final'] = 'manual'
                 led['log'].append([now(), a['photo_id'], 'manual', f'{ph["attempts"]} attempts rejected' if allow_redo else 'budget cap: no re-annotation'])
         done[a['decision']] += 1
+        save_ledger(led)          # после каждого решения: обрыв сети не должен терять уже сделанное
     return done
 
 
@@ -527,7 +549,9 @@ def autopilot_step():
     if not any(l[2] == 'batch added' and l[1] == 'main' for l in led['log']):
         done, ok, msg = pilot_gate(led)
         print(f'{time.strftime("%H:%M")} {msg}')
-        if done and ok:
+        if done and ok and state().get('hold_main'):
+            print(f'{time.strftime("%H:%M")} >>> пилот ок, но hold_main: основные фото НЕ добавляю — жду смены цены/настроек')
+        elif done and ok:
             n = add_photos(state()['pools_bbox'][0], 'main')
             print(f'{time.strftime("%H:%M")} >>> пилот ок, добавлено {n} основных фото в пул {state()["pools_bbox"][0]}')
         elif done:

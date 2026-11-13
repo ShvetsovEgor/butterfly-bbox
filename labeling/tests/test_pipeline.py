@@ -54,9 +54,12 @@ class Fake:
             return self.page([t for t in self.tasks.values() if t['pool_id'] == params['pool_id']], params)
         if method == 'GET' and path == '/assignments':
             return self.page([a for a in self.asg.values() if a['pool_id'] == params['pool_id']], params)
+        if method == 'GET' and parts[0] == 'assignments' and len(parts) == 2:
+            return self.asg[parts[1]]
         if method == 'PATCH' and parts[0] == 'assignments':
             a = self.asg[parts[1]]
-            assert a['status'] == 'SUBMITTED', ('решение по уже решённому заданию', a['status'])
+            if a['status'] != 'SUBMITTED':          # как платформа: 409 → api.py делает sys.exit
+                raise SystemExit(f'409 {a["status"]}')
             a['status'] = body['status']; return a
         if method == 'PUT' and path == '/user-skills':
             self.user_skills[(body['user_id'], body['skill_id'])] = body['value']; return {}
@@ -221,6 +224,10 @@ def main():
         for r, q in reviewers.items():
             for _ in range(rnd.randint(5, 40)):
                 fake.take(s['pool_review'], r, review_solver(truth, q))
+        if it == 2:                              # имитация обрыва: решения на платформе есть, журнал — старый
+            snap = open('work/ledger.json').read()
+            api.cmd_cycle()
+            open('work/ledger.json', 'w').write(snap)
         assert api.autopilot_step() or all(p.get('final') for p in api.ledger()['photos'].values())
         led = api.ledger()
         if all(p.get('final') for p in led['photos'].values()):
@@ -240,6 +247,8 @@ def main():
         if a['decision']:
             assert st_a == ('ACCEPTED' if a['decision'].startswith('accept') else 'REJECTED'), (a['decision'], st_a)
     att = collections.Counter(p['attempts'] for p in led['photos'].values())
+    per = collections.Counter(t['input_values']['photo_id'] for t in fake.tasks.values() if t['pool_id'] in s['pools_bbox'])
+    assert max(per.values()) <= api.MAX_ATTEMPTS, ('дубли заданий после обрыва', per.most_common(3))
     assert max(att) <= api.MAX_ATTEMPTS, att
 
     # --- ручной разбор: «команда» ставит истину (фикстура) ---

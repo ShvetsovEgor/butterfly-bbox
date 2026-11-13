@@ -1,0 +1,97 @@
+20:08 экзамен bbox: сдали работу 0, допущено (≥85) 0 → work/exam_scores.tsv
+20:18 экзамен bbox: сдали работу 0, допущено (≥85) 0 → work/exam_scores.tsv
+20:28 экзамен bbox: сдали работу 0, допущено (≥85) 0 → work/exam_scores.tsv
+20:34 экзамен bbox: сдали работу 0, допущено (≥85) 0 → work/exam_scores.tsv
+20:44 экзамен bbox: сдали работу 0, допущено (≥85) 0 → work/exam_scores.tsv
+Traceback (most recent call last):
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/urllib3/connection.py", line 770, in connect
+    self._tunnel()
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/http/client.py", line 969, in _tunnel
+    (version, code, message) = response._read_status()
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/urllib3/connection.py", line 770, in connect
+    self._tunnel()
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/http/client.py", line 969, in _tunnel
+    (version, code, message) = response._read_status()
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gleb/study3year/shad_data_parsing/final_project/labeling/api.py", line 634, in <module>
+    fn(*args)
+  File "/home/gleb/study3year/shad_data_parsing/final_project/labeling/api.py", line 234, in cmd_score_exam
+    for r in answers(pool):
+             ^^^^^^^^^^^^^
+  File "/home/gleb/study3year/shad_data_parsing/final_project/labeling/api.py", line 212, in answers
+    for a in paged('/assignments', pool_id=pool_id):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/study3year/shad_data_parsing/final_project/labeling/api.py", line 86, in paged
+    r = call('GET', path, params=p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/study3year/shad_data_parsing/final_project/labeling/api.py", line 68, in _http
+    r = requests.request(method, API + path, json=body, params=params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gleb/.pyenv/versions/3.12.5/lib/python3.12/site-packages/requests/adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+22:29 экзамен bbox: сдали работу 20, допущено (≥80) 13 → work/exam_scores.tsv
+22:39 экзамен bbox: сдали работу 20, допущено (≥80) 13 → work/exam_scores.tsv
+22:49 экзамен bbox: сдали работу 20, допущено (≥80) 13 → work/exam_scores.tsv
+22:59 экзамен bbox: сдали работу 20, допущено (≥80) 13 → work/exam_scores.tsv
+23:09 экзамен bbox: сдали работу 20, допущено (≥80) 13 → work/exam_scores.tsv
+23:19 экзамен bbox: сдали работу 27, допущено (≥80) 18 → work/exam_scores.tsv
+23:29 экзамен bbox: сдали работу 36, допущено (≥80) 25 → work/exam_scores.tsv
+23:40 экзамен bbox: сдали работу 37, допущено (≥80) 26 → work/exam_scores.tsv
+23:50 экзамен bbox: сдали работу 37, допущено (≥80) 26 → work/exam_scores.tsv
+00:00 экзамен bbox: сдали работу 39, допущено (≥80) 27 → work/exam_scores.tsv
+00:10 экзамен bbox: сдали работу 39, допущено (≥80) 27 → work/exam_scores.tsv
+00:20 экзамен bbox: сдали работу 40, допущено (≥80) 28 → work/exam_scores.tsv
+00:30 экзамен bbox: сдали работу 40, допущено (≥80) 28 → work/exam_scores.tsv
+10:06 экзамен bbox: сдали работу 40, допущено (≥80) 28 → work/exam_scores.tsv
