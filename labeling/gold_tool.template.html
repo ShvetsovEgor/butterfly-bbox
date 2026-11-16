@@ -42,7 +42,7 @@ label{font-size:12px}
  <div id="note" style="padding:4px 12px;color:#b45309;font-weight:600"></div>
  <div id="stage"><div id="wrap"><img id="img" draggable="false"></div></div>
  <div id="info">Тяните мышью — рамка. Край/угол рамки — тянуть (размер), выделенную — двигать за середину. Клик по рамке — выделить; у выделенной 1/2 меняют цвет, Del — удалить, Z — отменить последнюю, ←/→ — листать.
-  Зелёная — бабочка (идёт в эталон). Красная пунктирная — похожий объект: моль, другое насекомое (нужна для контрольных ревью и примеров «не размечать»).
+  Зелёная — бабочка (идёт в эталон). Красная пунктирная — похожий объект: другое насекомое, гусеница (нужна для контрольных ревью и примеров «не размечать»).
   Рамка плотно по видимым частям: крылья, тело, усики, лапки. Прячущееся за листом не достраиваем.</div>
 </div>
 <script>
@@ -56,7 +56,9 @@ $('who').value = st.__who || '';
 $('who').onchange = () => { st.__who = $('who').value; save() };
 function rec(i = cur) { const p = DATA[i], id = p.photo_id;
   // для разбора и выборочной проверки рамки краудсорсинга подставлены заранее
-  return st[id] = st[id] || {boxes: (p.pre || []).map(b => ({label: 'butterfly', ...b})), status: null, tags: [], comment: ''} }
+  // p.reset: сохранённый ответ на это фото дан по старому правилу — начинаем заново
+  if (st[id] && p.reset && st[id].rev !== p.reset) delete st[id];
+  return st[id] = st[id] || {boxes: (p.pre || []).map(b => ({label: 'butterfly', ...b})), status: null, tags: [], comment: '', rev: p.reset} }
 function save() { try { localStorage.setItem(KEY, JSON.stringify(st)) } catch (e) {} }
 function setLab(l) { lab = l; $('lb').classList.toggle('on', l == 'butterfly'); $('ld').classList.toggle('on', l != 'butterfly');
   // выделенная рамка перекрашивается: 1/2 меняют и режим, и цвет уже нарисованной рамки

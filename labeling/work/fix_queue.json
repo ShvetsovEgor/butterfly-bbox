@@ -16,74 +16,6 @@
   "queue": "manual"
  },
  {
-  "photo_id": "760884141",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884141/large.jpg",
-  "group": "moth_erebidae",
-  "pre": [
-   {
-    "left": 0.04237,
-    "top": 0.14198,
-    "width": 0.9075,
-    "height": 0.645
-   }
-  ],
-  "note": "РАЗБОР: annotator doubt | последний ответ: butterflies",
-  "queue": "manual"
- },
- {
-  "photo_id": "760884143",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884143/large.jpg",
-  "group": "moth_geometridae",
-  "pre": [],
-  "note": "РАЗБОР: 2 attempts rejected | последний ответ: none",
-  "queue": "manual"
- },
- {
-  "photo_id": "755178974",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755178974/large.jpg",
-  "group": "moth_sphingidae",
-  "pre": [
-   {
-    "left": 0.41519,
-    "top": 0.38178,
-    "width": 0.17091,
-    "height": 0.20955
-   }
-  ],
-  "note": "РАЗБОР: 2 attempts rejected | последний ответ: butterflies",
-  "queue": "manual"
- },
- {
-  "photo_id": "756264357",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756264357/large.jpg",
-  "group": "moth_sphingidae",
-  "pre": [
-   {
-    "left": 0.01833,
-    "top": 0.1275,
-    "width": 0.86333,
-    "height": 0.66
-   }
-  ],
-  "note": "РАЗБОР: 2 attempts rejected | последний ответ: butterflies",
-  "queue": "manual"
- },
- {
-  "photo_id": "759475465",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759475465/large.jpg",
-  "group": "moth_sphingidae",
-  "pre": [
-   {
-    "left": 0.35333,
-    "top": 0.4,
-    "width": 0.43556,
-    "height": 0.18
-   }
-  ],
-  "note": "РАЗБОР: 2 attempts rejected | последний ответ: butterflies",
-  "queue": "manual"
- },
- {
   "photo_id": "756244210",
   "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756244210/large.jpg",
   "group": "pupa",
@@ -144,6 +76,40 @@
   "queue": "manual"
  },
  {
+  "photo_id": "761107813",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761107813/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [
+   {
+    "left": 0.29931,
+    "top": 0.4475,
+    "width": 0.42521,
+    "height": 0.545
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883955",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883955/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "746348219",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/746348219/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
   "photo_id": "753324687",
   "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753324687/large.jpg",
   "group": "moth_sphingidae",
@@ -155,8 +121,646 @@
     "height": 0.4575
    }
   ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760495181",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760495181/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760546858",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760546858/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [
+   {
+    "left": 0.25059,
+    "top": 0.165,
+    "width": 0.52782,
+    "height": 0.7075
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760589148",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760589148/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883669",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883669/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883696",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883696/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883873",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883873/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883877",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883877/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [
+   {
+    "left": 0.11906,
+    "top": 0.0775,
+    "width": 0.76125,
+    "height": 0.81
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883917",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883917/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883985",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883985/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [
+   {
+    "left": 0.23025,
+    "top": 0.049,
+    "width": 0.69675,
+    "height": 0.78
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760884065",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884065/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760884071",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884071/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760884141",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884141/large.jpg",
+  "group": "moth_erebidae",
+  "pre": [
+   {
+    "left": 0.04237,
+    "top": 0.14198,
+    "width": 0.9075,
+    "height": 0.645
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883554",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883554/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883580",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883580/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [
+   {
+    "left": 0.04012,
+    "top": 0.189,
+    "width": 0.92625,
+    "height": 0.7075
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883667",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883667/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [
+   {
+    "left": 0.19219,
+    "top": 0.2625,
+    "width": 0.68437,
+    "height": 0.4975
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760883727",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883727/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760884082",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884082/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760884143",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884143/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [
+   {
+    "left": 0.05531,
+    "top": 0.0975,
+    "width": 0.8775,
+    "height": 0.715
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760884168",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760884168/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [
+   {
+    "left": 0.09094,
+    "top": 0.205,
+    "width": 0.81375,
+    "height": 0.5325
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "760896231",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760896231/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "761473390",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761473390/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [
+   {
+    "left": 0.16856,
+    "top": 0.1765,
+    "width": 0.65976,
+    "height": 0.66
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "761474257",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761474257/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [
+   {
+    "left": 0.12217,
+    "top": 0.1575,
+    "width": 0.7924,
+    "height": 0.6575
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "761478605",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761478605/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [
+   {
+    "left": 0.08805,
+    "top": 0.1375,
+    "width": 0.76945,
+    "height": 0.64
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "761589120",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761589120/large.jpg",
+  "group": "moth_geometridae",
+  "pre": [
+   {
+    "left": 0.07219,
+    "top": 0.33,
+    "width": 0.84187,
+    "height": 0.52
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "742183688",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/742183688/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [
+   {
+    "left": 0.0892,
+    "top": 0.1625,
+    "width": 0.77226,
+    "height": 0.825
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "743438449",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/743438449/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [
+   {
+    "left": 0.34556,
+    "top": 0.32583,
+    "width": 0.34,
+    "height": 0.465
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "743671383",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/743671383/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [
+   {
+    "left": 0.19462,
+    "top": 0.5575,
+    "width": 0.70063,
+    "height": 0.365
+   },
+   {
+    "left": 0.07186,
+    "top": 0.145,
+    "width": 0.78746,
+    "height": 0.3675
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "749069406",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/749069406/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [
+   {
+    "left": 0.28687,
+    "top": 0.3425,
+    "width": 0.4125,
+    "height": 0.405
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "749377128",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/749377128/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [
+   {
+    "left": 0.22331,
+    "top": 0.029,
+    "width": 0.55209,
+    "height": 0.8175
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "751777249",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751777249/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [
+   {
+    "left": 0.00333,
+    "top": 0.12,
+    "width": 0.99667,
+    "height": 0.5
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "753092065",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753092065/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "753317551",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753317551/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [
+   {
+    "left": 0.06212,
+    "top": 0.165,
+    "width": 0.90163,
+    "height": 0.6675
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "753324642",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753324642/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [
+   {
+    "left": 0.1325,
+    "top": 0.16333,
+    "width": 0.80437,
+    "height": 0.5325
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "755140737",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755140737/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [
+   {
+    "left": 0.17256,
+    "top": 0.10828,
+    "width": 0.73695,
+    "height": 0.8082
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "758005953",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758005953/large.jpg",
+  "group": "moth_saturniidae",
+  "pre": [
+   {
+    "left": 0.03361,
+    "top": 0.335,
+    "width": 0.91869,
+    "height": 0.26
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "753317526",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753317526/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [
+   {
+    "left": 0.19482,
+    "top": 0.275,
+    "width": 0.6927,
+    "height": 0.6225
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "754129366",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754129366/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [
+   {
+    "left": 0.33527,
+    "top": 0.36148,
+    "width": 0.39878,
+    "height": 0.24215
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "754985266",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/754985266/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "755178974",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755178974/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [
+   {
+    "left": 0.41519,
+    "top": 0.38178,
+    "width": 0.17091,
+    "height": 0.20955
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "755406952",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755406952/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамок нет — нарисуйте",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "755534516",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755534516/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [
+   {
+    "left": 0.05133,
+    "top": 0.024,
+    "width": 0.87933,
+    "height": 0.975
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "756068323",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756068323/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [
+   {
+    "left": 0.2509,
+    "top": 0.2815,
+    "width": 0.52096,
+    "height": 0.4075
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "756264357",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756264357/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [
+   {
+    "left": 0.01833,
+    "top": 0.1275,
+    "width": 0.86333,
+    "height": 0.66
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "756558367",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756558367/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [
+   {
+    "left": 0.15927,
+    "top": 0.385,
+    "width": 0.36931,
+    "height": 0.43798
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "758358635",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/758358635/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [
+   {
+    "left": 0.04043,
+    "top": 0.0425,
+    "width": 0.92587,
+    "height": 0.8675
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
+ },
+ {
+  "photo_id": "759475465",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/759475465/large.jpg",
+  "group": "moth_sphingidae",
+  "pre": [
+   {
+    "left": 0.35333,
+    "top": 0.4,
+    "width": 0.43556,
+    "height": 0.18
+   }
+  ],
+  "reset": "moth-2026-11-16",
+  "note": "МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную | рамка исполнителя подставлена",
+  "queue": "moth"
  },
  {
   "photo_id": "760580916",
@@ -200,286 +804,6 @@
   "photo_id": "761170228",
   "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761170228/large.jpg",
   "group": "larva",
-  "pre": [],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "760495181",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760495181/large.jpg",
-  "group": "moth_erebidae",
-  "pre": [],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "760546858",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760546858/large.jpg",
-  "group": "moth_erebidae",
-  "pre": [
-   {
-    "left": 0.25059,
-    "top": 0.165,
-    "width": 0.52782,
-    "height": 0.7075
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "760883669",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883669/large.jpg",
-  "group": "moth_erebidae",
-  "pre": [],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "760883696",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883696/large.jpg",
-  "group": "moth_erebidae",
-  "pre": [],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "760883877",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883877/large.jpg",
-  "group": "moth_erebidae",
-  "pre": [
-   {
-    "left": 0.11906,
-    "top": 0.0775,
-    "width": 0.76125,
-    "height": 0.81
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "760883917",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883917/large.jpg",
-  "group": "moth_erebidae",
-  "pre": [],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "760883554",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883554/large.jpg",
-  "group": "moth_geometridae",
-  "pre": [],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "760883580",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883580/large.jpg",
-  "group": "moth_geometridae",
-  "pre": [
-   {
-    "left": 0.04012,
-    "top": 0.189,
-    "width": 0.92625,
-    "height": 0.7075
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "760883667",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760883667/large.jpg",
-  "group": "moth_geometridae",
-  "pre": [
-   {
-    "left": 0.19219,
-    "top": 0.2625,
-    "width": 0.68437,
-    "height": 0.4975
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "760896231",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/760896231/large.jpg",
-  "group": "moth_geometridae",
-  "pre": [],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "761473390",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761473390/large.jpg",
-  "group": "moth_geometridae",
-  "pre": [
-   {
-    "left": 0.16856,
-    "top": 0.1765,
-    "width": 0.65976,
-    "height": 0.66
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "761478605",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761478605/large.jpg",
-  "group": "moth_geometridae",
-  "pre": [
-   {
-    "left": 0.08805,
-    "top": 0.1375,
-    "width": 0.76945,
-    "height": 0.64
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "742183688",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/742183688/large.jpg",
-  "group": "moth_saturniidae",
-  "pre": [
-   {
-    "left": 0.0892,
-    "top": 0.1625,
-    "width": 0.77226,
-    "height": 0.825
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "743671383",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/743671383/large.jpg",
-  "group": "moth_saturniidae",
-  "pre": [
-   {
-    "left": 0.19462,
-    "top": 0.5575,
-    "width": 0.70063,
-    "height": 0.365
-   },
-   {
-    "left": 0.07186,
-    "top": 0.145,
-    "width": 0.78746,
-    "height": 0.3675
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "751777249",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/751777249/large.jpg",
-  "group": "moth_saturniidae",
-  "pre": [
-   {
-    "left": 0.00333,
-    "top": 0.12,
-    "width": 0.99667,
-    "height": 0.5
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "753092065",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753092065/large.jpg",
-  "group": "moth_saturniidae",
-  "pre": [],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "753324642",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753324642/large.jpg",
-  "group": "moth_saturniidae",
-  "pre": [
-   {
-    "left": 0.1325,
-    "top": 0.16333,
-    "width": 0.80437,
-    "height": 0.5325
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "755140737",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755140737/large.jpg",
-  "group": "moth_saturniidae",
-  "pre": [
-   {
-    "left": 0.17256,
-    "top": 0.10828,
-    "width": 0.73695,
-    "height": 0.8082
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "753317526",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/753317526/large.jpg",
-  "group": "moth_sphingidae",
-  "pre": [
-   {
-    "left": 0.19482,
-    "top": 0.275,
-    "width": 0.6927,
-    "height": 0.6225
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "755534516",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/755534516/large.jpg",
-  "group": "moth_sphingidae",
-  "pre": [
-   {
-    "left": 0.05133,
-    "top": 0.024,
-    "width": 0.87933,
-    "height": 0.975
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "756068323",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756068323/large.jpg",
-  "group": "moth_sphingidae",
-  "pre": [
-   {
-    "left": 0.2509,
-    "top": 0.2815,
-    "width": 0.52096,
-    "height": 0.4075
-   }
-  ],
-  "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
-  "queue": "spot"
- },
- {
-  "photo_id": "756558367",
-  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/756558367/large.jpg",
-  "group": "moth_sphingidae",
   "pre": [],
   "note": "ВЫБОРОЧНАЯ ПРОВЕРКА: принято accept_majority",
   "queue": "spot"

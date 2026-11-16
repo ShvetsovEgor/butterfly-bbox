@@ -25,9 +25,18 @@ def last_answer(led, pid, decision_prefix=None):
 def cmd_queue():
     led, rnd = ledger(), random.Random(2026)
     photos = {p['photo_id']: p for p in json.load(open('work/photos.json'))}
-    manual, accepted = [], []
+    manual, accepted, moths = [], [], []
     for pid, ph in led['photos'].items():
-        if ph.get('final') == 'manual':
+        if photos[pid]['group'].startswith('moth'):
+            # уточнение условия 16.11: ночные бабочки (моли) — тоже бабочки. Краудсорсинг размечал по старому правилу,
+            # поэтому все фото молей решает команда; подставляем принятые рамки, иначе — лучшую отклонённую разметку
+            acc = led['ann'].get(ph.get('final')) or led['ann'].get(ph.get('accepted'))
+            boxed = sorted((a for a in led['ann'].values() if a['photo_id'] == pid and a['boxes']), key=lambda a: (a['round'], len(a['boxes'])))
+            pre = acc['boxes'] if acc and acc['boxes'] else (boxed[-1]['boxes'] if boxed else [])
+            moths.append({'photo_id': pid, 'image': ph['image'], 'group': photos[pid]['group'], 'pre': pre, 'reset': 'moth-2026-11-16',
+                          'note': 'МОЛЬ — теперь размечаем: обведите КАЖДУЮ взрослую бабочку, в т.ч. ночную' +
+                                  (' | рамка исполнителя подставлена' if pre else ' | рамок нет — нарисуйте'), 'queue': 'moth'})
+        elif ph.get('final') == 'manual':
             a = last_answer(led, pid)
             why = [l[3] for l in led['log'] if l[1] == pid and l[2] == 'manual']
             manual.append({'photo_id': pid, 'image': ph['image'], 'group': photos[pid]['group'], 'pre': a['boxes'] if a else [],
@@ -41,10 +50,10 @@ def cmd_queue():
     uni = [x for x in accepted if 'majority' not in x['note']]
     rnd.shuffle(uni)
     spot = maj + uni[:max(0, SPOT_CHECK - len(maj))]
-    data = manual + spot
+    data = manual + moths + spot
     json.dump(data, open('work/fix_queue.json', 'w'), ensure_ascii=False, indent=1)
     make_tool(data, 'fix_tool.html', 'Разбор и проверка', 'fix_tool_v1', 'fix_')
-    print(f'на разбор {len(manual)}, на выборочную проверку {len(spot)} (из них 2:1 — {len(maj)}). '
+    print(f'на разбор {len(manual)}, фото молей {len(moths)}, на выборочную проверку {len(spot)} (из них 2:1 — {len(maj)}). '
           'Откройте fix_tool.html: исправьте рамки, «Готово»/«Бабочек нет», в поле пояснения — что и почему. Экспорт → work/fix_<имя>.json')
 
 
@@ -75,9 +84,9 @@ def cmd_build():
             source = ('team_fix' if changed else 'team_confirmed') + ('_model' if 'model' in (fx.get('comment') or '').lower() else '')
             if q == 'spot':
                 spot_stats['checked'] += 1; spot_stats['changed'] += bool(changed)
-            if changed or q == 'manual':
+            if changed or q in ('manual', 'moth'):
                 corr.append([pid, p['group'], q, len(before), len(boxes), fx.get('annotator', ''), fx.get('comment', '')])
-        elif crowd and ph.get('final') != 'manual':
+        elif crowd and ph.get('final') != 'manual' and queue.get(pid, {}).get('queue') != 'moth':   # моли — только решение команды
             boxes, source = crowd['boxes'], 'crowd_' + crowd['decision']
         else:
             missing.append(pid); continue
